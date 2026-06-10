@@ -1,0 +1,109 @@
+import React from "react";
+import Link from "next/link";
+import { MapPin, Phone, Mail } from "lucide-react";
+
+export default function Footer() {
+  return (
+    <footer className="bg-slate-900 text-gray-300 py-16">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+          {/* Company Info */}
+          <div className="lg:col-span-1">
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+              <span className="bg-blue-600 text-white px-2 py-1 rounded-md text-xl">C</span>
+              ClaimMitra
+            </h3>
+            <p className="text-gray-400 mb-6 leading-relaxed">
+              We help you appeal & negotiate with insurers. Turning Insurance Challenges into Triumphs: From Denied Claims to Approved Success.
+            </p>
+            <div className="space-y-3">
+              <a href="tel:+919985060600" className="flex items-center text-gray-400 hover:text-white transition group">
+                <Phone className="w-5 h-5 mr-3 text-blue-500 group-hover:text-blue-400" />
+                +91 99850 60600
+              </a>
+              <a href="mailto:support@claimmitra.com" className="flex items-center text-gray-400 hover:text-white transition group">
+                <Mail className="w-5 h-5 mr-3 text-blue-500 group-hover:text-blue-400" />
+                support@claimmitra.com
+              </a>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div className="lg:col-span-1">
+            <h4 className="text-white font-semibold text-lg mb-6">Quick Links</h4>
+            <ul className="space-y-3">
+              <li><Link href="/" className="hover:text-blue-400 transition">Home</Link></li>
+              <li><Link href="/about" className="hover:text-blue-400 transition">About Us</Link></li>
+              <li><Link href="/services" className="hover:text-blue-400 transition">Services</Link></li>
+              <li><Link href="/faq" className="hover:text-blue-400 transition">FAQs</Link></li>
+              <li><Link href="/blog" className="hover:text-blue-400 transition">Blog</Link></li>
+              <li><Link href="/contact" className="hover:text-blue-400 transition">Contact Us</Link></li>
+              <li className="pt-2"><Link href="/login" className="text-blue-400 hover:text-white transition font-semibold">Login / Dashboard</Link></li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div className="lg:col-span-1">
+            <h3 className="font-semibold text-lg mb-6 text-white">Services</h3>
+            <ul className="space-y-4">
+              <li><Link href="/services/mis-selling" className="text-slate-400 hover:text-white transition-colors">Mis-selling of Policy</Link></li>
+              <li><Link href="/services/refile-claim" className="text-slate-400 hover:text-white transition-colors">Claim Rejection</Link></li>
+              <li><Link href="/services/delay-in-claim" className="text-slate-400 hover:text-white transition-colors">Delay in Process</Link></li>
+              <li><Link href="/services/short-settled" className="text-slate-400 hover:text-white transition-colors">Claim Short-settled</Link></li>
+              <li><Link href="/services/health-reimbursement" className="text-slate-400 hover:text-white transition-colors">Health Reimbursement</Link></li>
+              <li><Link href="/services/policy-review" className="text-slate-400 hover:text-white transition-colors">Know Your Policy (₹99)</Link></li>
+            </ul>
+          </div>
+
+          {/* Insights & Legal */}
+          <div className="lg:col-span-1">
+            <h3 className="font-semibold text-lg mb-6 text-white">Insights</h3>
+            <ul className="space-y-4 mb-8">
+              <li><Link href="/testimonials" className="text-slate-400 hover:text-white transition-colors">Customer Reviews</Link></li>
+              <li><Link href="/media-coverage" className="text-slate-400 hover:text-white transition-colors">Media Coverage</Link></li>
+              <li><Link href="/awards" className="text-slate-400 hover:text-white transition-colors">Awards & Recognition</Link></li>
+              <li><Link href="/career" className="text-slate-400 hover:text-white transition-colors">Careers</Link></li>
+            </ul>
+            
+            <h3 className="font-semibold text-lg mb-6 text-white">Legal</h3>
+            <ul className="space-y-3">
+              <li><Link href="/privacy-policy" className="hover:text-blue-400 transition text-sm">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-blue-400 transition text-sm">Terms & Conditions</Link></li>
+              <li><Link href="/disclaimer" className="hover:text-blue-400 transition text-sm">Disclaimer</Link></li>
+            </ul>
+          </div>
+
+          {/* Branches */}
+          <div className="lg:col-span-1">
+            <h4 className="text-white font-semibold text-lg mb-6">Our Locations</h4>
+            <div className="space-y-6">
+              <div>
+                <h5 className="text-white font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-blue-500"/> Hyderabad (HQ)</h5>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Plot no: 12, Road no: 1, Dharmareddy colony, Near JNTU metro, Hyderabad.
+                </p>
+              </div>
+              <div>
+                <h5 className="text-white font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-blue-500"/> Delhi</h5>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  311-315, 3rd Floor, Naurang House, KG Marg, Delhi-110001.
+                </p>
+              </div>
+              <div>
+                <h5 className="text-white font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-blue-500"/> Mumbai</h5>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  #27, 7th Floor, Mumbai Coworks, Next to Sai Service, Andheri East.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-slate-800 mt-16 pt-8 text-center text-gray-500 flex flex-col md:flex-row justify-between items-center">
+          <p>&copy; {new Date().getFullYear()} ClaimMitra. All rights reserved.</p>
+          <p className="mt-4 md:mt-0 text-sm">Empowering policyholders across India.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}

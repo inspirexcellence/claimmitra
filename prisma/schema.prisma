@@ -1,0 +1,137 @@
+// Prisma Schema for ClaimMitra Insurance Platform
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("admins")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  phone     String?
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  claims        Claim[]
+  rejectedClaims RejectedClaim[]
+  policyReviews  PolicyReview[]
+
+  @@map("users")
+}
+
+model Blog {
+  id              String   @id @default(cuid())
+  title           String
+  slug            String   @unique
+  content         String   @db.Text
+  excerpt         String?  @db.Text
+  metaTitle       String?  @map("meta_title")
+  metaDescription String?  @map("meta_description") @db.Text
+  featuredImage   String?  @map("featured_image")
+  published       Boolean  @default(false)
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  @@map("blogs")
+}
+
+model Claim {
+  id           String   @id @default(cuid())
+  name         String
+  phone        String
+  email        String
+  company      String
+  policyNumber String   @map("policy_number")
+  details      String   @db.Text
+  documents    String[] // Array of R2 file URLs
+  status       String   @default("pending") // pending, in_review, resolved, rejected
+  type         String   @default("general") // general, mis-selling, delay-in-claim, short-settled, health-reimbursement
+  notes        String?  @db.Text
+  userId       String?  @map("user_id")
+  user         User?    @relation(fields: [userId], references: [id])
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  @@map("claims")
+}
+
+model RejectedClaim {
+  id           String   @id @default(cuid())
+  name         String
+  phone        String
+  email        String
+  policyNumber String?  @map("policy_number")
+  reason       String   @db.Text
+  documents    String[] // Array of R2 file URLs
+  status       String   @default("pending") // pending, in_review, resolved, rejected
+  notes        String?  @db.Text
+  userId       String?  @map("user_id")
+  user         User?    @relation(fields: [userId], references: [id])
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  @@map("rejected_claims")
+}
+
+model PolicyReview {
+  id            String   @id @default(cuid())
+  name          String
+  phone         String
+  email         String
+  policyPdf     String?  @map("policy_pdf") // R2 URL
+  paymentStatus String   @default("pending") @map("payment_status") // pending, paid, failed
+  status        String   @default("pending") // pending, in_review, completed
+  notes         String?  @db.Text
+  paymentId     String?  @map("payment_id")
+  userId        String?  @map("user_id")
+  user          User?    @relation(fields: [userId], references: [id])
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  payment Payment? @relation(fields: [paymentId], references: [id])
+
+  @@map("policy_reviews")
+}
+
+model Payment {
+  id            String   @id @default(cuid())
+  amount        Int // Amount in paise (9900 = ₹99)
+  currency      String   @default("INR")
+  razorpayId    String?  @unique @map("razorpay_id")
+  orderId       String?  @unique @map("order_id")
+  status        String   @default("created") // created, paid, failed
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  policyReviews PolicyReview[]
+
+  @@map("payments")
+}
+
+model ContactRequest {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  message   String   @db.Text
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("contact_requests")
+}
