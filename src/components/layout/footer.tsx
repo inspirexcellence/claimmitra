@@ -6,12 +6,12 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-gray-300 py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12">
           {/* Company Info */}
-          <div className="lg:col-span-1">
-            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-              <span className="bg-blue-600 text-white px-2 py-1 rounded-md text-xl">C</span>
-              InsurenceSarthi
+          <div className="lg:col-span-2 pr-4">
+            <h3 className="text-2xl font-black mb-6 flex items-center tracking-tight">
+              <span className="text-blue-500">Insurence</span>
+              <span className="text-white">Sarthi</span>
             </h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
               We help you appeal & negotiate with insurers. Turning Insurance Challenges into Triumphs: From Denied Claims to Approved Success.

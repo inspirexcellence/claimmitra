@@ -53,16 +53,14 @@ export default function Navbar({ session }: { session?: Session | null }) {
             
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-2xl lg:text-3xl font-black text-slate-900 flex items-center gap-3 tracking-tighter">
-                <div className="bg-blue-600 text-white w-10 h-10 lg:w-12 lg:h-12 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/30">
-                  <span className="text-xl lg:text-2xl font-black">C</span>
-                </div>
-                InsurenceSarthi
+              <Link href="/" className="text-2xl lg:text-3xl font-black flex items-center tracking-tight">
+                <span className="text-blue-600">Insurence</span>
+                <span className="text-slate-900">Sarthi</span>
               </Link>
             </div>
             
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center lg:gap-1 xl:gap-6">
+            <nav className="hidden lg:flex flex-1 justify-center items-center lg:gap-2 xl:gap-6 px-8">
               
               <Link href="/" className={cn("lg:px-2 xl:px-4 py-2 text-[13px] xl:text-[15px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/" ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
                 Home
@@ -168,9 +166,11 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 </SheetTrigger>
                 <SheetContent side="right" className="bg-white">
                   {/* Mobile Header Branding */}
-                  <div className="flex items-center gap-2 pb-6 pt-2 border-b border-slate-100">
-                    <span className="bg-blue-600 text-white px-2 py-1 rounded-md text-xl font-bold">C</span>
-                    <span className="text-xl font-bold text-blue-700">InsurenceSarthi</span>
+                  <div className="flex items-center pb-6 pt-2 border-b border-slate-100">
+                    <span className="text-2xl font-black tracking-tight">
+                      <span className="text-blue-600">Insurence</span>
+                      <span className="text-slate-900">Sarthi</span>
+                    </span>
                   </div>
 
                   <div className="flex flex-col space-y-2 mt-6 overflow-y-auto max-h-[75vh] pb-8 px-2">
