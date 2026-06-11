@@ -45,9 +45,9 @@ export default function TestimonialsSection() {
         <StaggerContainer className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <StaggerItem key={index}>
-              <Card className="bg-slate-800 border-slate-700 h-full hover:-translate-y-1 transition-transform duration-300">
+              <Card className="bg-emerald-950/20 border-emerald-900/40 h-full hover:-translate-y-1 transition-transform duration-300">
                 <CardContent className="p-8">
-                  <div className="flex gap-1 mb-6 text-yellow-400">
+                  <div className="flex gap-1 mb-6 text-emerald-500">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <Star key={star} className="w-5 h-5 fill-current" />
                     ))}

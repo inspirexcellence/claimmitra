@@ -18,11 +18,11 @@ export default function Footer() {
             </p>
             <div className="space-y-3 text-sm">
               <a href="tel:+919985060600" className="flex items-center text-gray-400 hover:text-white transition group whitespace-nowrap">
-                <Phone className="w-4 h-4 mr-3 text-orange-500 group-hover:text-orange-400 shrink-0" />
+                <Phone className="w-4 h-4 mr-3 text-orange-500 group-hover:text-emerald-400 shrink-0" />
                 +91 99850 60600
               </a>
               <a href="mailto:support@insurencesarthi.com" className="flex items-center text-gray-400 hover:text-white transition group whitespace-nowrap">
-                <Mail className="w-4 h-4 mr-3 text-orange-500 group-hover:text-orange-400 shrink-0" />
+                <Mail className="w-4 h-4 mr-3 text-orange-500 group-hover:text-emerald-400 shrink-0" />
                 support@insurencesarthi.com
               </a>
             </div>
@@ -32,12 +32,12 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <h4 className="text-white font-semibold text-base mb-5">Quick Links</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/" className="hover:text-orange-400 transition">Home</Link></li>
-              <li><Link href="/about" className="hover:text-orange-400 transition">About Us</Link></li>
-              <li><Link href="/services" className="hover:text-orange-400 transition">Services</Link></li>
-              <li><Link href="/faq" className="hover:text-orange-400 transition">FAQs</Link></li>
-              <li><Link href="/blog" className="hover:text-orange-400 transition">Blog</Link></li>
-              <li><Link href="/contact" className="hover:text-orange-400 transition">Contact Us</Link></li>
+              <li><Link href="/" className="hover:text-emerald-400 transition">Home</Link></li>
+              <li><Link href="/about" className="hover:text-emerald-400 transition">About Us</Link></li>
+              <li><Link href="/services" className="hover:text-emerald-400 transition">Services</Link></li>
+              <li><Link href="/faq" className="hover:text-emerald-400 transition">FAQs</Link></li>
+              <li><Link href="/blog" className="hover:text-emerald-400 transition">Blog</Link></li>
+              <li><Link href="/contact" className="hover:text-emerald-400 transition">Contact Us</Link></li>
               <li className="pt-2"><Link href="/login" className="text-orange-400 hover:text-white transition font-semibold">Login / Dashboard</Link></li>
             </ul>
           </div>
@@ -67,9 +67,9 @@ export default function Footer() {
             
             <h3 className="font-semibold text-base mb-5 text-white">Legal</h3>
             <ul className="space-y-2.5">
-              <li><Link href="/privacy-policy" className="hover:text-orange-400 transition text-sm">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-orange-400 transition text-sm">Terms & Conditions</Link></li>
-              <li><Link href="/disclaimer" className="hover:text-orange-400 transition text-sm">Disclaimer</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-emerald-400 transition text-sm">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-emerald-400 transition text-sm">Terms & Conditions</Link></li>
+              <li><Link href="/disclaimer" className="hover:text-emerald-400 transition text-sm">Disclaimer</Link></li>
             </ul>
           </div>
 
