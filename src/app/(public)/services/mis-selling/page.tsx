@@ -33,7 +33,7 @@ export default function MisSellingPage() {
           <SlideUp delay={0.4}>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/submit-claim?type=mis-selling">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 h-14 text-lg">
+                <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 h-14 text-lg">
                   Report Mis-selling
                 </Button>
               </Link>
@@ -57,8 +57,8 @@ export default function MisSellingPage() {
               </SlideUp>
               <StaggerContainer className="space-y-6">
                 <StaggerItem className="flex items-start gap-4">
-                  <div className="bg-blue-100 p-3 rounded-xl shrink-0">
-                    <AlertTriangle className="w-6 h-6 text-blue-700" />
+                  <div className="bg-orange-100 p-3 rounded-xl shrink-0">
+                    <AlertTriangle className="w-6 h-6 text-orange-600" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-slate-900 mb-2">Loan Against Policy</h3>
@@ -66,8 +66,8 @@ export default function MisSellingPage() {
                   </div>
                 </StaggerItem>
                 <StaggerItem className="flex items-start gap-4">
-                  <div className="bg-blue-100 p-3 rounded-xl shrink-0">
-                    <AlertTriangle className="w-6 h-6 text-blue-700" />
+                  <div className="bg-orange-100 p-3 rounded-xl shrink-0">
+                    <AlertTriangle className="w-6 h-6 text-orange-600" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-slate-900 mb-2">Fixed Deposit Scam</h3>
@@ -75,8 +75,8 @@ export default function MisSellingPage() {
                   </div>
                 </StaggerItem>
                 <StaggerItem className="flex items-start gap-4">
-                  <div className="bg-blue-100 p-3 rounded-xl shrink-0">
-                    <AlertTriangle className="w-6 h-6 text-blue-700" />
+                  <div className="bg-orange-100 p-3 rounded-xl shrink-0">
+                    <AlertTriangle className="w-6 h-6 text-orange-600" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-slate-900 mb-2">Lapsed Policy Recovery</h3>
@@ -89,19 +89,19 @@ export default function MisSellingPage() {
               <h3 className="text-2xl font-bold text-slate-900 mb-6">How We Help You</h3>
               <StaggerContainer className="space-y-6">
                 <StaggerItem className="flex gap-4">
-                  <span className="text-blue-600 font-bold text-xl">01</span>
+                  <span className="text-orange-500 font-bold text-xl">01</span>
                   <p className="text-slate-700"><strong>Evaluate the Pitch:</strong> We analyze the communications, recordings, or messages that led to the sale.</p>
                 </StaggerItem>
                 <StaggerItem className="flex gap-4">
-                  <span className="text-blue-600 font-bold text-xl">02</span>
+                  <span className="text-orange-500 font-bold text-xl">02</span>
                   <p className="text-slate-700"><strong>Legal Framing:</strong> Our legal experts draft a robust complaint detailing the misrepresentation.</p>
                 </StaggerItem>
                 <StaggerItem className="flex gap-4">
-                  <span className="text-blue-600 font-bold text-xl">03</span>
+                  <span className="text-orange-500 font-bold text-xl">03</span>
                   <p className="text-slate-700"><strong>Ombudsman Representation:</strong> We escalate the matter to the Insurance Ombudsman or Consumer Court if the insurer denies a refund.</p>
                 </StaggerItem>
                 <StaggerItem className="flex gap-4">
-                  <span className="text-blue-600 font-bold text-xl">04</span>
+                  <span className="text-orange-500 font-bold text-xl">04</span>
                   <p className="text-slate-700"><strong>Refund Secured:</strong> We fight until your premium is refunded with applicable interest.</p>
                 </StaggerItem>
               </StaggerContainer>
@@ -111,12 +111,12 @@ export default function MisSellingPage() {
       </section>
       
       {/* CTA */}
-      <section className="bg-blue-900 py-20 text-center">
+      <section className="bg-orange-800 py-20 text-center">
         <FadeIn className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Don't Let Fraudsters Keep Your Money</h2>
-          <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">Upload your policy documents today and let our experts review your case for free.</p>
+          <p className="text-orange-100 text-lg mb-8 max-w-2xl mx-auto">Upload your policy documents today and let our experts review your case for free.</p>
           <Link href="/submit-claim?type=mis-selling">
-            <Button size="lg" className="bg-white text-blue-900 hover:bg-slate-100 h-14 px-8 text-lg hover:scale-105 transition-transform">
+            <Button size="lg" className="bg-white text-orange-800 hover:bg-slate-100 h-14 px-8 text-lg hover:scale-105 transition-transform">
               Start Your Resolution <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>

@@ -8,25 +8,25 @@ const steps = [
     number: "01",
     title: "Initial Assessment",
     description: "We review your case, policy details, and rejection letters to determine the best course of action.",
-    icon: <ClipboardCheck className="w-8 h-8 text-blue-600" />
+    icon: <ClipboardCheck className="w-8 h-8 text-orange-500" />
   },
   {
     number: "02",
     title: "Documentation",
     description: "Our experts gather all necessary medical records, bills, and legal paperwork required for the appeal.",
-    icon: <FileSearch className="w-8 h-8 text-blue-600" />
+    icon: <FileSearch className="w-8 h-8 text-orange-500" />
   },
   {
     number: "03",
     title: "Negotiation",
     description: "We represent you and negotiate directly with the insurance company's grievance redressal team.",
-    icon: <Handshake className="w-8 h-8 text-blue-600" />
+    icon: <Handshake className="w-8 h-8 text-orange-500" />
   },
   {
     number: "04",
     title: "Legal Assistance",
     description: "If required, we escalate your case to the Insurance Ombudsman or Consumer Court for final resolution.",
-    icon: <Scale className="w-8 h-8 text-blue-600" />
+    icon: <Scale className="w-8 h-8 text-orange-500" />
   }
 ];
 
@@ -52,7 +52,7 @@ export default function ProcessSection() {
                 <div className="text-5xl font-extrabold text-slate-100 absolute top-4 right-6">
                   {step.number}
                 </div>
-                <div className="mb-6 bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center relative z-10">
+                <div className="mb-6 bg-orange-50 w-16 h-16 rounded-full flex items-center justify-center relative z-10">
                   {step.icon}
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3 relative z-10">{step.title}</h3>

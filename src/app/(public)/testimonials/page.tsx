@@ -80,7 +80,7 @@ export default function TestimonialsPage() {
                 </p>
                 <div className="border-t border-slate-100 pt-4 mt-auto relative z-10">
                   <h4 className="font-bold text-slate-900">{review.name}</h4>
-                  <span className="text-sm text-blue-600 font-medium">{review.type}</span>
+                  <span className="text-sm text-orange-500 font-medium">{review.type}</span>
                 </div>
               </StaggerItem>
             ))}

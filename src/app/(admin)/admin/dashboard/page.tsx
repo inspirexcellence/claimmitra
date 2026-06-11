@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shield, ShieldAlert, Search, CreditCard, FileText, Mail } from "lucide-react";
 
 const stats = [
-  { title: "Total Claims", value: "0", icon: Shield, color: "text-blue-600", bg: "bg-blue-100" },
+  { title: "Total Claims", value: "0", icon: Shield, color: "text-orange-500", bg: "bg-orange-100" },
   { title: "Rejected Claims", value: "0", icon: ShieldAlert, color: "text-red-600", bg: "bg-red-100" },
   { title: "Policy Reviews", value: "0", icon: Search, color: "text-indigo-600", bg: "bg-indigo-100" },
   { title: "Total Payments", value: "₹0", icon: CreditCard, color: "text-emerald-600", bg: "bg-emerald-100" },

@@ -43,7 +43,7 @@ export default function BlogsAdminClient({ initialBlogs }: { initialBlogs: Blog[
           <p className="text-slate-500 mt-1">Create and manage your articles.</p>
         </div>
         <Link href="/admin/blogs/new">
-          <Button className="bg-blue-600 hover:bg-blue-700">
+          <Button className="bg-orange-500 hover:bg-orange-600">
             <Plus className="w-4 h-4 mr-2" />
             Create New Blog
           </Button>
@@ -99,7 +99,7 @@ export default function BlogsAdminClient({ initialBlogs }: { initialBlogs: Blog[
                     <div className="flex justify-end gap-2">
                       <Link href={`/admin/blogs/${blog.id}/edit`}>
                         <Button variant="outline" size="sm" className="h-8 w-8 p-0">
-                          <Edit className="h-4 w-4 text-blue-600" />
+                          <Edit className="h-4 w-4 text-orange-500" />
                         </Button>
                       </Link>
                       <Button 

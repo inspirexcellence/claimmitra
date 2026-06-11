@@ -32,11 +32,11 @@ export default function Navbar({ session }: { session?: Session | null }) {
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 mb-2 sm:mb-0">
             <a href="tel:+919985060600" className="flex items-center hover:text-white transition-colors text-[10px] sm:text-xs">
-              <Phone className="w-3.5 h-3.5 mr-2 text-blue-400" />
+              <Phone className="w-3.5 h-3.5 mr-2 text-orange-400" />
               +91 99850 60600
             </a>
             <a href="mailto:support@insurencesarthi.com" className="flex items-center hover:text-white transition-colors text-[10px] sm:text-xs">
-              <Mail className="w-3.5 h-3.5 mr-2 text-blue-400" />
+              <Mail className="w-3.5 h-3.5 mr-2 text-orange-400" />
               support@insurencesarthi.com
             </a>
           </div>
@@ -54,7 +54,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="text-2xl lg:text-3xl font-black flex items-center tracking-tight">
-                <span className="text-blue-600">Insurence</span>
+                <span className="text-orange-500">Insurence</span>
                 <span className="text-slate-900">Sarthi</span>
               </Link>
             </div>
@@ -62,48 +62,48 @@ export default function Navbar({ session }: { session?: Session | null }) {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex flex-1 justify-center items-center gap-2 lg:gap-4 px-1 lg:px-2">
               
-              <Link href="/" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/" ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
+              <Link href="/" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/" ? "bg-orange-50 text-orange-600" : "text-slate-600 hover:text-orange-500 hover:bg-slate-50")}>
                 Home
               </Link>
               
               <div className="relative group px-1 py-2">
-                <button className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", pathname.startsWith("/services") ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
+                <button className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", pathname.startsWith("/services") ? "bg-orange-50 text-orange-600" : "text-slate-600 hover:text-orange-500 hover:bg-slate-50")}>
                   Services <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
                 </button>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50">
                   <div className="bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-slate-100 p-3 flex flex-col gap-1">
-                    <Link href="/services/mis-selling" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-blue-700 rounded-xl transition-colors">Mis-selling of Insurance</Link>
-                    <Link href="/services/refile-claim" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-blue-700 rounded-xl transition-colors">Claim Rejection</Link>
-                    <Link href="/services/delay-in-claim" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-blue-700 rounded-xl transition-colors">Delay In Claim Process</Link>
-                    <Link href="/services/short-settled" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-blue-700 rounded-xl transition-colors">Claim Short-settled</Link>
-                    <Link href="/services/health-reimbursement" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-blue-700 rounded-xl transition-colors">Health Claim Reimbursement</Link>
-                    <Link href="/services/policy-review" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-blue-700 rounded-xl transition-colors">Know Your Policy</Link>
+                    <Link href="/services/mis-selling" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-orange-600 rounded-xl transition-colors">Mis-selling of Insurance</Link>
+                    <Link href="/services/refile-claim" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-orange-600 rounded-xl transition-colors">Claim Rejection</Link>
+                    <Link href="/services/delay-in-claim" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-orange-600 rounded-xl transition-colors">Delay In Claim Process</Link>
+                    <Link href="/services/short-settled" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-orange-600 rounded-xl transition-colors">Claim Short-settled</Link>
+                    <Link href="/services/health-reimbursement" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-orange-600 rounded-xl transition-colors">Health Claim Reimbursement</Link>
+                    <Link href="/services/policy-review" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-orange-600 rounded-xl transition-colors">Know Your Policy</Link>
                   </div>
                 </div>
               </div>
 
-              <Link href="/about" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/about" ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
+              <Link href="/about" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/about" ? "bg-orange-50 text-orange-600" : "text-slate-600 hover:text-orange-500 hover:bg-slate-50")}>
                 About
               </Link>
 
               <div className="relative group px-1 py-2">
-                <button className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
+                <button className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "bg-orange-50 text-orange-600" : "text-slate-600 hover:text-orange-500 hover:bg-slate-50")}>
                   Insights <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
                 </button>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-60 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50">
                   <div className="bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-slate-100 p-3 flex flex-col gap-1">
-                    <Link href="/testimonials" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-blue-700 rounded-xl transition-colors">Customer Reviews</Link>
-                    <Link href="/media-coverage" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-blue-700 rounded-xl transition-colors">Media Coverage</Link>
-                    <Link href="/awards" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-blue-700 rounded-xl transition-colors">Awards & Recognition</Link>
+                    <Link href="/testimonials" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-orange-600 rounded-xl transition-colors">Customer Reviews</Link>
+                    <Link href="/media-coverage" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-orange-600 rounded-xl transition-colors">Media Coverage</Link>
+                    <Link href="/awards" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-orange-600 rounded-xl transition-colors">Awards & Recognition</Link>
                   </div>
                 </div>
               </div>
 
-              <Link href="/blog" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname.startsWith("/blog") ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
+              <Link href="/blog" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname.startsWith("/blog") ? "bg-orange-50 text-orange-600" : "text-slate-600 hover:text-orange-500 hover:bg-slate-50")}>
                 Blog
               </Link>
               
-              <Link href="/career" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/career" ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
+              <Link href="/career" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/career" ? "bg-orange-50 text-orange-600" : "text-slate-600 hover:text-orange-500 hover:bg-slate-50")}>
                 Career
               </Link>
 
@@ -113,8 +113,8 @@ export default function Navbar({ session }: { session?: Session | null }) {
             <div className="hidden lg:flex items-center gap-2 shrink-0">
               {session?.user ? (
                 <div className="relative group px-1 py-2">
-                  <button className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-200 hover:border-blue-600 transition-all bg-white shadow-sm">
-                    <div className="w-7 h-7 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs uppercase">
+                  <button className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-200 hover:border-orange-500 transition-all bg-white shadow-sm">
+                    <div className="w-7 h-7 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-xs uppercase">
                       {session.user.name?.[0] || session.user.email?.[0] || 'U'}
                     </div>
                     <span className="text-[13px] font-bold text-slate-700 max-w-[80px] truncate">
@@ -130,11 +130,11 @@ export default function Navbar({ session }: { session?: Session | null }) {
                         <p className="text-xs text-slate-500 truncate">{session.user.email}</p>
                       </div>
                       
-                      <Link href={(session.user as any).role === 'admin' ? '/admin' : '/dashboard'} className="flex items-center px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-blue-700 rounded-xl transition-colors">
+                      <Link href={(session.user as any).role === 'admin' ? '/admin' : '/dashboard'} className="flex items-center px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-orange-600 rounded-xl transition-colors">
                         <LayoutDashboard className="w-4 h-4 mr-3" /> Dashboard
                       </Link>
                       
-                      <Link href="/profile" className="flex items-center px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-blue-700 rounded-xl transition-colors">
+                      <Link href="/profile" className="flex items-center px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-orange-600 rounded-xl transition-colors">
                         <UserIcon className="w-4 h-4 mr-3" /> My Profile
                       </Link>
                       
@@ -145,12 +145,12 @@ export default function Navbar({ session }: { session?: Session | null }) {
                   </div>
                 </div>
               ) : (
-                <Link href="/login" className="px-3 py-1.5 text-[13px] font-bold text-slate-700 border-2 border-slate-200 rounded-full hover:border-blue-600 hover:text-blue-600 transition-all flex items-center whitespace-nowrap">
+                <Link href="/login" className="px-3 py-1.5 text-[13px] font-bold text-slate-700 border-2 border-slate-200 rounded-full hover:border-orange-500 hover:text-orange-500 transition-all flex items-center whitespace-nowrap">
                   Login
                 </Link>
               )}
               <Link href="/contact" className="whitespace-nowrap">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 lg:px-5 py-4 text-[13px] font-bold shadow-[0_8px_20px_-6px_rgba(37,99,235,0.5)] hover:shadow-[0_12px_25px_-6px_rgba(37,99,235,0.6)] hover:-translate-y-0.5 transition-all duration-300">
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-4 lg:px-5 py-4 text-[13px] font-bold shadow-[0_8px_20px_-6px_rgba(249,115,22,0.5)] hover:shadow-[0_12px_25px_-6px_rgba(249,115,22,0.6)] hover:-translate-y-0.5 transition-all duration-300">
                   Request a Claim Review
                 </Button>
               </Link>
@@ -166,7 +166,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
                   {/* Mobile Header Branding */}
                   <div className="flex items-center pb-3 pt-1 px-4 border-b border-slate-100">
                     <span className="text-xl font-black tracking-tight">
-                      <span className="text-blue-600">Insurence</span>
+                      <span className="text-orange-500">Insurence</span>
                       <span className="text-slate-900">Sarthi</span>
                     </span>
                   </div>
@@ -174,7 +174,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
                   <div className="flex flex-col space-y-1 mt-3 overflow-y-auto max-h-[85vh] pb-4 px-4">
                     <Link 
                       href="/" 
-                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/" ? "text-blue-600 pl-2 border-l-4 border-l-blue-600 bg-blue-50/50 rounded-r-md" : "text-slate-900")} 
+                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/" ? "text-orange-500 pl-2 border-l-4 border-l-orange-500 bg-orange-50/50 rounded-r-md" : "text-slate-900")} 
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Home
@@ -184,26 +184,26 @@ export default function Navbar({ session }: { session?: Session | null }) {
                     <div className="border-b border-slate-100">
                       <button 
                         onClick={() => setOpenDropdown(openDropdown === 'services' ? null : 'services')}
-                        className={cn("flex items-center justify-between w-full py-2.5 text-base font-medium transition-colors", pathname.startsWith("/services") ? "text-blue-600" : "text-slate-900")}
+                        className={cn("flex items-center justify-between w-full py-2.5 text-base font-medium transition-colors", pathname.startsWith("/services") ? "text-orange-500" : "text-slate-900")}
                       >
                         Services
-                        <ChevronDown className={cn("h-5 w-5 transition-transform duration-200", openDropdown === 'services' ? "rotate-180 text-blue-600" : "text-slate-500")} />
+                        <ChevronDown className={cn("h-5 w-5 transition-transform duration-200", openDropdown === 'services' ? "rotate-180 text-orange-500" : "text-slate-500")} />
                       </button>
                       <div className={cn("overflow-hidden transition-all duration-300 ease-in-out", openDropdown === 'services' || pathname.startsWith("/services") ? "max-h-96 opacity-100 mb-2" : "max-h-0 opacity-0")}>
                         <div className="flex flex-col space-y-0.5 pl-3 border-l-2 border-slate-100 ml-1 py-1">
-                          <Link href="/services/mis-selling" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/mis-selling" ? "text-blue-700 font-medium bg-blue-50" : "text-slate-600 hover:text-blue-600")} onClick={() => setIsMobileMenuOpen(false)}>Mis-selling of Insurance</Link>
-                          <Link href="/services/refile-claim" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/refile-claim" ? "text-blue-700 font-medium bg-blue-50" : "text-slate-600 hover:text-blue-600")} onClick={() => setIsMobileMenuOpen(false)}>Claim Rejection</Link>
-                          <Link href="/services/delay-in-claim" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/delay-in-claim" ? "text-blue-700 font-medium bg-blue-50" : "text-slate-600 hover:text-blue-600")} onClick={() => setIsMobileMenuOpen(false)}>Delay In Claim Process</Link>
-                          <Link href="/services/short-settled" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/short-settled" ? "text-blue-700 font-medium bg-blue-50" : "text-slate-600 hover:text-blue-600")} onClick={() => setIsMobileMenuOpen(false)}>Claim Short-settled</Link>
-                          <Link href="/services/health-reimbursement" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/health-reimbursement" ? "text-blue-700 font-medium bg-blue-50" : "text-slate-600 hover:text-blue-600")} onClick={() => setIsMobileMenuOpen(false)}>Health Claim Reimbursement</Link>
-                          <Link href="/services/policy-review" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/policy-review" ? "text-blue-700 font-medium bg-blue-50" : "text-slate-600 hover:text-blue-600")} onClick={() => setIsMobileMenuOpen(false)}>Know Your Policy</Link>
+                          <Link href="/services/mis-selling" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/mis-selling" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-orange-500")} onClick={() => setIsMobileMenuOpen(false)}>Mis-selling of Insurance</Link>
+                          <Link href="/services/refile-claim" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/refile-claim" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-orange-500")} onClick={() => setIsMobileMenuOpen(false)}>Claim Rejection</Link>
+                          <Link href="/services/delay-in-claim" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/delay-in-claim" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-orange-500")} onClick={() => setIsMobileMenuOpen(false)}>Delay In Claim Process</Link>
+                          <Link href="/services/short-settled" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/short-settled" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-orange-500")} onClick={() => setIsMobileMenuOpen(false)}>Claim Short-settled</Link>
+                          <Link href="/services/health-reimbursement" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/health-reimbursement" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-orange-500")} onClick={() => setIsMobileMenuOpen(false)}>Health Claim Reimbursement</Link>
+                          <Link href="/services/policy-review" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/policy-review" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-orange-500")} onClick={() => setIsMobileMenuOpen(false)}>Know Your Policy</Link>
                         </div>
                       </div>
                     </div>
 
                     <Link 
                       href="/about" 
-                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/about" ? "text-blue-600 pl-2 border-l-4 border-l-blue-600 bg-blue-50/50 rounded-r-md" : "text-slate-900")} 
+                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/about" ? "text-orange-500 pl-2 border-l-4 border-l-orange-500 bg-orange-50/50 rounded-r-md" : "text-slate-900")} 
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       About Us
@@ -213,37 +213,37 @@ export default function Navbar({ session }: { session?: Session | null }) {
                     <div className="border-b border-slate-100">
                       <button 
                         onClick={() => setOpenDropdown(openDropdown === 'insights' ? null : 'insights')}
-                        className={cn("flex items-center justify-between w-full py-2.5 text-base font-medium transition-colors", ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "text-blue-600" : "text-slate-900")}
+                        className={cn("flex items-center justify-between w-full py-2.5 text-base font-medium transition-colors", ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "text-orange-500" : "text-slate-900")}
                       >
                         Insights
-                        <ChevronDown className={cn("h-5 w-5 transition-transform duration-200", openDropdown === 'insights' ? "rotate-180 text-blue-600" : "text-slate-500")} />
+                        <ChevronDown className={cn("h-5 w-5 transition-transform duration-200", openDropdown === 'insights' ? "rotate-180 text-orange-500" : "text-slate-500")} />
                       </button>
                       <div className={cn("overflow-hidden transition-all duration-300 ease-in-out", openDropdown === 'insights' || ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "max-h-64 opacity-100 mb-2" : "max-h-0 opacity-0")}>
                         <div className="flex flex-col space-y-0.5 pl-3 border-l-2 border-slate-100 ml-1 py-1">
-                          <Link href="/testimonials" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/testimonials" ? "text-blue-700 font-medium bg-blue-50" : "text-slate-600 hover:text-blue-600")} onClick={() => setIsMobileMenuOpen(false)}>Customer Reviews</Link>
-                          <Link href="/media-coverage" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/media-coverage" ? "text-blue-700 font-medium bg-blue-50" : "text-slate-600 hover:text-blue-600")} onClick={() => setIsMobileMenuOpen(false)}>Media Coverage</Link>
-                          <Link href="/awards" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/awards" ? "text-blue-700 font-medium bg-blue-50" : "text-slate-600 hover:text-blue-600")} onClick={() => setIsMobileMenuOpen(false)}>Awards & Recognition</Link>
+                          <Link href="/testimonials" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/testimonials" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-orange-500")} onClick={() => setIsMobileMenuOpen(false)}>Customer Reviews</Link>
+                          <Link href="/media-coverage" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/media-coverage" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-orange-500")} onClick={() => setIsMobileMenuOpen(false)}>Media Coverage</Link>
+                          <Link href="/awards" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/awards" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-orange-500")} onClick={() => setIsMobileMenuOpen(false)}>Awards & Recognition</Link>
                         </div>
                       </div>
                     </div>
 
                     <Link 
                       href="/blog" 
-                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname.startsWith("/blog") ? "text-blue-600 pl-2 border-l-4 border-l-blue-600 bg-blue-50/50 rounded-r-md" : "text-slate-900")} 
+                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname.startsWith("/blog") ? "text-orange-500 pl-2 border-l-4 border-l-orange-500 bg-orange-50/50 rounded-r-md" : "text-slate-900")} 
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Blog
                     </Link>
                     <Link 
                       href="/career" 
-                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/career" ? "text-blue-600 pl-2 border-l-4 border-l-blue-600 bg-blue-50/50 rounded-r-md" : "text-slate-900")} 
+                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/career" ? "text-orange-500 pl-2 border-l-4 border-l-orange-500 bg-orange-50/50 rounded-r-md" : "text-slate-900")} 
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Career
                     </Link>
                     <Link 
                       href="/contact" 
-                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/contact" ? "text-blue-600 pl-2 border-l-4 border-l-blue-600 bg-blue-50/50 rounded-r-md" : "text-slate-900")} 
+                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/contact" ? "text-orange-500 pl-2 border-l-4 border-l-orange-500 bg-orange-50/50 rounded-r-md" : "text-slate-900")} 
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Contact
@@ -253,7 +253,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
                       {session?.user ? (
                         <div className="border-t border-slate-100 pt-3">
                           <div className="flex items-center gap-3 px-2 mb-4">
-                            <div className="w-10 h-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg uppercase">
+                            <div className="w-10 h-10 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-lg uppercase">
                               {session.user.name?.[0] || session.user.email?.[0] || 'U'}
                             </div>
                             <div className="overflow-hidden flex-1">
@@ -262,11 +262,11 @@ export default function Navbar({ session }: { session?: Session | null }) {
                             </div>
                           </div>
                           
-                          <Link href={(session.user as any).role === 'admin' ? '/admin' : '/dashboard'} className="flex items-center w-full py-2 px-2 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors rounded-lg hover:bg-slate-50" onClick={() => setIsMobileMenuOpen(false)}>
+                          <Link href={(session.user as any).role === 'admin' ? '/admin' : '/dashboard'} className="flex items-center w-full py-2 px-2 text-sm font-medium text-slate-700 hover:text-orange-500 transition-colors rounded-lg hover:bg-slate-50" onClick={() => setIsMobileMenuOpen(false)}>
                             <LayoutDashboard className="w-4 h-4 mr-3 text-slate-400" /> Dashboard
                           </Link>
                           
-                          <Link href="/profile" className="flex items-center w-full py-2 px-2 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors rounded-lg hover:bg-slate-50" onClick={() => setIsMobileMenuOpen(false)}>
+                          <Link href="/profile" className="flex items-center w-full py-2 px-2 text-sm font-medium text-slate-700 hover:text-orange-500 transition-colors rounded-lg hover:bg-slate-50" onClick={() => setIsMobileMenuOpen(false)}>
                             <UserIcon className="w-4 h-4 mr-3 text-slate-400" /> My Profile
                           </Link>
                           
@@ -276,13 +276,13 @@ export default function Navbar({ session }: { session?: Session | null }) {
                         </div>
                       ) : (
                         <Link href="/login" className="block w-full mb-2" onClick={() => setIsMobileMenuOpen(false)}>
-                          <Button variant="outline" className="w-full text-blue-600 border-blue-200 hover:bg-blue-50 py-4 text-sm">
+                          <Button variant="outline" className="w-full text-orange-500 border-orange-200 hover:bg-orange-50 py-4 text-sm">
                             Login / Dashboard
                           </Button>
                         </Link>
                       )}
                       <Link href="/contact" className="block w-full" onClick={() => setIsMobileMenuOpen(false)}>
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 text-sm">
+                        <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 text-sm">
                           Request a Claim Review
                         </Button>
                       </Link>

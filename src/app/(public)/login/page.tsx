@@ -65,7 +65,7 @@ export default function LoginPage() {
                 placeholder="name@example.com" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="border-slate-200 focus:border-blue-600 focus:ring-blue-600"
+                className="border-slate-200 focus:border-orange-500 focus:ring-orange-500"
                 required
               />
             </div>
@@ -78,13 +78,13 @@ export default function LoginPage() {
                 type="password" 
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="border-slate-200 focus:border-blue-600 focus:ring-blue-600"
+                className="border-slate-200 focus:border-orange-500 focus:ring-orange-500"
                 required
               />
             </div>
             <Button 
               type="submit" 
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white" 
+              className="w-full bg-orange-500 hover:bg-orange-600 text-white" 
               disabled={loading}
             >
               {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
@@ -95,7 +95,7 @@ export default function LoginPage() {
         <CardFooter className="flex justify-center border-t border-slate-100 pt-6">
           <div className="text-sm text-slate-500">
             Don't have an account?{" "}
-            <Link href="/register" className="font-semibold text-blue-600 hover:text-blue-700 hover:underline">
+            <Link href="/register" className="font-semibold text-orange-500 hover:text-orange-600 hover:underline">
               Sign up
             </Link>
           </div>

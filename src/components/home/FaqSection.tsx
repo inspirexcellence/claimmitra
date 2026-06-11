@@ -54,7 +54,7 @@ export default function FaqSection() {
           {faqs.map((faq, index) => (
             <StaggerItem key={index}>
               <div 
-                className="bg-white border border-slate-200 rounded-xl overflow-hidden transition-all hover:border-blue-300 shadow-sm"
+                className="bg-white border border-slate-200 rounded-xl overflow-hidden transition-all hover:border-orange-300 shadow-sm"
               >
                 <button
                   className="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none"
@@ -62,7 +62,7 @@ export default function FaqSection() {
                 >
                   <span className="font-semibold text-lg text-slate-900 pr-8">{faq.question}</span>
                   <ChevronDown 
-                    className={`w-5 h-5 text-blue-600 flex-shrink-0 transition-transform duration-300 ${openIndex === index ? "transform rotate-180" : ""}`} 
+                    className={`w-5 h-5 text-orange-500 flex-shrink-0 transition-transform duration-300 ${openIndex === index ? "transform rotate-180" : ""}`} 
                   />
                 </button>
                 

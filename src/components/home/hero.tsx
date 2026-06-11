@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-slate-50 pt-10 pb-32">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-100 opacity-50 blur-3xl" />
+      <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-orange-100 opacity-50 blur-3xl" />
       <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-indigo-100 opacity-50 blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
@@ -23,7 +23,7 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
               className="flex mb-6"
             >
-              <span className="inline-flex items-center rounded-full bg-blue-100 px-4 py-1.5 text-sm font-medium text-blue-800">
+              <span className="inline-flex items-center rounded-full bg-orange-100 px-4 py-1.5 text-sm font-medium text-orange-700">
                 <ShieldCheck className="w-4 h-4 mr-2" />
                 Health & Life Insurance Claim Rejection Support
               </span>
@@ -35,7 +35,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6"
             >
-              We Help You <span className="text-blue-600">Appeal, Negotiate and Win</span> Your Claim
+              We Help You <span className="text-orange-500">Appeal, Negotiate and Win</span> Your Claim
             </motion.h1>
 
             <motion.p
@@ -54,7 +54,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row items-center gap-4"
             >
               <Link href="/contact" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 py-6 text-lg">
+                <Button size="lg" className="w-full bg-orange-500 hover:bg-orange-600 text-white rounded-full px-8 py-6 text-lg">
                   Request a Claim Review
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
@@ -85,7 +85,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="relative mt-16 lg:mt-12"
           >
-            <div className="absolute inset-0 bg-blue-600 rounded-[2rem] transform rotate-3 scale-105 opacity-10"></div>
+            <div className="absolute inset-0 bg-orange-500 rounded-[2rem] transform rotate-3 scale-105 opacity-10"></div>
             <Image
               src="/images/hero_family.png"
               alt="Happy family outside hospital"

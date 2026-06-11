@@ -19,7 +19,7 @@ const services = [
   {
     title: "Delay In Claim",
     description: "Tired of waiting? We legally force insurance companies to adhere to IRDAI's mandated turnaround times.",
-    icon: <Clock className="w-10 h-10 text-blue-500" />,
+    icon: <Clock className="w-10 h-10 text-orange-500" />,
     link: "/services/delay-in-claim",
   },
   {
@@ -66,7 +66,7 @@ export default function ServicesSection() {
                   <div className="mb-4 bg-slate-50 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
                     {service.icon}
                   </div>
-                  <CardTitle className="text-xl font-bold">{service.title} {service.price && <span className="text-blue-600 text-sm ml-2 bg-blue-50 px-2 py-1 rounded-full">{service.price}</span>}</CardTitle>
+                  <CardTitle className="text-xl font-bold">{service.title} {service.price && <span className="text-orange-500 text-sm ml-2 bg-orange-50 px-2 py-1 rounded-full">{service.price}</span>}</CardTitle>
                 </CardHeader>
                 <CardContent className="mt-auto">
                   <CardDescription className="text-base text-slate-600 mb-6">
@@ -74,7 +74,7 @@ export default function ServicesSection() {
                   </CardDescription>
                   <Link 
                     href={service.link}
-                    className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700"
+                    className="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600"
                   >
                     Learn More <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>

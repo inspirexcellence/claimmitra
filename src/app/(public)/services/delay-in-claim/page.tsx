@@ -29,7 +29,7 @@ export default function DelayClaimPage() {
           </SlideUp>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/submit-claim?type=delay-in-claim">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 h-14 text-lg">
+              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 h-14 text-lg">
                 Expedite My Claim
               </Button>
             </Link>
@@ -46,17 +46,17 @@ export default function DelayClaimPage() {
 
           <StaggerContainer className="grid md:grid-cols-3 gap-8">
             <StaggerItem className="p-8 rounded-2xl bg-slate-50 border border-slate-100 text-center">
-              <ShieldAlert className="w-12 h-12 text-blue-600 mx-auto mb-6" />
+              <ShieldAlert className="w-12 h-12 text-orange-500 mx-auto mb-6" />
               <h3 className="text-xl font-bold text-slate-900 mb-3">Endless Document Requests</h3>
               <p className="text-slate-600">The TPA or insurer keeps asking for piecemeal documents instead of a single consolidated list, resetting the clock every time.</p>
             </StaggerItem>
             <StaggerItem className="p-8 rounded-2xl bg-slate-50 border border-slate-100 text-center">
-              <ShieldAlert className="w-12 h-12 text-blue-600 mx-auto mb-6" />
+              <ShieldAlert className="w-12 h-12 text-orange-500 mx-auto mb-6" />
               <h3 className="text-xl font-bold text-slate-900 mb-3">Investigation Delays</h3>
               <p className="text-slate-600">They place your claim under "investigation" and take months to conclude it, far beyond the IRDAI 30-day limit.</p>
             </StaggerItem>
             <StaggerItem className="p-8 rounded-2xl bg-slate-50 border border-slate-100 text-center">
-              <ShieldAlert className="w-12 h-12 text-blue-600 mx-auto mb-6" />
+              <ShieldAlert className="w-12 h-12 text-orange-500 mx-auto mb-6" />
               <h3 className="text-xl font-bold text-slate-900 mb-3">Silent Treatment</h3>
               <p className="text-slate-600">Emails go unanswered, phone lines are always busy, and customer support has no real update on your file.</p>
             </StaggerItem>

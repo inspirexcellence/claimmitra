@@ -41,7 +41,7 @@ export default function ProfileForm({ user }: { user: { name: string, email: str
               id="name"
               defaultValue={user.name}
               required
-              className="block w-full pl-10 pr-3 py-2.5 border border-slate-300 rounded-xl focus:ring-blue-500 focus:border-blue-500 sm:text-sm bg-slate-50 focus:bg-white transition-colors"
+              className="block w-full pl-10 pr-3 py-2.5 border border-slate-300 rounded-xl focus:ring-orange-500 focus:border-orange-500 sm:text-sm bg-slate-50 focus:bg-white transition-colors"
               placeholder="Your full name"
             />
           </div>
@@ -62,7 +62,7 @@ export default function ProfileForm({ user }: { user: { name: string, email: str
               id="email"
               defaultValue={user.email}
               required
-              className="block w-full pl-10 pr-3 py-2.5 border border-slate-300 rounded-xl focus:ring-blue-500 focus:border-blue-500 sm:text-sm bg-slate-50 focus:bg-white transition-colors"
+              className="block w-full pl-10 pr-3 py-2.5 border border-slate-300 rounded-xl focus:ring-orange-500 focus:border-orange-500 sm:text-sm bg-slate-50 focus:bg-white transition-colors"
               placeholder="you@example.com"
             />
           </div>
@@ -85,7 +85,7 @@ export default function ProfileForm({ user }: { user: { name: string, email: str
               name="phone"
               id="phone"
               defaultValue={user.phone || ""}
-              className="block w-full pl-10 pr-3 py-2.5 border border-slate-300 rounded-xl focus:ring-blue-500 focus:border-blue-500 sm:text-sm bg-slate-50 focus:bg-white transition-colors"
+              className="block w-full pl-10 pr-3 py-2.5 border border-slate-300 rounded-xl focus:ring-orange-500 focus:border-orange-500 sm:text-sm bg-slate-50 focus:bg-white transition-colors"
               placeholder="+91 9876543210"
             />
           </div>
@@ -97,7 +97,7 @@ export default function ProfileForm({ user }: { user: { name: string, email: str
         <button
           type="submit"
           disabled={isPending}
-          className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-medium rounded-xl shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-medium rounded-xl shadow-sm text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
           {isPending ? (
             <>

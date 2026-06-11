@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2 pr-4">
             <h3 className="text-2xl font-black mb-6 flex items-center tracking-tight">
-              <span className="text-blue-500">Insurence</span>
+              <span className="text-orange-500">Insurence</span>
               <span className="text-white">Sarthi</span>
             </h3>
             <p className="text-gray-400 text-sm mb-6 leading-relaxed pr-2">
@@ -18,11 +18,11 @@ export default function Footer() {
             </p>
             <div className="space-y-3 text-sm">
               <a href="tel:+919985060600" className="flex items-center text-gray-400 hover:text-white transition group whitespace-nowrap">
-                <Phone className="w-4 h-4 mr-3 text-blue-500 group-hover:text-blue-400 shrink-0" />
+                <Phone className="w-4 h-4 mr-3 text-orange-500 group-hover:text-orange-400 shrink-0" />
                 +91 99850 60600
               </a>
               <a href="mailto:support@insurencesarthi.com" className="flex items-center text-gray-400 hover:text-white transition group whitespace-nowrap">
-                <Mail className="w-4 h-4 mr-3 text-blue-500 group-hover:text-blue-400 shrink-0" />
+                <Mail className="w-4 h-4 mr-3 text-orange-500 group-hover:text-orange-400 shrink-0" />
                 support@insurencesarthi.com
               </a>
             </div>
@@ -32,13 +32,13 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <h4 className="text-white font-semibold text-base mb-5">Quick Links</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/" className="hover:text-blue-400 transition">Home</Link></li>
-              <li><Link href="/about" className="hover:text-blue-400 transition">About Us</Link></li>
-              <li><Link href="/services" className="hover:text-blue-400 transition">Services</Link></li>
-              <li><Link href="/faq" className="hover:text-blue-400 transition">FAQs</Link></li>
-              <li><Link href="/blog" className="hover:text-blue-400 transition">Blog</Link></li>
-              <li><Link href="/contact" className="hover:text-blue-400 transition">Contact Us</Link></li>
-              <li className="pt-2"><Link href="/login" className="text-blue-400 hover:text-white transition font-semibold">Login / Dashboard</Link></li>
+              <li><Link href="/" className="hover:text-orange-400 transition">Home</Link></li>
+              <li><Link href="/about" className="hover:text-orange-400 transition">About Us</Link></li>
+              <li><Link href="/services" className="hover:text-orange-400 transition">Services</Link></li>
+              <li><Link href="/faq" className="hover:text-orange-400 transition">FAQs</Link></li>
+              <li><Link href="/blog" className="hover:text-orange-400 transition">Blog</Link></li>
+              <li><Link href="/contact" className="hover:text-orange-400 transition">Contact Us</Link></li>
+              <li className="pt-2"><Link href="/login" className="text-orange-400 hover:text-white transition font-semibold">Login / Dashboard</Link></li>
             </ul>
           </div>
 
@@ -67,9 +67,9 @@ export default function Footer() {
             
             <h3 className="font-semibold text-base mb-5 text-white">Legal</h3>
             <ul className="space-y-2.5">
-              <li><Link href="/privacy-policy" className="hover:text-blue-400 transition text-sm">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-blue-400 transition text-sm">Terms & Conditions</Link></li>
-              <li><Link href="/disclaimer" className="hover:text-blue-400 transition text-sm">Disclaimer</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-orange-400 transition text-sm">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-orange-400 transition text-sm">Terms & Conditions</Link></li>
+              <li><Link href="/disclaimer" className="hover:text-orange-400 transition text-sm">Disclaimer</Link></li>
             </ul>
           </div>
 
@@ -78,19 +78,19 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-base mb-5">Our Locations</h4>
             <div className="space-y-5">
               <div>
-                <h5 className="text-white text-sm font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-blue-500"/> Hyderabad (HQ)</h5>
+                <h5 className="text-white text-sm font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-orange-500"/> Hyderabad (HQ)</h5>
                 <p className="text-gray-400 text-sm leading-relaxed">
                   Plot no: 12, Road no: 1, Dharmareddy colony, Near JNTU metro, Hyderabad.
                 </p>
               </div>
               <div>
-                <h5 className="text-white text-sm font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-blue-500"/> Delhi</h5>
+                <h5 className="text-white text-sm font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-orange-500"/> Delhi</h5>
                 <p className="text-gray-400 text-sm leading-relaxed">
                   311-315, 3rd Floor, Naurang House, KG Marg, Delhi-110001.
                 </p>
               </div>
               <div>
-                <h5 className="text-white text-sm font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-blue-500"/> Mumbai</h5>
+                <h5 className="text-white text-sm font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-orange-500"/> Mumbai</h5>
                 <p className="text-gray-400 text-sm leading-relaxed">
                   #27, 7th Floor, Mumbai Coworks, Next to Sai Service, Andheri East.
                 </p>

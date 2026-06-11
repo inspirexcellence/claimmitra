@@ -16,7 +16,7 @@ const awards = [
   {
     title: "Excellence in Consumer Grievance Redressal",
     organization: "National Consumer Protection Council",
-    icon: <Award className="w-10 h-10 text-blue-600" />
+    icon: <Award className="w-10 h-10 text-orange-500" />
   },
   {
     title: "Top 50 Most Innovative Startups",
@@ -58,9 +58,9 @@ export default function AwardsPage() {
             ))}
           </StaggerContainer>
           
-          <div className="mt-20 bg-blue-900 rounded-3xl p-12 text-center text-white">
+          <div className="mt-20 bg-orange-800 rounded-3xl p-12 text-center text-white">
             <h2 className="text-3xl font-bold mb-4">Our Biggest Award is Your Trust</h2>
-            <p className="text-blue-100 text-lg max-w-2xl mx-auto">
+            <p className="text-orange-100 text-lg max-w-2xl mx-auto">
               While industry accolades validate our business model, resolving over 20,000+ claims and bringing a smile to distraught families remains our greatest achievement.
             </p>
           </div>

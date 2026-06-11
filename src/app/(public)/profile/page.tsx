@@ -35,7 +35,7 @@ export default async function ProfilePage() {
       <div className="container max-w-3xl mx-auto px-4">
         
         <div className="mb-8 flex items-center gap-4">
-          <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-3xl uppercase shadow-inner">
+          <div className="w-16 h-16 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center font-bold text-3xl uppercase shadow-inner">
             {user.name[0] || "U"}
           </div>
           <div>
@@ -51,7 +51,7 @@ export default async function ProfilePage() {
         <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
           <div className="p-6 sm:p-8">
             <h2 className="text-xl font-semibold text-slate-900 mb-6 flex items-center gap-2">
-              <UserCircle className="w-6 h-6 text-blue-600" />
+              <UserCircle className="w-6 h-6 text-orange-500" />
               Personal Information
             </h2>
             

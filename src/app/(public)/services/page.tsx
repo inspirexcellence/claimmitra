@@ -14,7 +14,7 @@ const services = [
     id: "file-claim",
     title: "File Your Claim Properly",
     description: "Don't risk a rejection due to improper paperwork. Let our experts file your claim with the exact documentation and phrasing required by insurance companies.",
-    icon: <FileText className="w-12 h-12 text-blue-600" />,
+    icon: <FileText className="w-12 h-12 text-orange-500" />,
     features: [
       "Complete documentation review before submission",
       "Drafting of the claim narrative",
@@ -76,7 +76,7 @@ export default function ServicesPage() {
                   {service.icon}
                 </div>
                 <CardTitle className="text-2xl font-bold mb-2">{service.title}</CardTitle>
-                <div className="inline-block bg-blue-50 text-blue-700 font-semibold px-4 py-1 rounded-full text-sm mb-4">
+                <div className="inline-block bg-orange-50 text-orange-600 font-semibold px-4 py-1 rounded-full text-sm mb-4">
                   {service.price}
                 </div>
                 <CardDescription className="text-base text-slate-600">
@@ -93,7 +93,7 @@ export default function ServicesPage() {
                   ))}
                 </ul>
                 <Link href={service.link} className="w-full mt-auto">
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg py-6 rounded-xl">
+                  <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white text-lg py-6 rounded-xl">
                     {service.cta}
                   </Button>
                 </Link>

@@ -82,7 +82,7 @@ export default function FileClaimPage() {
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Form */}
           <div className="lg:col-span-2">
-            <Card className="border-slate-200 shadow-sm border-t-4 border-t-blue-600">
+            <Card className="border-slate-200 shadow-sm border-t-4 border-t-orange-500">
               <CardContent className="p-8">
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
@@ -142,7 +142,7 @@ export default function FileClaimPage() {
                     {errors.documents && <p className="text-sm text-red-500">{errors.documents.message as string}</p>}
                   </div>
 
-                  <Button type="submit" disabled={isSubmitting} className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg py-6 mt-4">
+                  <Button type="submit" disabled={isSubmitting} className="w-full bg-orange-500 hover:bg-orange-600 text-white text-lg py-6 mt-4">
                     {isSubmitting ? "Submitting..." : "Submit Claim for Review"}
                   </Button>
                 </form>
@@ -152,27 +152,27 @@ export default function FileClaimPage() {
 
           {/* Info Panel */}
           <div className="lg:col-span-1 space-y-6">
-            <Card className="bg-blue-50 border-blue-100">
+            <Card className="bg-orange-50 border-orange-100">
               <CardContent className="p-6">
-                <div className="flex items-center mb-4 text-blue-800">
+                <div className="flex items-center mb-4 text-orange-700">
                   <FileText className="w-6 h-6 mr-2" />
                   <h3 className="font-bold text-lg">What happens next?</h3>
                 </div>
                 <ul className="space-y-4">
                   <li className="flex items-start">
-                    <div className="bg-blue-200 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0 mt-0.5">1</div>
+                    <div className="bg-orange-200 text-orange-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0 mt-0.5">1</div>
                     <p className="text-slate-700 text-sm">We securely receive your documents and details.</p>
                   </li>
                   <li className="flex items-start">
-                    <div className="bg-blue-200 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0 mt-0.5">2</div>
+                    <div className="bg-orange-200 text-orange-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0 mt-0.5">2</div>
                     <p className="text-slate-700 text-sm">An expert case manager is assigned within 24 hours.</p>
                   </li>
                   <li className="flex items-start">
-                    <div className="bg-blue-200 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0 mt-0.5">3</div>
+                    <div className="bg-orange-200 text-orange-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0 mt-0.5">3</div>
                     <p className="text-slate-700 text-sm">We analyze your policy and draft the flawless claim narrative.</p>
                   </li>
                   <li className="flex items-start">
-                    <div className="bg-blue-200 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0 mt-0.5">4</div>
+                    <div className="bg-orange-200 text-orange-700 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0 mt-0.5">4</div>
                     <p className="text-slate-700 text-sm">We coordinate directly with the TPA to ensure fast approval.</p>
                   </li>
                 </ul>

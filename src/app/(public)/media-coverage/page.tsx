@@ -57,19 +57,19 @@ export default function MediaCoveragePage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <StaggerContainer className="grid md:grid-cols-2 gap-8">
             {pressReleases.map((press, i) => (
-              <StaggerItem key={i} className="group bg-white p-8 rounded-2xl border border-slate-200 hover:border-blue-300 shadow-sm hover:shadow-lg transition cursor-pointer flex flex-col h-full">
+              <StaggerItem key={i} className="group bg-white p-8 rounded-2xl border border-slate-200 hover:border-orange-300 shadow-sm hover:shadow-lg transition cursor-pointer flex flex-col h-full">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className={`p-3 rounded-full ${press.type === 'tv' ? 'bg-red-50 text-red-600' : 'bg-blue-50 text-blue-600'}`}>
+                  <div className={`p-3 rounded-full ${press.type === 'tv' ? 'bg-red-50 text-red-600' : 'bg-orange-50 text-orange-500'}`}>
                     {press.type === 'tv' ? <Tv className="w-5 h-5" /> : <Newspaper className="w-5 h-5" />}
                   </div>
                   <span className="font-semibold text-slate-500">{press.source}</span>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-orange-500 transition-colors">
                   {press.title}
                 </h3>
                 <div className="mt-auto flex items-center justify-between border-t border-slate-100 pt-4">
                   <span className="text-slate-500 text-sm">{press.date}</span>
-                  <span className="text-blue-600 flex items-center text-sm font-semibold group-hover:translate-x-1 transition-transform">
+                  <span className="text-orange-500 flex items-center text-sm font-semibold group-hover:translate-x-1 transition-transform">
                     Read Story <ArrowRight className="ml-1 w-4 h-4" />
                   </span>
                 </div>

@@ -18,7 +18,7 @@ function getStatusBadge(status: string) {
     case "pending":
       return <Badge variant="outline" className="bg-yellow-50 text-yellow-700 border-yellow-200">Pending</Badge>;
     case "in_review":
-      return <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">In Review</Badge>;
+      return <Badge variant="outline" className="bg-orange-50 text-orange-600 border-orange-200">In Review</Badge>;
     case "resolved":
     case "completed":
     case "paid":
@@ -84,14 +84,14 @@ export default async function DashboardPage() {
         {hasNoData ? (
           <Card className="border-0 shadow-sm bg-white text-center py-16">
             <CardContent className="flex flex-col items-center">
-              <div className="h-20 w-20 bg-blue-50 rounded-full flex items-center justify-center mb-6">
-                <ShieldCheck className="h-10 w-10 text-blue-600" />
+              <div className="h-20 w-20 bg-orange-50 rounded-full flex items-center justify-center mb-6">
+                <ShieldCheck className="h-10 w-10 text-orange-500" />
               </div>
               <h2 className="text-2xl font-semibold text-slate-900 mb-2">No active services yet</h2>
               <p className="text-slate-500 max-w-md mx-auto mb-8">
                 You haven't submitted any claims or policy reviews yet. Explore our services to see how we can help you with your insurance needs.
               </p>
-              <Link href="/services" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-blue-600 text-white shadow hover:bg-blue-700 h-9 px-8 py-2">
+              <Link href="/services" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-orange-500 text-white shadow hover:bg-orange-600 h-9 px-8 py-2">
                 Explore Services <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </CardContent>
@@ -103,7 +103,7 @@ export default async function DashboardPage() {
               <Card className="border-0 shadow-sm bg-white overflow-hidden">
                 <CardHeader className="bg-white border-b border-slate-100 pb-4">
                   <div className="flex items-center gap-2">
-                    <FileText className="h-5 w-5 text-blue-600" />
+                    <FileText className="h-5 w-5 text-orange-500" />
                     <CardTitle className="text-xl">Your Claims</CardTitle>
                   </div>
                   <CardDescription>View the status of your submitted claims</CardDescription>

@@ -59,7 +59,7 @@ export default function AdminLogin() {
       <Card className="w-full max-w-md shadow-lg border-slate-200">
         <CardHeader className="space-y-1 pb-8 text-center pt-8">
           <div className="flex justify-center mb-4">
-            <div className="bg-blue-600 text-white p-3 rounded-xl shadow-inner">
+            <div className="bg-orange-500 text-white p-3 rounded-xl shadow-inner">
               <Shield className="w-8 h-8" />
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function AdminLogin() {
               />
               {errors.password && <p className="text-sm text-red-500">{errors.password.message as string}</p>}
             </div>
-            <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg" disabled={isSubmitting}>
+            <Button type="submit" className="w-full bg-orange-500 hover:bg-orange-600 text-white py-6 text-lg" disabled={isSubmitting}>
               {isSubmitting ? "Signing in..." : "Sign In"}
             </Button>
           </form>

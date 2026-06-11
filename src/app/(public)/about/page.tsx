@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const leaders = [
-  { name: "Vinaya Kumar N", title: "MD & CEO", initial: "V", color: "bg-blue-600" },
+  { name: "Vinaya Kumar N", title: "MD & CEO", initial: "V", color: "bg-orange-500" },
   { name: "Sankaraiah Ch", title: "Director", initial: "S", color: "bg-indigo-600" },
   { name: "Santosh Choubey", title: "Director", initial: "S", color: "bg-teal-600" },
   { name: "Prakash P S S", title: "Director & COO", initial: "P", color: "bg-sky-600" },
@@ -28,8 +28,8 @@ export default function AboutPage() {
         {/* Mission & Vision */}
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-            <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-              <Target className="w-7 h-7 text-blue-600" />
+            <div className="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-6">
+              <Target className="w-7 h-7 text-orange-500" />
             </div>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Our Mission</h2>
             <p className="text-slate-600 leading-relaxed">
@@ -57,7 +57,7 @@ export default function AboutPage() {
                   {leader.initial}
                 </div>
                 <h3 className="text-xl font-bold text-slate-900">{leader.name}</h3>
-                <p className="text-blue-600 font-medium mt-1">{leader.title}</p>
+                <p className="text-orange-500 font-medium mt-1">{leader.title}</p>
               </div>
             ))}
           </div>
@@ -68,22 +68,22 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-10">Our Core Values</h2>
           <div className="grid sm:grid-cols-3 gap-8">
             <div>
-              <div className="w-12 h-12 mx-auto bg-blue-500/20 rounded-full flex items-center justify-center mb-4">
-                <Award className="w-6 h-6 text-blue-400" />
+              <div className="w-12 h-12 mx-auto bg-orange-500/20 rounded-full flex items-center justify-center mb-4">
+                <Award className="w-6 h-6 text-orange-400" />
               </div>
               <h3 className="text-xl font-bold mb-2">Integrity</h3>
               <p className="text-slate-400 text-sm">We operate with complete transparency and honesty in every case.</p>
             </div>
             <div>
-              <div className="w-12 h-12 mx-auto bg-blue-500/20 rounded-full flex items-center justify-center mb-4">
-                <Users className="w-6 h-6 text-blue-400" />
+              <div className="w-12 h-12 mx-auto bg-orange-500/20 rounded-full flex items-center justify-center mb-4">
+                <Users className="w-6 h-6 text-orange-400" />
               </div>
               <h3 className="text-xl font-bold mb-2">Client-First</h3>
               <p className="text-slate-400 text-sm">Your financial recovery and peace of mind are our absolute priorities.</p>
             </div>
             <div>
-              <div className="w-12 h-12 mx-auto bg-blue-500/20 rounded-full flex items-center justify-center mb-4">
-                <Target className="w-6 h-6 text-blue-400" />
+              <div className="w-12 h-12 mx-auto bg-orange-500/20 rounded-full flex items-center justify-center mb-4">
+                <Target className="w-6 h-6 text-orange-400" />
               </div>
               <h3 className="text-xl font-bold mb-2">Excellence</h3>
               <p className="text-slate-400 text-sm">We leverage deep industry expertise to deliver the highest success rates.</p>

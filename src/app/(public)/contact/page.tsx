@@ -100,7 +100,7 @@ export default function ContactPage() {
                     {errors.message && <p className="text-sm text-red-500">{errors.message.message}</p>}
                   </div>
 
-                  <Button type="submit" disabled={isSubmitting} className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg py-6">
+                  <Button type="submit" disabled={isSubmitting} className="w-full bg-orange-500 hover:bg-orange-600 text-white text-lg py-6">
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
@@ -110,29 +110,29 @@ export default function ContactPage() {
 
           {/* Contact Info */}
           <div className="lg:col-span-2 space-y-8">
-            <Card className="border-slate-200 bg-blue-900 text-white shadow-md border-none">
+            <Card className="border-slate-200 bg-orange-800 text-white shadow-md border-none">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold mb-6">Contact Information</h3>
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <Phone className="w-6 h-6 text-blue-300 mr-4 flex-shrink-0" />
+                    <Phone className="w-6 h-6 text-orange-300 mr-4 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-lg">+91 99850 60600</p>
-                      <p className="text-blue-200 text-sm">Mon-Sat, 9am - 7pm</p>
+                      <p className="text-orange-200 text-sm">Mon-Sat, 9am - 7pm</p>
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <Mail className="w-6 h-6 text-blue-300 mr-4 flex-shrink-0" />
+                    <Mail className="w-6 h-6 text-orange-300 mr-4 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-lg">support@insurencesarthi.com</p>
-                      <p className="text-blue-200 text-sm">Online support 24/7</p>
+                      <p className="text-orange-200 text-sm">Online support 24/7</p>
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <Clock className="w-6 h-6 text-blue-300 mr-4 flex-shrink-0" />
+                    <Clock className="w-6 h-6 text-orange-300 mr-4 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-lg">Response Time</p>
-                      <p className="text-blue-200 text-sm">Within 24 hours</p>
+                      <p className="text-orange-200 text-sm">Within 24 hours</p>
                     </div>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ export default function ContactPage() {
               
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <div className="flex items-start">
-                  <MapPin className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0 mt-1" />
+                  <MapPin className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-bold text-slate-900 mb-1">Hyderabad (Head Office)</h4>
                     <p className="text-slate-600 text-sm">Plot no: 12, Road no: 1, Dharmareddy colony, Near JNTU metro station, Vasanth Nagar, Kukatpally, Hyderabad - 500 085.</p>
@@ -154,7 +154,7 @@ export default function ContactPage() {
 
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <div className="flex items-start">
-                  <MapPin className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0 mt-1" />
+                  <MapPin className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-bold text-slate-900 mb-1">Delhi</h4>
                     <p className="text-slate-600 text-sm">MYDESK CO-WORKING SPACE 311-315, 3RD FLOOR, B BLOCK, NAURANG HOUSE, 21, KG MARG, DELHI-110001.</p>
@@ -164,7 +164,7 @@ export default function ContactPage() {
 
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <div className="flex items-start">
-                  <MapPin className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0 mt-1" />
+                  <MapPin className="w-5 h-5 text-orange-500 mr-3 flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-bold text-slate-900 mb-1">Mumbai</h4>
                     <p className="text-slate-600 text-sm">#27, 7th Floor, Mumbai Coworks, Times Square, Next to Sai Service W. Exp Highway, Andheri East, Mumbai-400069</p>

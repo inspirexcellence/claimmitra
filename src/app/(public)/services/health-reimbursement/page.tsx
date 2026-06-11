@@ -29,7 +29,7 @@ export default function HealthReimbursementPage() {
           </SlideUp>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/submit-claim?type=health-reimbursement">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 h-14 text-lg">
+              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 h-14 text-lg">
                 Resolve Health Claim
               </Button>
             </Link>

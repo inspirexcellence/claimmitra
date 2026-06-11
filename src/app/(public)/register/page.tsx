@@ -74,7 +74,7 @@ export default function RegisterPage() {
                 placeholder="John Doe" 
                 value={formData.name}
                 onChange={handleChange}
-                className="border-slate-200 focus:border-blue-600 focus:ring-blue-600"
+                className="border-slate-200 focus:border-orange-500 focus:ring-orange-500"
                 required
               />
             </div>
@@ -86,7 +86,7 @@ export default function RegisterPage() {
                 placeholder="name@example.com" 
                 value={formData.email}
                 onChange={handleChange}
-                className="border-slate-200 focus:border-blue-600 focus:ring-blue-600"
+                className="border-slate-200 focus:border-orange-500 focus:ring-orange-500"
                 required
               />
             </div>
@@ -98,7 +98,7 @@ export default function RegisterPage() {
                 placeholder="+91 9876543210" 
                 value={formData.phone}
                 onChange={handleChange}
-                className="border-slate-200 focus:border-blue-600 focus:ring-blue-600"
+                className="border-slate-200 focus:border-orange-500 focus:ring-orange-500"
               />
             </div>
             <div className="space-y-2">
@@ -108,13 +108,13 @@ export default function RegisterPage() {
                 type="password" 
                 value={formData.password}
                 onChange={handleChange}
-                className="border-slate-200 focus:border-blue-600 focus:ring-blue-600"
+                className="border-slate-200 focus:border-orange-500 focus:ring-orange-500"
                 required
               />
             </div>
             <Button 
               type="submit" 
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white mt-2" 
+              className="w-full bg-orange-500 hover:bg-orange-600 text-white mt-2" 
               disabled={loading}
             >
               {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
@@ -125,7 +125,7 @@ export default function RegisterPage() {
         <CardFooter className="flex justify-center border-t border-slate-100 pt-6">
           <div className="text-sm text-slate-500">
             Already have an account?{" "}
-            <Link href="/login" className="font-semibold text-blue-600 hover:text-blue-700 hover:underline">
+            <Link href="/login" className="font-semibold text-orange-500 hover:text-orange-600 hover:underline">
               Log in
             </Link>
           </div>

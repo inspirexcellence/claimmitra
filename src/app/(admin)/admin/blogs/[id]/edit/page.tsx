@@ -125,7 +125,7 @@ export default function EditBlogPage({ params }: { params: Promise<{ id: string 
   return (
     <div>
       <div className="mb-6 flex flex-col space-y-4">
-        <Link href="/admin/blogs" className="text-sm text-slate-500 hover:text-blue-600 flex items-center">
+        <Link href="/admin/blogs" className="text-sm text-slate-500 hover:text-orange-500 flex items-center">
           <ArrowLeft className="w-4 h-4 mr-1" /> Back to Blogs
         </Link>
         <div>
@@ -148,7 +148,7 @@ export default function EditBlogPage({ params }: { params: Promise<{ id: string 
                 <div className="space-y-2">
                   <div className="flex justify-between items-center">
                     <Label htmlFor="slug">URL Slug *</Label>
-                    <button type="button" onClick={handleGenerateSlug} className="text-xs text-blue-600 hover:underline">Generate from title</button>
+                    <button type="button" onClick={handleGenerateSlug} className="text-xs text-orange-500 hover:underline">Generate from title</button>
                   </div>
                   <Input id="slug" placeholder="how-to-win-health-insurance-claim" {...register("slug")} className={errors.slug ? "border-red-500" : ""} />
                   {errors.slug && <p className="text-sm text-red-500">{errors.slug.message as string}</p>}
@@ -188,12 +188,12 @@ export default function EditBlogPage({ params }: { params: Promise<{ id: string 
                 </div>
 
                 <div className="flex items-center space-x-2 pt-2 bg-slate-50 p-4 rounded-lg border border-slate-100">
-                  <input type="checkbox" id="published" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500 w-5 h-5 cursor-pointer" {...register("published")} />
+                  <input type="checkbox" id="published" className="rounded border-gray-300 text-orange-500 focus:ring-orange-500 w-5 h-5 cursor-pointer" {...register("published")} />
                   <Label htmlFor="published" className="font-semibold cursor-pointer text-slate-700">Publish immediately</Label>
                 </div>
                 <p className="text-xs text-slate-500 mt-1">If unchecked, this post will be saved as a Draft.</p>
 
-                <Button type="submit" disabled={isSubmitting} className="w-full bg-blue-600 hover:bg-blue-700 mt-4 h-12 text-md">
+                <Button type="submit" disabled={isSubmitting} className="w-full bg-orange-500 hover:bg-orange-600 mt-4 h-12 text-md">
                   {isSubmitting ? "Saving..." : "Update Blog Post"}
                 </Button>
               </CardContent>

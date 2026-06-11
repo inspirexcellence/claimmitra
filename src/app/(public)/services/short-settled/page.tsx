@@ -29,7 +29,7 @@ export default function ShortSettledPage() {
           </SlideUp>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/submit-claim?type=short-settled">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 h-14 text-lg">
+              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 h-14 text-lg">
                 Recover Balance Amount
               </Button>
             </Link>
@@ -44,19 +44,19 @@ export default function ShortSettledPage() {
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Common Excuses for Deductions</h3>
               <StaggerContainer className="space-y-4">
                 <StaggerItem className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-blue-600 mt-2 shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full bg-orange-500 mt-2 shrink-0"></div>
                   <p className="text-slate-700"><strong>Room Rent Capping:</strong> "Proportionate deduction" applied to all hospital bills just because your room rent exceeded the limit.</p>
                 </StaggerItem>
                 <StaggerItem className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-blue-600 mt-2 shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full bg-orange-500 mt-2 shrink-0"></div>
                   <p className="text-slate-700"><strong>Reasonable & Customary Charges:</strong> Claiming the hospital charged more than the "standard" rate for a procedure in that city.</p>
                 </StaggerItem>
                 <StaggerItem className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-blue-600 mt-2 shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full bg-orange-500 mt-2 shrink-0"></div>
                   <p className="text-slate-700"><strong>Non-Medical Expenses:</strong> Excessively broad interpretation of "consumables" to reject valid medical costs.</p>
                 </StaggerItem>
                 <StaggerItem className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-blue-600 mt-2 shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full bg-orange-500 mt-2 shrink-0"></div>
                   <p className="text-slate-700"><strong>Depreciation (Motor):</strong> Unfair depreciation rates applied to parts during an accident repair.</p>
                 </StaggerItem>
               </StaggerContainer>
@@ -70,7 +70,7 @@ export default function ShortSettledPage() {
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                 Legally, you can challenge the deductions. Our experts audit your settlement letter line-by-line, compare it with your policy wording, and force the insurer to pay the unjustifiably deducted amount.
               </p>
-              <Link href="/submit-claim?type=short-settled" className="inline-flex items-center text-blue-600 font-bold hover:text-blue-700 text-lg">
+              <Link href="/submit-claim?type=short-settled" className="inline-flex items-center text-orange-500 font-bold hover:text-orange-600 text-lg">
                 Audit my settlement letter <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </div>
