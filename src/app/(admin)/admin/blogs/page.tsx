@@ -11,6 +11,8 @@ export default async function BlogsAdmin() {
       id: true,
       title: true,
       slug: true,
+      excerpt: true,
+      content: true,
       published: true,
       createdAt: true,
     }

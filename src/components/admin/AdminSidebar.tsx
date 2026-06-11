@@ -23,7 +23,7 @@ export default function AdminSidebar() {
   const SidebarContent = () => (
     <>
       <div className="h-20 flex items-center px-6 border-b border-slate-800 shrink-0">
-        <Link href="/admin/dashboard" className="text-xl font-bold flex items-center tracking-tight" onClick={() => setIsOpen(false)}>
+        <Link href="/admin/dashboard" className="text-xl font-bold flex  items-center tracking-tight" onClick={() => setIsOpen(false)}>
           <span className="text-blue-500">Insurence</span><span className="text-white">Sarthi</span><span className="ml-2 text-slate-400 font-normal text-sm">Admin</span>
         </Link>
       </div>
@@ -73,7 +73,7 @@ export default function AdminSidebar() {
   return (
     <>
       {/* Desktop Sidebar */}
-      <aside className="w-56 bg-slate-900 text-white h-screen flex-col flex-shrink-0 fixed left-0 top-0 hidden md:flex">
+      <aside className="w-60 bg-slate-900 text-white h-screen flex-col flex-shrink-0 fixed left-0 top-0 hidden md:flex">
         <SidebarContent />
       </aside>
 

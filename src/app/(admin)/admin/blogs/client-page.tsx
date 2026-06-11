@@ -12,6 +12,8 @@ type Blog = {
   id: string;
   title: string;
   slug: string;
+  excerpt?: string | null;
+  content?: string | null;
   published: boolean;
   createdAt: string;
 };
@@ -52,8 +54,8 @@ export default function BlogsAdminClient({ initialBlogs }: { initialBlogs: Blog[
         <Table>
           <TableHeader className="bg-slate-50">
             <TableRow>
-              <TableHead>Title</TableHead>
-              <TableHead>Slug</TableHead>
+              <TableHead className="w-[250px] lg:w-[300px]">Title</TableHead>
+              <TableHead className="w-[300px] lg:w-[400px]">Description</TableHead>
               <TableHead>Status</TableHead>
               <TableHead>Date</TableHead>
               <TableHead className="text-right">Actions</TableHead>
@@ -75,8 +77,14 @@ export default function BlogsAdminClient({ initialBlogs }: { initialBlogs: Blog[
             ) : (
               blogs.map((blog) => (
                 <TableRow key={blog.id}>
-                  <TableCell className="font-medium">{blog.title}</TableCell>
-                  <TableCell className="text-slate-500">{blog.slug}</TableCell>
+                  <TableCell className="font-medium truncate max-w-[250px] lg:max-w-[300px]" title={blog.title}>
+                    {blog.title}
+                  </TableCell>
+                  <TableCell className="text-slate-500">
+                    <p className="line-clamp-2 text-sm" title={blog.excerpt || "Description"}>
+                      {blog.excerpt || (blog.content ? blog.content.replace(/<[^>]*>?/gm, '').substring(0, 120) + '...' : "No description available.")}
+                    </p>
+                  </TableCell>
                   <TableCell>
                     {blog.published ? (
                       <Badge className="bg-green-100 text-green-800 hover:bg-green-100">Published</Badge>
