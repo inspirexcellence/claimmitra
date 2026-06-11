@@ -77,10 +77,10 @@ export default function BlogsAdminClient({ initialBlogs }: { initialBlogs: Blog[
             ) : (
               blogs.map((blog) => (
                 <TableRow key={blog.id}>
-                  <TableCell className="font-medium truncate max-w-[250px] lg:max-w-[300px]" title={blog.title}>
+                  <TableCell className="font-medium truncate max-w-[100px] md:w-[250px] lg:max-w-[300px]" title={blog.title}>
                     {blog.title}
                   </TableCell>
-                  <TableCell className="text-slate-500">
+                  <TableCell className="text-slate-500 max-w-[100px] md:w-[250px] lg:max-w-[300px]">
                     <p className="line-clamp-2 text-sm" title={blog.excerpt || "Description"}>
                       {blog.excerpt || (blog.content ? blog.content.replace(/<[^>]*>?/gm, '').substring(0, 120) + '...' : "No description available.")}
                     </p>
