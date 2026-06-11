@@ -60,14 +60,14 @@ export default function Navbar({ session }: { session?: Session | null }) {
             </div>
             
             {/* Desktop Navigation */}
-            <nav className="hidden xl:flex flex-1 justify-center items-center gap-2 xl:gap-4 px-2 xl:px-4">
+            <nav className="hidden lg:flex flex-1 justify-center items-center gap-2 lg:gap-4 px-1 lg:px-2">
               
-              <Link href="/" className={cn("px-2 xl:px-3 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/" ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
+              <Link href="/" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/" ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
                 Home
               </Link>
               
               <div className="relative group px-1 py-2">
-                <button className={cn("px-2 xl:px-3 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", pathname.startsWith("/services") ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
+                <button className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", pathname.startsWith("/services") ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
                   Services <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
                 </button>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50">
@@ -82,12 +82,12 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 </div>
               </div>
 
-              <Link href="/about" className={cn("px-2 xl:px-3 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/about" ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
+              <Link href="/about" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/about" ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
                 About
               </Link>
 
               <div className="relative group px-1 py-2">
-                <button className={cn("px-2 xl:px-3 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
+                <button className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
                   Insights <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
                 </button>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-60 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50">
@@ -99,21 +99,21 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 </div>
               </div>
 
-              <Link href="/blog" className={cn("px-2 xl:px-3 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname.startsWith("/blog") ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
+              <Link href="/blog" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname.startsWith("/blog") ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
                 Blog
               </Link>
               
-              <Link href="/career" className={cn("px-2 xl:px-3 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/career" ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
+              <Link href="/career" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/career" ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
                 Career
               </Link>
 
             </nav>
             
             {/* Desktop Buttons */}
-            <div className="hidden xl:flex items-center gap-2 xl:gap-3 shrink-0">
+            <div className="hidden lg:flex items-center gap-2 shrink-0">
               {session?.user ? (
                 <div className="relative group px-1 py-2">
-                  <button className="flex items-center gap-2 px-3 xl:px-4 py-1.5 xl:py-2 rounded-full border border-slate-200 hover:border-blue-600 transition-all bg-white shadow-sm">
+                  <button className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-200 hover:border-blue-600 transition-all bg-white shadow-sm">
                     <div className="w-7 h-7 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs uppercase">
                       {session.user.name?.[0] || session.user.email?.[0] || 'U'}
                     </div>
@@ -145,19 +145,19 @@ export default function Navbar({ session }: { session?: Session | null }) {
                   </div>
                 </div>
               ) : (
-                <Link href="/login" className="px-3 xl:px-4 py-1.5 xl:py-2 text-[13px] font-bold text-slate-700 border-2 border-slate-200 rounded-full hover:border-blue-600 hover:text-blue-600 transition-all flex items-center whitespace-nowrap">
+                <Link href="/login" className="px-3 py-1.5 text-[13px] font-bold text-slate-700 border-2 border-slate-200 rounded-full hover:border-blue-600 hover:text-blue-600 transition-all flex items-center whitespace-nowrap">
                   Login
                 </Link>
               )}
               <Link href="/contact" className="whitespace-nowrap">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 xl:px-6 py-4 xl:py-5 text-[13px] font-bold shadow-[0_8px_20px_-6px_rgba(37,99,235,0.5)] hover:shadow-[0_12px_25px_-6px_rgba(37,99,235,0.6)] hover:-translate-y-0.5 transition-all duration-300">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-4 lg:px-5 py-4 text-[13px] font-bold shadow-[0_8px_20px_-6px_rgba(37,99,235,0.5)] hover:shadow-[0_12px_25px_-6px_rgba(37,99,235,0.6)] hover:-translate-y-0.5 transition-all duration-300">
                   Request a Claim Review
                 </Button>
               </Link>
             </div>
 
             {/* Mobile Menu */}
-            <div className="xl:hidden px-5 flex items-center">
+            <div className="lg:hidden px-5 flex items-center">
               <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
                 <SheetTrigger className="p-2 hover:bg-slate-100 rounded-md">
                   <Menu className="h-6 w-6" />
