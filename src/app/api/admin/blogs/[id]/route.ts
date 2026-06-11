@@ -15,10 +15,9 @@ const getSupabase = () => {
   return createClient(supabaseUrl, supabaseKey);
 };
 
-export async function GET(req: Request, { params }: { params: Promise<{ id: string }> }) {
+export const GET = auth(async (req: any, { params }: { params: Promise<{ id: string }> }) => {
   try {
-    const session = await auth();
-    if (!session || (session.user as any).role !== "admin") {
+    if (!req.auth || (req.auth.user as any).role !== "admin") {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
@@ -31,12 +30,11 @@ export async function GET(req: Request, { params }: { params: Promise<{ id: stri
   } catch (error) {
     return NextResponse.json({ error: "Failed to fetch blog" }, { status: 500 });
   }
-}
+}) as any;
 
-export async function PUT(req: Request, { params }: { params: Promise<{ id: string }> }) {
+export const PUT = auth(async (req: any, { params }: { params: Promise<{ id: string }> }) => {
   try {
-    const session = await auth();
-    if (!session || (session.user as any).role !== "admin") {
+    if (!req.auth || (req.auth.user as any).role !== "admin") {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
@@ -105,12 +103,11 @@ export async function PUT(req: Request, { params }: { params: Promise<{ id: stri
     console.error("Error updating blog:", error);
     return NextResponse.json({ error: error?.message || "Failed to update blog", stack: error?.stack }, { status: 500 });
   }
-}
+}) as any;
 
-export async function DELETE(req: Request, { params }: { params: Promise<{ id: string }> }) {
+export const DELETE = auth(async (req: any, { params }: { params: Promise<{ id: string }> }) => {
   try {
-    const session = await auth();
-    if (!session || (session.user as any).role !== "admin") {
+    if (!req.auth || (req.auth.user as any).role !== "admin") {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
@@ -122,4 +119,4 @@ export async function DELETE(req: Request, { params }: { params: Promise<{ id: s
     console.error("Error deleting blog:", error);
     return NextResponse.json({ error: "Failed to delete blog" }, { status: 500 });
   }
-}
+}) as any;

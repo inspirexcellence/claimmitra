@@ -15,10 +15,9 @@ const getSupabase = () => {
   return createClient(supabaseUrl, supabaseKey);
 };
 
-export async function GET(req: Request) {
+export const GET = auth(async (req) => {
   try {
-    const session = await auth();
-    if (!session || (session.user as any).role !== "admin") {
+    if (!req.auth || (req.auth.user as any).role !== "admin") {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
@@ -31,12 +30,11 @@ export async function GET(req: Request) {
     console.error("Error fetching blogs:", error);
     return NextResponse.json({ error: "Failed to fetch blogs" }, { status: 500 });
   }
-}
+}) as any;
 
-export async function POST(req: Request) {
+export const POST = auth(async (req: any) => {
   try {
-    const session = await auth();
-    if (!session || (session.user as any).role !== "admin") {
+    if (!req.auth || (req.auth.user as any).role !== "admin") {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
@@ -103,4 +101,4 @@ export async function POST(req: Request) {
     console.error("Error creating blog:", error);
     return NextResponse.json({ error: error?.message || "Failed to create blog", stack: error?.stack }, { status: 500 });
   }
-}
+}) as any;
