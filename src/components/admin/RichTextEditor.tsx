@@ -24,7 +24,7 @@ export default function RichTextEditor({ value, onChange, placeholder, className
     // Register custom font sizes with Quill on mount
     import('react-quill-new').then((ReactQuillModule) => {
       const Quill = ReactQuillModule.Quill;
-      const Size = Quill.import('attributors/style/size');
+      const Size = Quill.import('attributors/style/size') as any;
       Size.whitelist = FONT_SIZES;
       Quill.register(Size, true);
     });
