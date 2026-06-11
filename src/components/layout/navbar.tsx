@@ -164,14 +164,14 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 </SheetTrigger>
                 <SheetContent side="right" className="bg-white">
                   {/* Mobile Header Branding */}
-                  <div className="flex items-center pb-3 pt-1 border-b border-slate-100">
+                  <div className="flex items-center pb-3 pt-1 px-4 border-b border-slate-100">
                     <span className="text-xl font-black tracking-tight">
                       <span className="text-blue-600">Insurence</span>
                       <span className="text-slate-900">Sarthi</span>
                     </span>
                   </div>
 
-                  <div className="flex flex-col space-y-1 mt-3 overflow-y-auto max-h-[85vh] pb-4 px-1">
+                  <div className="flex flex-col space-y-1 mt-3 overflow-y-auto max-h-[85vh] pb-4 px-4">
                     <Link 
                       href="/" 
                       className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/" ? "text-blue-600 pl-2 border-l-4 border-l-blue-600 bg-blue-50/50 rounded-r-md" : "text-slate-900")} 
