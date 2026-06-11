@@ -73,7 +73,7 @@ export const POST = auth(async (req: any) => {
       
       const { data: uploadData, error: uploadError } = await supabase
         .storage
-        .from(process.env.S3_BUCKET_NAME || "claimmitra-uploads")
+        .from(process.env.S3_BUCKET_NAME || "insurencesarthi-uploads")
         .upload(fileName, buffer, {
           contentType: image.type,
           upsert: false
@@ -83,7 +83,7 @@ export const POST = auth(async (req: any) => {
         throw new Error("Failed to upload image to Supabase: " + uploadError.message);
       }
       
-      const publicUrlPrefix = process.env.NEXT_PUBLIC_S3_PUBLIC_URL || "https://vdevakgnmvjvweradcjg.supabase.co/storage/v1/object/public/claimmitra-uploads";
+      const publicUrlPrefix = process.env.NEXT_PUBLIC_S3_PUBLIC_URL || "https://vdevakgnmvjvweradcjg.supabase.co/storage/v1/object/public/insurencesarthi-uploads";
       featuredImage = `${publicUrlPrefix}/${fileName}`;
     }
 
