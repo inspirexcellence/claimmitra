@@ -71,7 +71,7 @@ export default async function BlogListingPage() {
                       {/* Text Content */}
                       <div className="flex flex-col flex-1 py-1">
                         <p className="text-slate-600 leading-relaxed mb-5 line-clamp-4">
-                          {blog.metaDescription || blog.excerpt || (blog.content ? blog.content.replace(/<[^>]*>?/gm, '').substring(0, 180) + "..." : "Click to read the full article and learn more about this insurance topic...")}
+                          {blog.metaDescription || blog.excerpt || (blog.content ? blog.content.replace(/<[^>]*>?/gm, '').replace(/&nbsp;/g, ' ').trim().substring(0, 180) + "..." : "Click to read the full article and learn more about this insurance topic...")}
                         </p>
                         
                         <Link 
