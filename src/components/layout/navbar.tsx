@@ -29,7 +29,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
     <>
       {/* Top Bar */}
       <div className="bg-neutral-950 text-slate-300 py-2.5 px-4 sm:px-6 md:px-8 lg:px-8 text-xs font-medium tracking-wide">
-        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+        <div className="max-w-[1600px] w-full mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 mb-2 sm:mb-0">
             <a href="tel:+919985060600" className="flex items-center hover:text-white transition-colors text-[10px] sm:text-xs">
               <Phone className="w-3.5 h-3.5 mr-2 text-orange-400" />
@@ -48,7 +48,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
 
       {/* Main Navigation */}
       <header className="bg-white/95 backdrop-blur-xl sticky top-0 z-50 border-b border-slate-200/60 shadow-sm transition-all duration-300">
-        <div className="container mx-auto px-4 sm:px-6 md:px-6 lg:px-8">
+        <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex items-center justify-between h-24">
             
             {/* Logo */}
@@ -60,7 +60,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
             </div>
             
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex justify-center items-center gap-4 lg:gap-8">
+            <nav className="hidden lg:flex justify-center items-center gap-4 lg:gap-6 xl:gap-8">
               
               <Link href="/" className={cn("py-2 text-[14px] font-bold transition-all whitespace-nowrap", pathname === "/" ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600")}>
                 Home
