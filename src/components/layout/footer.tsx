@@ -13,16 +13,16 @@ export default function Footer() {
               <span className="text-blue-500">Insurence</span>
               <span className="text-white">Sarthi</span>
             </h3>
-            <p className="text-gray-400 mb-6 leading-relaxed">
+            <p className="text-gray-400 text-sm mb-6 leading-relaxed pr-2">
               We help you appeal & negotiate with insurers. Turning Insurance Challenges into Triumphs: From Denied Claims to Approved Success.
             </p>
-            <div className="space-y-3">
-              <a href="tel:+919985060600" className="flex items-center text-gray-400 hover:text-white transition group">
-                <Phone className="w-5 h-5 mr-3 text-blue-500 group-hover:text-blue-400" />
+            <div className="space-y-3 text-sm">
+              <a href="tel:+919985060600" className="flex items-center text-gray-400 hover:text-white transition group whitespace-nowrap">
+                <Phone className="w-4 h-4 mr-3 text-blue-500 group-hover:text-blue-400 shrink-0" />
                 +91 99850 60600
               </a>
-              <a href="mailto:support@insurencesarthi.com" className="flex items-center text-gray-400 hover:text-white transition group">
-                <Mail className="w-5 h-5 mr-3 text-blue-500 group-hover:text-blue-400" />
+              <a href="mailto:support@insurencesarthi.com" className="flex items-center text-gray-400 hover:text-white transition group whitespace-nowrap">
+                <Mail className="w-4 h-4 mr-3 text-blue-500 group-hover:text-blue-400 shrink-0" />
                 support@insurencesarthi.com
               </a>
             </div>
@@ -30,8 +30,8 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="lg:col-span-1">
-            <h4 className="text-white font-semibold text-lg mb-6">Quick Links</h4>
-            <ul className="space-y-3">
+            <h4 className="text-white font-semibold text-base mb-5">Quick Links</h4>
+            <ul className="space-y-2.5 text-sm">
               <li><Link href="/" className="hover:text-blue-400 transition">Home</Link></li>
               <li><Link href="/about" className="hover:text-blue-400 transition">About Us</Link></li>
               <li><Link href="/services" className="hover:text-blue-400 transition">Services</Link></li>
@@ -44,8 +44,8 @@ export default function Footer() {
 
           {/* Services */}
           <div className="lg:col-span-1">
-            <h3 className="font-semibold text-lg mb-6 text-white">Services</h3>
-            <ul className="space-y-4">
+            <h3 className="font-semibold text-base mb-5 text-white">Services</h3>
+            <ul className="space-y-3 text-sm">
               <li><Link href="/services/mis-selling" className="text-slate-400 hover:text-white transition-colors">Mis-selling of Policy</Link></li>
               <li><Link href="/services/refile-claim" className="text-slate-400 hover:text-white transition-colors">Claim Rejection</Link></li>
               <li><Link href="/services/delay-in-claim" className="text-slate-400 hover:text-white transition-colors">Delay in Process</Link></li>
@@ -57,16 +57,16 @@ export default function Footer() {
 
           {/* Insights & Legal */}
           <div className="lg:col-span-1">
-            <h3 className="font-semibold text-lg mb-6 text-white">Insights</h3>
-            <ul className="space-y-4 mb-8">
+            <h3 className="font-semibold text-base mb-5 text-white">Insights</h3>
+            <ul className="space-y-3 mb-8 text-sm">
               <li><Link href="/testimonials" className="text-slate-400 hover:text-white transition-colors">Customer Reviews</Link></li>
               <li><Link href="/media-coverage" className="text-slate-400 hover:text-white transition-colors">Media Coverage</Link></li>
               <li><Link href="/awards" className="text-slate-400 hover:text-white transition-colors">Awards & Recognition</Link></li>
               <li><Link href="/career" className="text-slate-400 hover:text-white transition-colors">Careers</Link></li>
             </ul>
             
-            <h3 className="font-semibold text-lg mb-6 text-white">Legal</h3>
-            <ul className="space-y-3">
+            <h3 className="font-semibold text-base mb-5 text-white">Legal</h3>
+            <ul className="space-y-2.5">
               <li><Link href="/privacy-policy" className="hover:text-blue-400 transition text-sm">Privacy Policy</Link></li>
               <li><Link href="/terms" className="hover:text-blue-400 transition text-sm">Terms & Conditions</Link></li>
               <li><Link href="/disclaimer" className="hover:text-blue-400 transition text-sm">Disclaimer</Link></li>
@@ -75,22 +75,22 @@ export default function Footer() {
 
           {/* Branches */}
           <div className="lg:col-span-1">
-            <h4 className="text-white font-semibold text-lg mb-6">Our Locations</h4>
-            <div className="space-y-6">
+            <h4 className="text-white font-semibold text-base mb-5">Our Locations</h4>
+            <div className="space-y-5">
               <div>
-                <h5 className="text-white font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-blue-500"/> Hyderabad (HQ)</h5>
+                <h5 className="text-white text-sm font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-blue-500"/> Hyderabad (HQ)</h5>
                 <p className="text-gray-400 text-sm leading-relaxed">
                   Plot no: 12, Road no: 1, Dharmareddy colony, Near JNTU metro, Hyderabad.
                 </p>
               </div>
               <div>
-                <h5 className="text-white font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-blue-500"/> Delhi</h5>
+                <h5 className="text-white text-sm font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-blue-500"/> Delhi</h5>
                 <p className="text-gray-400 text-sm leading-relaxed">
                   311-315, 3rd Floor, Naurang House, KG Marg, Delhi-110001.
                 </p>
               </div>
               <div>
-                <h5 className="text-white font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-blue-500"/> Mumbai</h5>
+                <h5 className="text-white text-sm font-medium mb-2 flex items-center"><MapPin className="w-4 h-4 mr-2 text-blue-500"/> Mumbai</h5>
                 <p className="text-gray-400 text-sm leading-relaxed">
                   #27, 7th Floor, Mumbai Coworks, Next to Sai Service, Andheri East.
                 </p>
