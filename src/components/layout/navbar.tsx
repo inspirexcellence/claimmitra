@@ -62,12 +62,12 @@ export default function Navbar({ session }: { session?: Session | null }) {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex flex-1 justify-center items-center gap-2 lg:gap-4 px-1 lg:px-2">
               
-              <Link href="/" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/" ? "bg-emerald-50 text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
+              <Link href="/" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/" ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
                 Home
               </Link>
               
               <div className="relative group px-1 py-2">
-                <button className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", pathname.startsWith("/services") ? "bg-emerald-50 text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
+                <button className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", pathname.startsWith("/services") ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
                   Services <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
                 </button>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50">
@@ -82,12 +82,12 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 </div>
               </div>
 
-              <Link href="/about" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/about" ? "bg-emerald-50 text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
+              <Link href="/about" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/about" ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
                 About
               </Link>
 
               <div className="relative group px-1 py-2">
-                <button className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "bg-emerald-50 text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
+                <button className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
                   Insights <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
                 </button>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-60 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50">
@@ -99,11 +99,11 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 </div>
               </div>
 
-              <Link href="/blog" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname.startsWith("/blog") ? "bg-emerald-50 text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
+              <Link href="/blog" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname.startsWith("/blog") ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
                 Blog
               </Link>
               
-              <Link href="/career" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/career" ? "bg-emerald-50 text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
+              <Link href="/career" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/career" ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
                 Career
               </Link>
 
@@ -145,7 +145,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
                   </div>
                 </div>
               ) : (
-                <Link href="/login" className="px-3 py-1.5 text-[13px] font-bold text-slate-700 border-2 border-slate-200 rounded-full hover:border-orange-500 hover:text-emerald-600 transition-all flex items-center whitespace-nowrap">
+                <Link href="/login" className="px-5 py-1.5 text-[13px] font-bold text-white bg-emerald-500 rounded-full hover:bg-emerald-600 transition-all flex items-center whitespace-nowrap border-0 shadow-sm">
                   Login
                 </Link>
               )}
@@ -174,7 +174,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
                   <div className="flex flex-col space-y-1 mt-3 overflow-y-auto max-h-[85vh] pb-4 px-4">
                     <Link 
                       href="/" 
-                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/" ? "text-emerald-600 pl-2 border-l-4 border-l-emerald-500 bg-emerald-50/50 rounded-r-md" : "text-slate-900")} 
+                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/" ? "text-emerald-600 pl-2 border-l-4 border-l-emerald-500 bg-emerald-50/30 rounded-r-md" : "text-slate-900")} 
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Home
@@ -203,7 +203,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
 
                     <Link 
                       href="/about" 
-                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/about" ? "text-emerald-600 pl-2 border-l-4 border-l-emerald-500 bg-emerald-50/50 rounded-r-md" : "text-slate-900")} 
+                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/about" ? "text-emerald-600 pl-2 border-l-4 border-l-emerald-500 bg-emerald-50/30 rounded-r-md" : "text-slate-900")} 
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       About Us
@@ -229,21 +229,21 @@ export default function Navbar({ session }: { session?: Session | null }) {
 
                     <Link 
                       href="/blog" 
-                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname.startsWith("/blog") ? "text-emerald-600 pl-2 border-l-4 border-l-emerald-500 bg-emerald-50/50 rounded-r-md" : "text-slate-900")} 
+                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname.startsWith("/blog") ? "text-emerald-600 pl-2 border-l-4 border-l-emerald-500 bg-emerald-50/30 rounded-r-md" : "text-slate-900")} 
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Blog
                     </Link>
                     <Link 
                       href="/career" 
-                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/career" ? "text-emerald-600 pl-2 border-l-4 border-l-emerald-500 bg-emerald-50/50 rounded-r-md" : "text-slate-900")} 
+                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/career" ? "text-emerald-600 pl-2 border-l-4 border-l-emerald-500 bg-emerald-50/30 rounded-r-md" : "text-slate-900")} 
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Career
                     </Link>
                     <Link 
                       href="/contact" 
-                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/contact" ? "text-emerald-600 pl-2 border-l-4 border-l-emerald-500 bg-emerald-50/50 rounded-r-md" : "text-slate-900")} 
+                      className={cn("text-base font-medium py-2.5 border-b border-slate-100 transition-colors", pathname === "/contact" ? "text-emerald-600 pl-2 border-l-4 border-l-emerald-500 bg-emerald-50/30 rounded-r-md" : "text-slate-900")} 
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Contact
@@ -276,7 +276,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
                         </div>
                       ) : (
                         <Link href="/login" className="block w-full mb-2" onClick={() => setIsMobileMenuOpen(false)}>
-                          <Button variant="outline" className="w-full text-orange-500 border-orange-200 hover:bg-orange-50 py-4 text-sm">
+                          <Button className="w-full text-white bg-emerald-500 hover:bg-emerald-600 py-4 text-sm border-0">
                             Login / Dashboard
                           </Button>
                         </Link>
