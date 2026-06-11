@@ -82,7 +82,7 @@ export default function BlogsAdminClient({ initialBlogs }: { initialBlogs: Blog[
                   </TableCell>
                   <TableCell className="text-slate-500 max-w-[100px] md:w-[250px] lg:max-w-[300px]">
                     <p className="line-clamp-2 text-sm" title={blog.excerpt || "Description"}>
-                      {blog.excerpt || (blog.content ? blog.content.replace(/<[^>]*>?/gm, '').substring(0, 120) + '...' : "No description available.")}
+                      {blog.excerpt || (blog.content ? blog.content.replace(/<[^>]*>?/gm, '').replace(/&nbsp;/g, ' ').substring(0, 120) + '...' : "No description available.")}
                     </p>
                   </TableCell>
                   <TableCell>
