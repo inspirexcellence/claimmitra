@@ -26,7 +26,7 @@ export default function AdminLayout({
     <SessionProvider>
       <div className="flex min-h-screen bg-slate-50">
         <AdminSidebar />
-        <main className="flex-1 md:ml-64 p-4 pt-20 md:p-8 overflow-y-auto">
+        <main className="flex-1 md:ml-56 p-4 pt-20 md:p-8 overflow-y-auto">
           {children}
         </main>
       </div>

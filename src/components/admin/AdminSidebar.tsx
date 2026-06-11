@@ -73,7 +73,7 @@ export default function AdminSidebar() {
   return (
     <>
       {/* Desktop Sidebar */}
-      <aside className="w-64 bg-slate-900 text-white h-screen flex-col flex-shrink-0 fixed left-0 top-0 hidden md:flex">
+      <aside className="w-56 bg-slate-900 text-white h-screen flex-col flex-shrink-0 fixed left-0 top-0 hidden md:flex">
         <SidebarContent />
       </aside>
 
@@ -86,7 +86,7 @@ export default function AdminSidebar() {
           <SheetTrigger className="p-2 -mr-2 text-slate-300 hover:text-white">
             <Menu className="w-6 h-6" />
           </SheetTrigger>
-          <SheetContent side="left" className="w-72 bg-slate-900 border-r-slate-800 p-0 text-white flex flex-col h-full">
+          <SheetContent side="left" className="w-64 bg-slate-900 border-r-slate-800 p-0 text-white flex flex-col h-full">
             <SidebarContent />
           </SheetContent>
         </Sheet>

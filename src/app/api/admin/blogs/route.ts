@@ -3,6 +3,8 @@ import { prisma } from "@/lib/prisma";
 import { auth } from "@/lib/auth";
 import { createClient } from "@supabase/supabase-js";
 
+export const dynamic = "force-dynamic";
+
 // Lazy initialize Supabase Client to prevent top-level crashes if env vars are missing
 const getSupabase = () => {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://vdevakgnmvjvweradcjg.supabase.co";
@@ -15,9 +17,11 @@ const getSupabase = () => {
   return createClient(supabaseUrl, supabaseKey);
 };
 
-export const GET = auth(async (req) => {
+export const GET = auth(async (req: any) => {
   try {
+    console.log("AUTH CHECK:", JSON.stringify(req.auth, null, 2));
     if (!req.auth || (req.auth.user as any).role !== "admin") {
+      console.log("UNAUTHORIZED. req.auth:", !!req.auth, "role:", req.auth?.user?.role);
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
