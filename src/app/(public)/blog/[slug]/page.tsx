@@ -87,7 +87,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
 
             <div className="w-full mb-12">
               <div className="ql-snow">
-                <div className="ql-editor" style={{ padding: 0 }} dangerouslySetInnerHTML={{ __html: blog.content }} />
+                <div className="ql-editor" style={{ padding: 0 }} dangerouslySetInnerHTML={{ __html: blog.content ? blog.content.replace(/&nbsp;/g, ' ') : '' }} />
               </div>
 
               <div className="my-10 text-center">
