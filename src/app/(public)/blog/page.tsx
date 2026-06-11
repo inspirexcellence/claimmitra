@@ -20,6 +20,8 @@ export default async function BlogListingPage() {
       title: true,
       slug: true,
       excerpt: true,
+      metaDescription: true,
+      content: true,
       featuredImage: true,
       createdAt: true,
     }
@@ -54,23 +56,30 @@ export default async function BlogListingPage() {
                     </div>
 
                     {/* Content Row: Image + Excerpt */}
-                    <div className="flex flex-col md:flex-row gap-6 mb-6">
-                      <div className="w-full md:w-1/3 shrink-0">
-                        <Link href={`/blog/${blog.slug}`} className="block h-48 md:h-56 bg-slate-200 overflow-hidden relative group">
+                    <div className="flex flex-col md:flex-row gap-8 mb-6 group/card">
+                      {/* Image Container with Shadow and Radius */}
+                      <div className="w-full md:w-2/5 shrink-0 rounded-xl overflow-hidden shadow-md group-hover/card:shadow-lg transition-shadow duration-300">
+                        <Link href={`/blog/${blog.slug}`} className="block aspect-[4/3] bg-slate-100 overflow-hidden relative">
                           <img 
                             src={blog.featuredImage || "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&auto=format&fit=crop&q=60"} 
                             alt={blog.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            className="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-700 ease-out"
                           />
                         </Link>
                       </div>
                       
-                      <div className="flex flex-col flex-1">
-                        <p className="text-slate-700 leading-relaxed mb-4">
-                          {blog.excerpt || "Click to read the full article and learn more about this insurance topic..."}
+                      {/* Text Content */}
+                      <div className="flex flex-col flex-1 py-1">
+                        <p className="text-slate-600 leading-relaxed mb-5 line-clamp-4">
+                          {blog.metaDescription || blog.excerpt || (blog.content ? blog.content.replace(/<[^>]*>?/gm, '').substring(0, 180) + "..." : "Click to read the full article and learn more about this insurance topic...")}
                         </p>
-                        <Link href={`/blog/${blog.slug}`} className="text-red-600 font-medium hover:underline mt-auto self-end md:self-start">
-                          Continue Reading &rarr;
+                        
+                        <Link 
+                          href={`/blog/${blog.slug}`} 
+                          className="inline-flex items-center text-red-600 font-semibold hover:text-red-700 mt-auto self-start group/btn"
+                        >
+                          Continue Reading 
+                          <ArrowRight className="w-4 h-4 ml-1.5 group-hover/btn:translate-x-1 transition-transform" />
                         </Link>
                       </div>
                     </div>
