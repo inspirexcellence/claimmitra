@@ -130,6 +130,10 @@
 }
 
 /* Fix for Quill Editor Spacing between lines */
+.ql-editor {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
 .ql-editor p {
   margin-bottom: 0.75em;
   min-height: 1.5em;
