@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { signOut } from "next-auth/react";
-import { LayoutDashboard, Shield, ShieldAlert, Search, CreditCard, FileText, LogOut, Menu } from "lucide-react";
+import { LayoutDashboard, Shield, ShieldAlert, Search, CreditCard, FileText, LogOut, Menu, Globe } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const sidebarLinks = [
@@ -51,7 +51,14 @@ export default function AdminSidebar() {
         })}
       </div>
 
-      <div className="p-4 border-t border-slate-800 shrink-0">
+      <div className="p-4 border-t border-slate-800 shrink-0 space-y-2">
+        <Link
+          href="/"
+          className="flex items-center w-full px-4 py-3 text-slate-300 hover:bg-slate-800 hover:text-white rounded-lg transition-colors"
+        >
+          <Globe className="w-5 h-5 mr-3 text-slate-400" />
+          Main Website
+        </Link>
         <button
           onClick={() => signOut({ callbackUrl: "/admin/login" })}
           className="flex items-center w-full px-4 py-3 text-slate-300 hover:bg-red-500/10 hover:text-red-400 rounded-lg transition-colors"
