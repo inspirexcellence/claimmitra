@@ -1,132 +1,33 @@
-"use client";
+import { prisma } from "@/lib/prisma";
+import { auth } from "@/lib/auth";
+import { redirect } from "next/navigation";
+import BlogsAdminClient from "./client-page";
 
-import { useEffect, useState } from "react";
-import Link from "next/link";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Edit, Trash2, Plus } from "lucide-react";
-import { toast } from "sonner";
+export const dynamic = "force-dynamic";
 
-type Blog = {
-  id: string;
-  title: string;
-  slug: string;
-  published: boolean;
-  createdAt: string;
-};
+export default async function BlogsAdmin() {
+  const session = await auth();
 
-export default function BlogsAdmin() {
-  const [blogs, setBlogs] = useState<Blog[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  if (!session || (session.user as any).role !== "admin") {
+    redirect("/admin/login");
+  }
 
-  const fetchBlogs = async () => {
-    try {
-      const res = await fetch("/api/admin/blogs");
-      if (!res.ok) throw new Error("Failed to fetch");
-      const data = await res.json();
-      setBlogs(data);
-    } catch (err) {
-      toast.error("Failed to load blogs");
-    } finally {
-      setIsLoading(false);
+  const blogs = await prisma.blog.findMany({
+    orderBy: { createdAt: "desc" },
+    select: {
+      id: true,
+      title: true,
+      slug: true,
+      published: true,
+      createdAt: true,
     }
-  };
+  });
 
-  useEffect(() => {
-    fetchBlogs();
-  }, []);
+  // Convert Date objects to strings for the client component
+  const serializedBlogs = blogs.map(blog => ({
+    ...blog,
+    createdAt: blog.createdAt.toISOString()
+  }));
 
-  const handleDelete = async (id: string) => {
-    if (!confirm("Are you sure you want to delete this blog post?")) return;
-    
-    try {
-      const res = await fetch(`/api/admin/blogs/${id}`, { method: "DELETE" });
-      if (!res.ok) throw new Error("Failed to delete");
-      toast.success("Blog deleted successfully");
-      fetchBlogs();
-    } catch (err) {
-      toast.error("Failed to delete blog");
-    }
-  };
-
-  return (
-    <div>
-      <div className="mb-8 flex justify-between items-center">
-        <div>
-          <h1 className="text-3xl font-bold text-slate-900">Blog Management</h1>
-          <p className="text-slate-500 mt-1">Create and manage your articles.</p>
-        </div>
-        <Link href="/admin/blogs/new">
-          <Button className="bg-blue-600 hover:bg-blue-700">
-            <Plus className="w-4 h-4 mr-2" />
-            Create New Blog
-          </Button>
-        </Link>
-      </div>
-
-      <div className="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
-        <Table>
-          <TableHeader className="bg-slate-50">
-            <TableRow>
-              <TableHead>Title</TableHead>
-              <TableHead>Slug</TableHead>
-              <TableHead>Status</TableHead>
-              <TableHead>Date</TableHead>
-              <TableHead className="text-right">Actions</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {isLoading ? (
-              <TableRow>
-                <TableCell colSpan={5} className="text-center py-8 text-slate-500">
-                  Loading blogs...
-                </TableCell>
-              </TableRow>
-            ) : blogs.length === 0 ? (
-              <TableRow>
-                <TableCell colSpan={5} className="text-center py-8 text-slate-500">
-                  No blogs created yet.
-                </TableCell>
-              </TableRow>
-            ) : (
-              blogs.map((blog) => (
-                <TableRow key={blog.id}>
-                  <TableCell className="font-medium">{blog.title}</TableCell>
-                  <TableCell className="text-slate-500">{blog.slug}</TableCell>
-                  <TableCell>
-                    {blog.published ? (
-                      <Badge className="bg-green-100 text-green-800 hover:bg-green-100">Published</Badge>
-                    ) : (
-                      <Badge variant="secondary" className="bg-slate-100 text-slate-600">Draft</Badge>
-                    )}
-                  </TableCell>
-                  <TableCell className="text-slate-500">
-                    {new Date(blog.createdAt).toLocaleDateString()}
-                  </TableCell>
-                  <TableCell className="text-right">
-                    <div className="flex justify-end gap-2">
-                      <Link href={`/admin/blogs/${blog.id}/edit`}>
-                        <Button variant="outline" size="sm" className="h-8 w-8 p-0">
-                          <Edit className="h-4 w-4 text-blue-600" />
-                        </Button>
-                      </Link>
-                      <Button 
-                        variant="outline" 
-                        size="sm" 
-                        className="h-8 w-8 p-0 hover:bg-red-50 hover:text-red-600 hover:border-red-200"
-                        onClick={() => handleDelete(blog.id)}
-                      >
-                        <Trash2 className="h-4 w-4 text-red-500" />
-                      </Button>
-                    </div>
-                  </TableCell>
-                </TableRow>
-              ))
-            )}
-          </TableBody>
-        </Table>
-      </div>
-    </div>
-  );
+  return <BlogsAdminClient initialBlogs={serializedBlogs} />;
 }
