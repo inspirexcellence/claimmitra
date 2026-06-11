@@ -28,7 +28,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-[#0f172a] text-slate-300 py-2.5 px-4 sm:px-6 lg:px-8 text-xs font-medium tracking-wide">
+      <div className="bg-[#0f172a] text-slate-300 py-2.5 px-4 sm:px-6 md:px-8 lg:px-8 text-xs font-medium tracking-wide">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 mb-2 sm:mb-0">
             <a href="tel:+919985060600" className="flex items-center hover:text-white transition-colors">
@@ -48,7 +48,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
 
       {/* Main Navigation */}
       <header className="bg-white/95 backdrop-blur-xl sticky top-0 z-50 border-b border-slate-200/60 shadow-sm transition-all duration-300">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 md:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24">
             
             {/* Logo */}
@@ -60,7 +60,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
             </div>
             
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex flex-1 justify-center items-center lg:gap-2 xl:gap-6 px-8">
+            <nav className="hidden xl:flex flex-1 justify-center items-center gap-4 xl:gap-6 px-8">
               
               <Link href="/" className={cn("lg:px-2 xl:px-4 py-2 text-[13px] xl:text-[15px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/" ? "bg-blue-50 text-blue-700" : "text-slate-600 hover:text-blue-600 hover:bg-slate-50")}>
                 Home
@@ -112,7 +112,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
             </nav>
             
             {/* Desktop Buttons */}
-            <div className="hidden lg:flex items-center lg:gap-2 xl:gap-4">
+            <div className="hidden xl:flex items-center lg:gap-2 xl:gap-4">
               {session?.user ? (
                 <div className="relative group px-1 py-2">
                   <button className="flex items-center gap-2 lg:px-3 xl:px-4 lg:py-1.5 xl:py-2 rounded-full border border-slate-200 hover:border-blue-600 transition-all bg-white shadow-sm">
@@ -159,7 +159,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
             </div>
 
             {/* Mobile Menu */}
-            <div className="lg:hidden px-5 flex items-center">
+            <div className="xl:hidden px-5 flex items-center">
               <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
                 <SheetTrigger className="p-2 hover:bg-slate-100 rounded-md">
                   <Menu className="h-6 w-6" />
