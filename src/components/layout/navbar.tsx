@@ -60,14 +60,14 @@ export default function Navbar({ session }: { session?: Session | null }) {
             </div>
             
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex flex-1 justify-center items-center gap-2 lg:gap-4 px-1 lg:px-2">
+            <nav className="hidden lg:flex justify-center items-center gap-4 lg:gap-8">
               
-              <Link href="/" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/" ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
+              <Link href="/" className={cn("py-2 text-[14px] font-bold transition-all whitespace-nowrap", pathname === "/" ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600")}>
                 Home
               </Link>
               
-              <div className="relative group px-1 py-2">
-                <button className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", pathname.startsWith("/services") ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
+              <div className="relative group py-2">
+                <button className={cn("py-2 text-[14px] font-bold transition-all flex items-center gap-1 whitespace-nowrap", pathname.startsWith("/services") ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600")}>
                   Services <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
                 </button>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50">
@@ -82,12 +82,12 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 </div>
               </div>
 
-              <Link href="/about" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/about" ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
+              <Link href="/about" className={cn("py-2 text-[14px] font-bold transition-all whitespace-nowrap", pathname === "/about" ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600")}>
                 About
               </Link>
 
-              <div className="relative group px-1 py-2">
-                <button className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all flex items-center gap-1 whitespace-nowrap", ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
+              <div className="relative group py-2">
+                <button className={cn("py-2 text-[14px] font-bold transition-all flex items-center gap-1 whitespace-nowrap", ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600")}>
                   Insights <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
                 </button>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-60 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 z-50">
@@ -99,18 +99,18 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 </div>
               </div>
 
-              <Link href="/blog" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname.startsWith("/blog") ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
+              <Link href="/blog" className={cn("py-2 text-[14px] font-bold transition-all whitespace-nowrap", pathname.startsWith("/blog") ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600")}>
                 Blog
               </Link>
               
-              <Link href="/career" className={cn("px-2 lg:px-2 py-2 text-[13px] font-bold rounded-full transition-all whitespace-nowrap", pathname === "/career" ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50/50")}>
+              <Link href="/career" className={cn("py-2 text-[14px] font-bold transition-all whitespace-nowrap", pathname === "/career" ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600")}>
                 Career
               </Link>
 
             </nav>
             
             {/* Desktop Buttons */}
-            <div className="hidden lg:flex items-center gap-2 shrink-0">
+            <div className="hidden lg:flex items-center gap-4 shrink-0">
               {session?.user ? (
                 <div className="relative group px-1 py-2">
                   <button className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-200 hover:border-orange-500 transition-all bg-white shadow-sm">
