@@ -44,7 +44,7 @@ const services = [
     id: "policy-review",
     title: "Understand My Policy",
     description: "Stop guessing what your policy covers. Our experts will review your policy document and give you a plain-English breakdown of your coverage, limits, and exclusions.",
-    icon: <Search className="w-12 h-12 text-indigo-600" />,
+    icon: <Search className="w-12 h-12 text-emerald-600" />,
     features: [
       "Summary of inclusions and exclusions",
       "Identification of hidden waiting periods",
@@ -87,7 +87,7 @@ export default function ServicesPage() {
                 <ul className="space-y-3 mb-8 flex-grow">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
-                      <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0 mt-0.5" />
                       <span className="text-slate-700">{feature}</span>
                     </li>
                   ))}

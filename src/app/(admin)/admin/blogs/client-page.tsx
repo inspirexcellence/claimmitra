@@ -87,7 +87,7 @@ export default function BlogsAdminClient({ initialBlogs }: { initialBlogs: Blog[
                   </TableCell>
                   <TableCell>
                     {blog.published ? (
-                      <Badge className="bg-green-100 text-green-800 hover:bg-green-100">Published</Badge>
+                      <Badge className="bg-emerald-100 text-emerald-800 hover:bg-emerald-100">Published</Badge>
                     ) : (
                       <Badge variant="secondary" className="bg-slate-100 text-slate-600">Draft</Badge>
                     )}

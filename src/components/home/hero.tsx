@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-slate-50 pt-10 pb-32">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-orange-100 opacity-50 blur-3xl" />
-      <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-indigo-100 opacity-50 blur-3xl" />
+      <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-emerald-100 opacity-50 blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -23,8 +23,8 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
               className="flex mb-6"
             >
-              <span className="inline-flex items-center rounded-full bg-orange-100 px-4 py-1.5 text-sm font-medium text-orange-700">
-                <ShieldCheck className="w-4 h-4 mr-2" />
+              <span className="inline-flex items-center rounded-full bg-emerald-50 px-4 py-1.5 text-sm font-medium text-emerald-700 border border-emerald-200">
+                <ShieldCheck className="w-4 h-4 mr-2 text-emerald-600" />
                 Health & Life Insurance Claim Rejection Support
               </span>
             </motion.div>
@@ -72,9 +72,9 @@ export default function Hero() {
               transition={{ duration: 1, delay: 0.6 }}
               className="mt-8 flex flex-wrap gap-6 text-sm text-slate-500 font-medium"
             >
-              <span className="flex items-center">✓ No Win, No Fee*</span>
-              <span className="flex items-center">✓ 95% Success Rate</span>
-              <span className="flex items-center">✓ Free Initial Consultation</span>
+              <span className="flex items-center"><span className="text-emerald-500 mr-2 font-bold">✓</span> No Win, No Fee*</span>
+              <span className="flex items-center"><span className="text-emerald-500 mr-2 font-bold">✓</span> 95% Success Rate</span>
+              <span className="flex items-center"><span className="text-emerald-500 mr-2 font-bold">✓</span> Free Initial Consultation</span>
             </motion.div>
           </div>
 

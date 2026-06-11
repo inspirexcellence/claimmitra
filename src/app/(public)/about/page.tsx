@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const leaders = [
   { name: "Vinaya Kumar N", title: "MD & CEO", initial: "V", color: "bg-orange-500" },
-  { name: "Sankaraiah Ch", title: "Director", initial: "S", color: "bg-indigo-600" },
+  { name: "Sankaraiah Ch", title: "Director", initial: "S", color: "bg-emerald-600" },
   { name: "Santosh Choubey", title: "Director", initial: "S", color: "bg-teal-600" },
   { name: "Prakash P S S", title: "Director & COO", initial: "P", color: "bg-sky-600" },
 ];
@@ -37,8 +37,8 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-            <div className="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
-              <ShieldCheck className="w-7 h-7 text-indigo-600" />
+            <div className="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center mb-6">
+              <ShieldCheck className="w-7 h-7 text-emerald-600" />
             </div>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Our Vision</h2>
             <p className="text-slate-600 leading-relaxed">
@@ -64,7 +64,7 @@ export default function AboutPage() {
         </div>
 
         {/* Values */}
-        <div className="bg-slate-900 text-white rounded-3xl p-10 md:p-16 text-center">
+        <div className="bg-neutral-900 text-white rounded-3xl p-10 md:p-16 text-center">
           <h2 className="text-3xl font-bold mb-10">Our Core Values</h2>
           <div className="grid sm:grid-cols-3 gap-8">
             <div>

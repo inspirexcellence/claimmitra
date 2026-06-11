@@ -22,7 +22,7 @@ function getStatusBadge(status: string) {
     case "resolved":
     case "completed":
     case "paid":
-      return <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">Resolved</Badge>;
+      return <Badge variant="outline" className="bg-green-50 text-emerald-700 border-emerald-200">Resolved</Badge>;
     case "rejected":
     case "failed":
       return <Badge variant="outline" className="bg-red-50 text-red-700 border-red-200">Rejected</Badge>;
@@ -193,7 +193,7 @@ export default async function DashboardPage() {
               <Card className="border-0 shadow-sm bg-white overflow-hidden">
                 <CardHeader className="bg-white border-b border-slate-100 pb-4">
                   <div className="flex items-center gap-2">
-                    <ShieldCheck className="h-5 w-5 text-green-600" />
+                    <ShieldCheck className="h-5 w-5 text-emerald-600" />
                     <CardTitle className="text-xl">Policy Reviews</CardTitle>
                   </div>
                   <CardDescription>Status of your policy analysis and reviews</CardDescription>

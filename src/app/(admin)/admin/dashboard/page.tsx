@@ -6,7 +6,7 @@ import { Shield, ShieldAlert, Search, CreditCard, FileText, Mail } from "lucide-
 const stats = [
   { title: "Total Claims", value: "0", icon: Shield, color: "text-orange-500", bg: "bg-orange-100" },
   { title: "Rejected Claims", value: "0", icon: ShieldAlert, color: "text-red-600", bg: "bg-red-100" },
-  { title: "Policy Reviews", value: "0", icon: Search, color: "text-indigo-600", bg: "bg-indigo-100" },
+  { title: "Policy Reviews", value: "0", icon: Search, color: "text-emerald-600", bg: "bg-emerald-100" },
   { title: "Total Payments", value: "₹0", icon: CreditCard, color: "text-emerald-600", bg: "bg-emerald-100" },
   { title: "Published Blogs", value: "0", icon: FileText, color: "text-purple-600", bg: "bg-purple-100" },
   { title: "Contact Requests", value: "0", icon: Mail, color: "text-sky-600", bg: "bg-sky-100" },

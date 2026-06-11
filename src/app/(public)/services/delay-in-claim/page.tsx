@@ -64,25 +64,25 @@ export default function DelayClaimPage() {
         </div>
       </section>
 
-      <section className="bg-slate-900 py-20 text-white">
+      <section className="bg-neutral-900 py-20 text-white">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-8">IRDAI Rules You Should Know</h2>
           <div className="bg-slate-800 p-8 rounded-2xl text-left">
             <StaggerContainer className="space-y-4 text-lg text-slate-300">
               <StaggerItem className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-400 shrink-0" />
+                <CheckCircle className="w-6 h-6 text-emerald-400 shrink-0" />
                 <p>Insurers must ask for all required documents in <strong>one go</strong> within 15 days of intimation.</p>
               </StaggerItem>
               <StaggerItem className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-400 shrink-0" />
+                <CheckCircle className="w-6 h-6 text-emerald-400 shrink-0" />
                 <p>If an investigation is required, it must be completed within <strong>30 days</strong>.</p>
               </StaggerItem>
               <StaggerItem className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-400 shrink-0" />
+                <CheckCircle className="w-6 h-6 text-emerald-400 shrink-0" />
                 <p>Payment must be made within <strong>30 days</strong> of receiving the final document.</p>
               </StaggerItem>
               <StaggerItem className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-green-400 shrink-0" />
+                <CheckCircle className="w-6 h-6 text-emerald-400 shrink-0" />
                 <p>If delayed beyond this, the insurer is liable to pay <strong>interest at 2% above the bank rate</strong>.</p>
               </StaggerItem>
             </StaggerContainer>

@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-gray-300 py-16">
+    <footer className="bg-neutral-950 text-gray-300 py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12">
           {/* Company Info */}
@@ -99,7 +99,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-16 pt-8 text-center text-gray-500 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-neutral-800 mt-16 pt-8 text-center text-gray-500 flex flex-col md:flex-row justify-between items-center">
           <p>&copy; {new Date().getFullYear()} InsurenceSarthi. All rights reserved.</p>
           <p className="mt-4 md:mt-0 text-sm">Empowering policyholders across India.</p>
         </div>

@@ -183,11 +183,11 @@ export default function FileClaimPage() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg text-slate-900 mb-4">Required Documents</h3>
                 <ul className="space-y-2">
-                  <li className="flex items-center text-sm text-slate-600"><CheckCircle2 className="w-4 h-4 text-green-500 mr-2" /> Policy Copy / e-Card</li>
-                  <li className="flex items-center text-sm text-slate-600"><CheckCircle2 className="w-4 h-4 text-green-500 mr-2" /> Patient's ID Proof (Aadhar/PAN)</li>
-                  <li className="flex items-center text-sm text-slate-600"><CheckCircle2 className="w-4 h-4 text-green-500 mr-2" /> Discharge Summary (if discharged)</li>
-                  <li className="flex items-center text-sm text-slate-600"><CheckCircle2 className="w-4 h-4 text-green-500 mr-2" /> Final Hospital Bill</li>
-                  <li className="flex items-center text-sm text-slate-600"><CheckCircle2 className="w-4 h-4 text-green-500 mr-2" /> Cancelled Cheque</li>
+                  <li className="flex items-center text-sm text-slate-600"><CheckCircle2 className="w-4 h-4 text-emerald-500 mr-2" /> Policy Copy / e-Card</li>
+                  <li className="flex items-center text-sm text-slate-600"><CheckCircle2 className="w-4 h-4 text-emerald-500 mr-2" /> Patient's ID Proof (Aadhar/PAN)</li>
+                  <li className="flex items-center text-sm text-slate-600"><CheckCircle2 className="w-4 h-4 text-emerald-500 mr-2" /> Discharge Summary (if discharged)</li>
+                  <li className="flex items-center text-sm text-slate-600"><CheckCircle2 className="w-4 h-4 text-emerald-500 mr-2" /> Final Hospital Bill</li>
+                  <li className="flex items-center text-sm text-slate-600"><CheckCircle2 className="w-4 h-4 text-emerald-500 mr-2" /> Cancelled Cheque</li>
                 </ul>
               </CardContent>
             </Card>

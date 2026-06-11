@@ -174,7 +174,7 @@ export default function RefileClaimPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-slate-200 shadow-sm bg-slate-900 text-white">
+            <Card className="border-slate-200 shadow-sm bg-neutral-900 text-white">
               <CardContent className="p-6 text-center">
                 <h3 className="font-bold text-xl mb-2">No Win, No Fee!</h3>
                 <p className="text-slate-300 text-sm mb-4">We believe in our experts. For most rejection cases, we only charge a success fee if we recover your money.</p>

@@ -37,7 +37,7 @@ const services = [
   {
     title: "Understand My Policy",
     description: "Stop guessing. Our experts will review your policy document and give you a plain-English breakdown.",
-    icon: <Search className="w-10 h-10 text-indigo-600" />,
+    icon: <Search className="w-10 h-10 text-emerald-600" />,
     link: "/services/policy-review",
     price: "₹99",
   },

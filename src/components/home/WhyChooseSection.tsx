@@ -5,7 +5,7 @@ const features = [
   {
     title: "95% Success Rate",
     description: "We have an industry-leading success rate in resolving rejected health and life insurance claims.",
-    icon: <CheckCircle2 className="w-6 h-6 text-orange-500" />
+    icon: <CheckCircle2 className="w-6 h-6 text-emerald-500" />
   },
   {
     title: "Expert Legal Team",

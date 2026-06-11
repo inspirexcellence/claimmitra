@@ -54,11 +54,11 @@ export default function StatsSection() {
   return (
     <section className="relative py-16 bg-slate-50">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="bg-gradient-to-br from-slate-900 via-[#0B1A2C] to-orange-900 rounded-[2.5rem] shadow-2xl p-8 lg:p-14 overflow-hidden relative">
+        <div className="bg-gradient-to-br from-neutral-900 via-neutral-950 to-orange-900 rounded-[2.5rem] shadow-2xl p-8 lg:p-14 overflow-hidden relative">
           
           {/* Dynamic background glow */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/20 rounded-full blur-[100px] translate-x-1/3 -translate-y-1/3 pointer-events-none" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-indigo-600/20 rounded-full blur-[100px] -translate-x-1/3 translate-y-1/3 pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/20 rounded-full blur-[100px] -translate-x-1/3 translate-y-1/3 pointer-events-none" />
           
           <StaggerContainer className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 text-center relative z-10">
             {stats.map((stat, i) => (

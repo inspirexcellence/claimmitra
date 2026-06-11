@@ -163,7 +163,7 @@ export default function PolicyReviewPage() {
                       <span className="font-semibold text-slate-700">Total Amount to Pay</span>
                       <span className="text-2xl font-bold text-slate-900">₹99</span>
                     </div>
-                    <Button type="submit" disabled={isSubmitting || !razorpayLoaded} className="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-lg py-6">
+                    <Button type="submit" disabled={isSubmitting || !razorpayLoaded} className="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-lg py-6">
                       {isSubmitting ? "Processing..." : "Pay ₹99 & Submit"}
                     </Button>
                     <p className="text-xs text-center text-slate-500 mt-4">Payments are securely processed via Razorpay.</p>
@@ -174,9 +174,9 @@ export default function PolicyReviewPage() {
 
             {/* Info Panel */}
             <div className="space-y-6">
-              <Card className="bg-indigo-50 border-indigo-100 h-full">
+              <Card className="bg-indigo-50 border-emerald-100 h-full">
                 <CardContent className="p-8">
-                  <div className="flex items-center mb-6 text-indigo-800">
+                  <div className="flex items-center mb-6 text-emerald-800">
                     <Search className="w-8 h-8 mr-3" />
                     <h3 className="font-bold text-2xl">What's Included in the ₹99 Review?</h3>
                   </div>
@@ -196,28 +196,28 @@ export default function PolicyReviewPage() {
 
                   <ul className="space-y-5">
                     <li className="flex items-start">
-                      <CheckCircle2 className="w-6 h-6 text-indigo-600 mr-3 flex-shrink-0" />
+                      <CheckCircle2 className="w-6 h-6 text-emerald-600 mr-3 flex-shrink-0" />
                       <div>
                         <h4 className="font-bold text-slate-900">Summary of Inclusions & Exclusions</h4>
                         <p className="text-sm text-slate-600">A clear list of what is covered and what is definitely not covered.</p>
                       </div>
                     </li>
                     <li className="flex items-start">
-                      <CheckCircle2 className="w-6 h-6 text-indigo-600 mr-3 flex-shrink-0" />
+                      <CheckCircle2 className="w-6 h-6 text-emerald-600 mr-3 flex-shrink-0" />
                       <div>
                         <h4 className="font-bold text-slate-900">Waiting Period Analysis</h4>
                         <p className="text-sm text-slate-600">Identification of 30-day, 1-year, 2-year, and pre-existing disease waiting periods.</p>
                       </div>
                     </li>
                     <li className="flex items-start">
-                      <CheckCircle2 className="w-6 h-6 text-indigo-600 mr-3 flex-shrink-0" />
+                      <CheckCircle2 className="w-6 h-6 text-emerald-600 mr-3 flex-shrink-0" />
                       <div>
                         <h4 className="font-bold text-slate-900">Co-Pay & Sub-Limit Identification</h4>
                         <p className="text-sm text-slate-600">We highlight room rent capping, ICU capping, and mandatory co-payments.</p>
                       </div>
                     </li>
                     <li className="flex items-start">
-                      <CheckCircle2 className="w-6 h-6 text-indigo-600 mr-3 flex-shrink-0" />
+                      <CheckCircle2 className="w-6 h-6 text-emerald-600 mr-3 flex-shrink-0" />
                       <div>
                         <h4 className="font-bold text-slate-900">Expert Recommendations</h4>
                         <p className="text-sm text-slate-600">Actionable advice on whether you should port your policy or add riders.</p>
