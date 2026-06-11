@@ -28,7 +28,7 @@ export default function AdminSidebar() {
         </Link>
       </div>
 
-      <div className="flex-1 py-6 px-4 space-y-2 overflow-y-auto">
+      <div className="flex-1 py-4 px-3 space-y-1 overflow-y-auto">
         {sidebarLinks.map((link) => {
           const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
           const Icon = link.icon;
@@ -38,32 +38,32 @@ export default function AdminSidebar() {
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className={`flex items-center px-4 py-3 rounded-lg transition-colors ${
+              className={`flex items-center px-3 py-2 text-sm rounded-md transition-colors ${
                 isActive 
-                  ? "bg-blue-600 text-white font-medium shadow-md" 
+                  ? "bg-blue-600 text-white font-medium shadow-sm" 
                   : "text-slate-300 hover:bg-slate-800 hover:text-white"
               }`}
             >
-              <Icon className={`w-5 h-5 mr-3 ${isActive ? "text-white" : "text-slate-400"}`} />
+              <Icon className={`w-4 h-4 mr-3 shrink-0 ${isActive ? "text-white" : "text-slate-400"}`} />
               {link.name}
             </Link>
           );
         })}
       </div>
 
-      <div className="p-4 border-t border-slate-800 shrink-0 space-y-2">
+      <div className="p-3 border-t border-slate-800 shrink-0 space-y-1">
         <Link
           href="/"
-          className="flex items-center w-full px-4 py-3 text-slate-300 hover:bg-slate-800 hover:text-white rounded-lg transition-colors"
+          className="flex items-center w-full px-3 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white rounded-md transition-colors"
         >
-          <Globe className="w-5 h-5 mr-3 text-slate-400" />
+          <Globe className="w-4 h-4 mr-3 shrink-0 text-slate-400" />
           Main Website
         </Link>
         <button
           onClick={() => signOut({ callbackUrl: "/admin/login" })}
-          className="flex items-center w-full px-4 py-3 text-slate-300 hover:bg-red-500/10 hover:text-red-400 rounded-lg transition-colors"
+          className="flex items-center w-full px-3 py-2 text-sm text-slate-300 hover:bg-red-500/10 hover:text-red-400 rounded-md transition-colors"
         >
-          <LogOut className="w-5 h-5 mr-3 text-slate-400" />
+          <LogOut className="w-4 h-4 mr-3 shrink-0 text-slate-400" />
           Sign Out
         </button>
       </div>
