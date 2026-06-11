@@ -54,7 +54,7 @@ export default function PolicyReviewPage() {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "rzp_test_placeholder",
         amount: orderData.amount,
         currency: orderData.currency,
-        name: "ClaimMitra",
+        name: "InsurenceSarthi",
         description: "Policy Review Service",
         order_id: orderData.orderId,
         handler: async function (response: any) {

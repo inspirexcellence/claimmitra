@@ -3,8 +3,8 @@ import { Star, Quote } from "lucide-react";
 import { FadeIn, SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 
 export const metadata: Metadata = {
-  title: "Customer Reviews & Testimonials | ClaimMitra",
-  description: "Read real stories from customers who successfully resolved their insurance claims, recovered their money, and found justice with ClaimMitra.",
+  title: "Customer Reviews & Testimonials | InsurenceSarthi",
+  description: "Read real stories from customers who successfully resolved their insurance claims, recovered their money, and found justice with InsurenceSarthi.",
 };
 
 const reviews = [
@@ -12,37 +12,37 @@ const reviews = [
     name: "Ravi Sharma",
     type: "Health Claim",
     rating: 5,
-    text: "My health insurance claim of ₹4.5 Lakhs was rejected citing 'non-disclosure of PED'. ClaimMitra's team took my case, gathered medical certificates from my doctor, and fought with the ombudsman. We won! I got my money with interest.",
+    text: "My health insurance claim of ₹4.5 Lakhs was rejected citing 'non-disclosure of PED'. InsurenceSarthi's team took my case, gathered medical certificates from my doctor, and fought with the ombudsman. We won! I got my money with interest.",
   },
   {
     name: "Anjali Gupta",
     type: "Mis-selling",
     rating: 5,
-    text: "I was sold a life insurance policy under the false promise of getting an interest-free loan. When I realized the fraud, the bank washed its hands off it. ClaimMitra got my entire ₹1 Lakh premium refunded within 45 days.",
+    text: "I was sold a life insurance policy under the false promise of getting an interest-free loan. When I realized the fraud, the bank washed its hands off it. InsurenceSarthi got my entire ₹1 Lakh premium refunded within 45 days.",
   },
   {
     name: "Vikram Reddy",
     type: "Motor Claim Delay",
     rating: 5,
-    text: "My car was in the garage for 3 months because the insurance surveyor kept delaying the approval. One legal notice drafted by ClaimMitra and the insurance company cleared the bill in 4 days. Highly recommended!",
+    text: "My car was in the garage for 3 months because the insurance surveyor kept delaying the approval. One legal notice drafted by InsurenceSarthi and the insurance company cleared the bill in 4 days. Highly recommended!",
   },
   {
     name: "Pooja Desai",
     type: "Short-Settled Claim",
     rating: 4,
-    text: "I was charged ₹80,000 extra by the hospital for PPE kits and consumables, which my TPA refused to pay. ClaimMitra audited the bill and forced the TPA to reimburse ₹50,000 back to me under IRDAI guidelines.",
+    text: "I was charged ₹80,000 extra by the hospital for PPE kits and consumables, which my TPA refused to pay. InsurenceSarthi audited the bill and forced the TPA to reimburse ₹50,000 back to me under IRDAI guidelines.",
   },
   {
     name: "Suresh Menon",
     type: "Life Insurance Claim",
     rating: 5,
-    text: "After my father's demise, the insurance company rejected the death claim. It was a very dark time for us. ClaimMitra handled everything with empathy and extreme professionalism. They secured the ₹50 Lakh claim for us.",
+    text: "After my father's demise, the insurance company rejected the death claim. It was a very dark time for us. InsurenceSarthi handled everything with empathy and extreme professionalism. They secured the ₹50 Lakh claim for us.",
   },
   {
     name: "Meera Iyer",
     type: "Travel Insurance",
     rating: 5,
-    text: "My baggage was lost in transit and the insurance company offered a measly ₹5000 as compensation. ClaimMitra helped me claim the actual value of my lost items up to the sub-limit of $1000.",
+    text: "My baggage was lost in transit and the insurance company offered a measly ₹5000 as compensation. InsurenceSarthi helped me claim the actual value of my lost items up to the sub-limit of $1000.",
   }
 ];
 

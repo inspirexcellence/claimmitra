@@ -44,7 +44,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed"
             >
-              Are you tired of fighting with insurance companies over denied or delayed claims? ClaimMitra is India's most trusted platform for resolving complex insurance disputes. Our experts handle the paperwork, legalities, and negotiations so you get the money you deserve.
+              Are you tired of fighting with insurance companies over denied or delayed claims? InsurenceSarthi is India's most trusted platform for resolving complex insurance disputes. Our experts handle the paperwork, legalities, and negotiations so you get the money you deserve.
             </motion.p>
 
             <motion.div

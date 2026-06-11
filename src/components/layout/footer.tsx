@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
               <span className="bg-blue-600 text-white px-2 py-1 rounded-md text-xl">C</span>
-              ClaimMitra
+              InsurenceSarthi
             </h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
               We help you appeal & negotiate with insurers. Turning Insurance Challenges into Triumphs: From Denied Claims to Approved Success.
@@ -21,9 +21,9 @@ export default function Footer() {
                 <Phone className="w-5 h-5 mr-3 text-blue-500 group-hover:text-blue-400" />
                 +91 99850 60600
               </a>
-              <a href="mailto:support@claimmitra.com" className="flex items-center text-gray-400 hover:text-white transition group">
+              <a href="mailto:support@insurencesarthi.com" className="flex items-center text-gray-400 hover:text-white transition group">
                 <Mail className="w-5 h-5 mr-3 text-blue-500 group-hover:text-blue-400" />
-                support@claimmitra.com
+                support@insurencesarthi.com
               </a>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 mt-16 pt-8 text-center text-gray-500 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} ClaimMitra. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} InsurenceSarthi. All rights reserved.</p>
           <p className="mt-4 md:mt-0 text-sm">Empowering policyholders across India.</p>
         </div>
       </div>

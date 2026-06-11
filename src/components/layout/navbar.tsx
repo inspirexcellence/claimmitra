@@ -35,9 +35,9 @@ export default function Navbar({ session }: { session?: Session | null }) {
               <Phone className="w-3.5 h-3.5 mr-2 text-blue-400" />
               +91 99850 60600
             </a>
-            <a href="mailto:support@claimmitra.com" className="flex items-center hover:text-white transition-colors">
+            <a href="mailto:support@insurencesarthi.com" className="flex items-center hover:text-white transition-colors">
               <Mail className="w-3.5 h-3.5 mr-2 text-blue-400" />
-              support@claimmitra.com
+              support@insurencesarthi.com
             </a>
           </div>
           <div className="hidden lg:flex items-center gap-4">
@@ -57,7 +57,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 <div className="bg-blue-600 text-white w-10 h-10 lg:w-12 lg:h-12 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/30">
                   <span className="text-xl lg:text-2xl font-black">C</span>
                 </div>
-                ClaimMitra
+                InsurenceSarthi
               </Link>
             </div>
             
@@ -170,7 +170,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
                   {/* Mobile Header Branding */}
                   <div className="flex items-center gap-2 pb-6 pt-2 border-b border-slate-100">
                     <span className="bg-blue-600 text-white px-2 py-1 rounded-md text-xl font-bold">C</span>
-                    <span className="text-xl font-bold text-blue-700">ClaimMitra</span>
+                    <span className="text-xl font-bold text-blue-700">InsurenceSarthi</span>
                   </div>
 
                   <div className="flex flex-col space-y-2 mt-6 overflow-y-auto max-h-[75vh] pb-8 px-2">

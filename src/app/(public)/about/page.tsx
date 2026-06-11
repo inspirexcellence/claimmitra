@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Users, Award, ShieldCheck, Target } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us | ClaimMitra",
-  description: "Learn about ClaimMitra, India's most trusted insurance claim resolution platform.",
+  title: "About Us | InsurenceSarthi",
+  description: "Learn about InsurenceSarthi, India's most trusted insurance claim resolution platform.",
 };
 
 const leaders = [
@@ -19,7 +19,7 @@ export default function AboutPage() {
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">About ClaimMitra</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">About InsurenceSarthi</h1>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
             We are a team of former insurance professionals, legal experts, and doctors dedicated to fighting for policyholders' rights. Our mission is to ensure every legitimate insurance claim gets paid.
           </p>

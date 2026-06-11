@@ -124,7 +124,7 @@ export default function ContactPage() {
                   <div className="flex items-start">
                     <Mail className="w-6 h-6 text-blue-300 mr-4 flex-shrink-0" />
                     <div>
-                      <p className="font-semibold text-lg">support@claimmitra.com</p>
+                      <p className="font-semibold text-lg">support@insurencesarthi.com</p>
                       <p className="text-blue-200 text-sm">Online support 24/7</p>
                     </div>
                   </div>

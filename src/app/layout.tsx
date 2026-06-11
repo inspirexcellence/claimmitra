@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ClaimMitra — Insurance Claim Assistance",
+  title: "InsurenceSarthi — Insurance Claim Assistance",
   description: "We help you appeal, negotiate and win your insurance claim.",
 };
 

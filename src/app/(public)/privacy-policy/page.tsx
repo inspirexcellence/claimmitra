@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | ClaimMitra",
-  description: "Privacy policy for ClaimMitra insurance services.",
+  title: "Privacy Policy | InsurenceSarthi",
+  description: "Privacy policy for InsurenceSarthi insurance services.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="text-2xl font-semibold text-slate-800 mt-8 mb-4">1. Information We Collect</h2>
         <p className="text-slate-600 mb-4">
-          When you use ClaimMitra, we collect information you provide directly to us, including your name, contact information (email, phone number), policy documents, medical records (if applicable to your claim), and communication history.
+          When you use InsurenceSarthi, we collect information you provide directly to us, including your name, contact information (email, phone number), policy documents, medical records (if applicable to your claim), and communication history.
         </p>
 
         <h2 className="text-2xl font-semibold text-slate-800 mt-8 mb-4">2. How We Use Your Information</h2>
@@ -40,7 +40,7 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="text-2xl font-semibold text-slate-800 mt-8 mb-4">5. Contact Us</h2>
         <p className="text-slate-600 mb-4">
-          If you have any questions about this Privacy Policy, please contact us at <strong>privacy@claimmitra.com</strong>.
+          If you have any questions about this Privacy Policy, please contact us at <strong>privacy@insurencesarthi.com</strong>.
         </p>
       </div>
     </div>

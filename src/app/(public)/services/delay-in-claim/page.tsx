@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { FadeIn, SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 
 export const metadata: Metadata = {
-  title: "Delay in Claim Process | ClaimMitra",
+  title: "Delay in Claim Process | InsurenceSarthi",
   description: "Is your insurance claim stuck or taking too long? We expedite delayed claims and force insurance companies to process your settlement.",
 };
 

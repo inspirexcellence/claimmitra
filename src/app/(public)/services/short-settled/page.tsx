@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { FadeIn, SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 
 export const metadata: Metadata = {
-  title: "Claim Short-Settled | ClaimMitra",
+  title: "Claim Short-Settled | InsurenceSarthi",
   description: "Did you receive a lower insurance payout than expected? We help you challenge short-settled claims and recover your rightful balance.",
 };
 

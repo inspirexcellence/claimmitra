@@ -5,8 +5,8 @@ import ProfileForm from "./ProfileForm";
 import { UserCircle } from "lucide-react";
 
 export const metadata = {
-  title: "My Profile | ClaimMitra",
-  description: "Manage your ClaimMitra profile settings.",
+  title: "My Profile | InsurenceSarthi",
+  description: "Manage your InsurenceSarthi profile settings.",
 };
 
 export default async function ProfilePage() {

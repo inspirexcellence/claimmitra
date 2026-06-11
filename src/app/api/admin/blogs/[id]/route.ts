@@ -81,7 +81,7 @@ export async function PUT(req: Request, { params }: { params: Promise<{ id: stri
       
       const { data: uploadData, error: uploadError } = await supabase
         .storage
-        .from(process.env.S3_BUCKET_NAME || "claimmitra-uploads")
+        .from(process.env.S3_BUCKET_NAME || "insurencesarthi-uploads")
         .upload(fileName, buffer, {
           contentType: image.type,
           upsert: false
@@ -91,8 +91,8 @@ export async function PUT(req: Request, { params }: { params: Promise<{ id: stri
         throw new Error("Failed to upload image to Supabase: " + uploadError.message);
       }
       
-      const publicUrlPrefix = process.env.NEXT_PUBLIC_S3_PUBLIC_URL || "https://vdevakgnmvjvweradcjg.supabase.co/storage/v1/object/public/claimmitra-uploads";
-      updateData.featuredImage = `${publicUrlPrefix.split('/claimmitra-uploads')[0]}/${process.env.S3_BUCKET_NAME || "claimmitra-uploads"}/${fileName}`;
+      const publicUrlPrefix = process.env.NEXT_PUBLIC_S3_PUBLIC_URL || "https://vdevakgnmvjvweradcjg.supabase.co/storage/v1/object/public/insurencesarthi-uploads";
+      updateData.featuredImage = `${publicUrlPrefix.split('/insurencesarthi-uploads')[0]}/${process.env.S3_BUCKET_NAME || "insurencesarthi-uploads"}/${fileName}`;
     }
 
     const blog = await prisma.blog.update({

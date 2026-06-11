@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { FadeIn, SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 
 export const metadata: Metadata = {
-  title: "Mis-selling of Insurance Policy | ClaimMitra",
+  title: "Mis-selling of Insurance Policy | InsurenceSarthi",
   description: "Were you sold an insurance policy with false promises like a guaranteed loan or high returns? Get expert help to resolve mis-selling cases and get your money back.",
 };
 

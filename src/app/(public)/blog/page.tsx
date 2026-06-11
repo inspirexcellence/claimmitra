@@ -7,7 +7,7 @@ import BlogSidebar from "@/components/public/BlogSidebar";
 export const revalidate = 60; // Revalidate every 60 seconds to make the page load instantly
 
 export const metadata: Metadata = {
-  title: "Insurance Guides & Blog | ClaimMitra",
+  title: "Insurance Guides & Blog | InsurenceSarthi",
   description: "Read the latest tips, guides, and news about health and life insurance claims in India.",
 };
 
@@ -50,7 +50,7 @@ export default async function BlogListingPage() {
                     
                     {/* Meta Row */}
                     <div className="text-sm text-slate-500 mb-6 font-medium">
-                      Posted on {new Date(blog.createdAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })} by ClaimMitra
+                      Posted on {new Date(blog.createdAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })} by InsurenceSarthi
                     </div>
 
                     {/* Content Row: Image + Excerpt */}
