@@ -145,7 +145,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
                   </div>
                 </div>
               ) : (
-                <Link href="/login" className="px-5 py-1.5 text-[13px] font-bold text-white bg-emerald-500 rounded-full hover:bg-emerald-600 transition-all flex items-center whitespace-nowrap border-0 shadow-sm">
+                <Link href="/login" className="px-5 py-1.5 text-[13px] font-bold text-white bg-emerald-600 rounded-full hover:bg-emerald-600 transition-all flex items-center whitespace-nowrap border-0 shadow-sm">
                   Login
                 </Link>
               )}
