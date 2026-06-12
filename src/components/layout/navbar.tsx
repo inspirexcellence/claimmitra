@@ -31,7 +31,6 @@ export default function Navbar({ session }: { session?: Session | null }) {
     if (typeof document !== 'undefined' && document.activeElement instanceof HTMLElement) {
       document.activeElement.blur();
     }
-    setTimeout(() => setHideDropdowns(false), 200);
   };
 
   return (
@@ -75,7 +74,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 Home
               </Link>
               
-              <div className="relative group py-2">
+              <div className="relative group py-2" onMouseEnter={() => setHideDropdowns(false)}>
                 <button className={cn("py-2 text-[14px] font-bold transition-all flex items-center gap-1 whitespace-nowrap", pathname.startsWith("/services") ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600")}>
                   Services <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 group-focus-within:rotate-180 transition-transform duration-300" />
                 </button>
@@ -95,7 +94,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 About
               </Link>
 
-              <div className="relative group py-2">
+              <div className="relative group py-2" onMouseEnter={() => setHideDropdowns(false)}>
                 <button className={cn("py-2 text-[14px] font-bold transition-all flex items-center gap-1 whitespace-nowrap", ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600")}>
                   Insights <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 group-focus-within:rotate-180 transition-transform duration-300" />
                 </button>
@@ -121,7 +120,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
             {/* Desktop Buttons */}
             <div className="hidden lg:flex items-center gap-4 shrink-0">
               {session?.user ? (
-                <div className="relative group px-1 py-2">
+                <div className="relative group px-1 py-2" onMouseEnter={() => setHideDropdowns(false)}>
                   <button className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-200 hover:border-orange-500 transition-all bg-white shadow-sm">
                     <div className="w-7 h-7 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-xs uppercase">
                       {session.user.name?.[0] || session.user.email?.[0] || 'U'}
