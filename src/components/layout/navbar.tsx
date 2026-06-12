@@ -24,6 +24,15 @@ export default function Navbar({ session }: { session?: Session | null }) {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [hideDropdowns, setHideDropdowns] = useState(false);
+
+  const handleDropdownClick = () => {
+    setHideDropdowns(true);
+    if (typeof document !== 'undefined' && document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+    setTimeout(() => setHideDropdowns(false), 200);
+  };
 
   return (
     <>
@@ -70,8 +79,8 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 <button className={cn("py-2 text-[14px] font-bold transition-all flex items-center gap-1 whitespace-nowrap", pathname.startsWith("/services") ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600")}>
                   Services <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 group-focus-within:rotate-180 transition-transform duration-300" />
                 </button>
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 group-focus-within:translate-y-0 z-50">
-                  <div className="bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-slate-100 p-3 flex flex-col gap-1" onClick={() => { if (document.activeElement instanceof HTMLElement) document.activeElement.blur(); }}>
+                <div className={cn("absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 invisible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 group-focus-within:translate-y-0 z-50", !hideDropdowns && "group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible")}>
+                  <div className="bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-slate-100 p-3 flex flex-col gap-1" onClick={handleDropdownClick}>
                     <Link href="/services/mis-selling" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Mis-selling of Insurance</Link>
                     <Link href="/services/refile-claim" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Claim Rejection</Link>
                     <Link href="/services/delay-in-claim" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Delay In Claim Process</Link>
@@ -90,8 +99,8 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 <button className={cn("py-2 text-[14px] font-bold transition-all flex items-center gap-1 whitespace-nowrap", ["/testimonials", "/media-coverage", "/awards"].includes(pathname) ? "text-emerald-600" : "text-slate-600 hover:text-emerald-600")}>
                   Insights <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 group-focus-within:rotate-180 transition-transform duration-300" />
                 </button>
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-60 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 group-focus-within:translate-y-0 z-50">
-                  <div className="bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-slate-100 p-3 flex flex-col gap-1" onClick={() => { if (document.activeElement instanceof HTMLElement) document.activeElement.blur(); }}>
+                <div className={cn("absolute top-full left-1/2 -translate-x-1/2 pt-2 w-60 opacity-0 invisible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 group-focus-within:translate-y-0 z-50", !hideDropdowns && "group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible")}>
+                  <div className="bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-slate-100 p-3 flex flex-col gap-1" onClick={handleDropdownClick}>
                     <Link href="/testimonials" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Customer Reviews</Link>
                     <Link href="/media-coverage" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Media Coverage</Link>
                     <Link href="/awards" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Awards & Recognition</Link>
@@ -123,8 +132,8 @@ export default function Navbar({ session }: { session?: Session | null }) {
                     <ChevronDown className="h-4 w-4 opacity-70 group-hover:rotate-180 group-focus-within:rotate-180 transition-transform duration-300 text-slate-500" />
                   </button>
                   
-                  <div className="absolute top-full right-0 pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 group-focus-within:translate-y-0 z-50">
-                    <div className="bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1" onClick={() => { if (document.activeElement instanceof HTMLElement) document.activeElement.blur(); }}>
+                  <div className={cn("absolute top-full right-0 pt-2 w-64 opacity-0 invisible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 group-focus-within:translate-y-0 z-50", !hideDropdowns && "group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible")}>
+                    <div className="bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-slate-100 p-2 flex flex-col gap-1" onClick={handleDropdownClick}>
                       <div className="px-4 py-3 border-b border-slate-100 mb-1">
                         <p className="text-sm font-bold text-slate-800 truncate">{session.user.name}</p>
                         <p className="text-xs text-slate-500 truncate">{session.user.email}</p>
