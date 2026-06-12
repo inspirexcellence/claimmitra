@@ -40,7 +40,7 @@ export default function WhyChooseSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <SlideUp>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Why Choose InsurenceSarthi?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Why Choose InsuranceSarthi?</h2>
           </SlideUp>
           <SlideUp delay={0.1}>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">

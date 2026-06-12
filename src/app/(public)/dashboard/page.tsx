@@ -9,8 +9,8 @@ import Link from "next/link";
 import { FileText, AlertCircle, ShieldCheck, ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Dashboard - InsurenceSarthi",
-  description: "User dashboard for InsurenceSarthi",
+  title: "Dashboard - InsuranceSarthi",
+  description: "User dashboard for InsuranceSarthi",
 };
 
 function getStatusBadge(status: string) {

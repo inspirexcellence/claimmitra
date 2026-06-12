@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { FadeIn, SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 
 export const metadata: Metadata = {
-  title: "Career | Join InsurenceSarthi",
-  description: "Join InsurenceSarthi and build a career with purpose. Help us fight for justice in the insurance sector.",
+  title: "Career | Join InsuranceSarthi",
+  description: "Join InsuranceSarthi and build a career with purpose. Help us fight for justice in the insurance sector.",
 };
 
 const openings = [
@@ -41,7 +41,7 @@ export default function CareerPage() {
           </SlideUp>
           <SlideUp delay={0.1}>
             <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed">
-              At InsurenceSarthi, we don't just process paperwork. We fight for justice, right wrongs, and restore faith for thousands of Indian families. Come join our mission.
+              At InsuranceSarthi, we don't just process paperwork. We fight for justice, right wrongs, and restore faith for thousands of Indian families. Come join our mission.
             </p>
           </SlideUp>
           <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 h-14 text-lg">
@@ -92,7 +92,7 @@ export default function CareerPage() {
                   </div>
                 </div>
                 <div className="mt-4 md:mt-0">
-                  <a href="mailto:careers@insurencesarthi.com">
+                  <a href="mailto:careers@insurancesarthi.com">
                     <Button variant="outline" className="w-full md:w-auto text-orange-500 border-orange-200 hover:bg-orange-50">Apply Now</Button>
                   </a>
                 </div>
@@ -102,7 +102,7 @@ export default function CareerPage() {
           
           <div className="mt-12 bg-slate-50 rounded-2xl p-8 text-center border border-slate-100">
             <p className="text-slate-600 text-lg mb-4">Don't see a role that fits your profile?</p>
-            <p className="text-slate-900 font-medium">Drop your resume at <a href="mailto:careers@insurencesarthi.com" className="text-orange-500 hover:underline">careers@insurencesarthi.com</a> and we'll reach out when there's an opening.</p>
+            <p className="text-slate-900 font-medium">Drop your resume at <a href="mailto:careers@insurancesarthi.com" className="text-orange-500 hover:underline">careers@insurancesarthi.com</a> and we'll reach out when there's an opening.</p>
           </div>
         </div>
       </section>

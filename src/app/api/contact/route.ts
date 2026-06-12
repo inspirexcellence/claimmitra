@@ -20,7 +20,7 @@ export async function POST(req: Request) {
 
     // Send notification email (non-blocking)
     sendEmail({
-      to: process.env.EMAIL_FROM || "admin@insurencesarthi.com",
+      to: process.env.EMAIL_FROM || "admin@insurancesarthi.com",
       subject: `New Contact Request from ${name}`,
       html: `
         <h2>New Contact Request</h2>

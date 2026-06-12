@@ -9,7 +9,7 @@ import FaqSection from "@/components/home/FaqSection";
 import CtaSection from "@/components/home/CtaSection";
 
 export const metadata: Metadata = {
-  title: "InsurenceSarthi | Insurance Claim Assistance in India",
+  title: "InsuranceSarthi | Insurance Claim Assistance in India",
   description: "We help you appeal, negotiate and win your rejected or delayed insurance claim.",
 };
 

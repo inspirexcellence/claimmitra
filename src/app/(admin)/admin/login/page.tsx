@@ -66,7 +66,7 @@ export default function AdminLogin() {
           <CardTitle className="text-3xl font-extrabold tracking-tight text-slate-900">
             Admin Portal
           </CardTitle>
-          <p className="text-sm text-slate-500">Sign in to manage InsurenceSarthi</p>
+          <p className="text-sm text-slate-500">Sign in to manage InsuranceSarthi</p>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -75,7 +75,7 @@ export default function AdminLogin() {
               <Input 
                 id="email" 
                 type="email" 
-                placeholder="admin@insurencesarthi.com" 
+                placeholder="admin@insurancesarthi.com" 
                 {...register("email")} 
                 className={errors.email ? "border-red-500" : ""}
               />

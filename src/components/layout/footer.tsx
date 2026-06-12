@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2 pr-4">
             <h3 className="text-2xl font-black mb-6 flex items-center tracking-tight">
-              <span className="text-orange-500">Insurence</span>
+              <span className="text-orange-500">Insurance</span>
               <span className="text-white">Sarthi</span>
             </h3>
             <p className="text-gray-400 text-sm mb-6 leading-relaxed pr-2">
@@ -21,9 +21,9 @@ export default function Footer() {
                 <Phone className="w-4 h-4 mr-3 text-orange-500 group-hover:text-emerald-400 shrink-0" />
                 +91 99850 60600
               </a>
-              <a href="mailto:support@insurencesarthi.com" className="flex items-center text-gray-400 hover:text-white transition group whitespace-nowrap">
+              <a href="mailto:support@insurancesarthi.com" className="flex items-center text-gray-400 hover:text-white transition group whitespace-nowrap">
                 <Mail className="w-4 h-4 mr-3 text-orange-500 group-hover:text-emerald-400 shrink-0" />
-                support@insurencesarthi.com
+                support@insurancesarthi.com
               </a>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-neutral-800 mt-16 pt-8 text-center text-gray-500 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} InsurenceSarthi. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} InsuranceSarthi. All rights reserved.</p>
           <p className="mt-4 md:mt-0 text-sm">Empowering policyholders across India.</p>
         </div>
       </div>

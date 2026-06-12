@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { FadeIn, SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 
 export const metadata: Metadata = {
-  title: "Health Claim Reimbursement | InsurenceSarthi",
+  title: "Health Claim Reimbursement | InsuranceSarthi",
   description: "Facing issues with your health insurance reimbursement? Get expert help to clear your medical bills and secure your rightful payout.",
 };
 

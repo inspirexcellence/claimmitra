@@ -3,7 +3,7 @@ import { Award, Trophy, Medal } from "lucide-react";
 import { FadeIn, SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 
 export const metadata: Metadata = {
-  title: "Awards & Recognition | InsurenceSarthi",
+  title: "Awards & Recognition | InsuranceSarthi",
   description: "Recognized as India's most trusted platform for resolving insurance grievances. Explore our industry awards and milestones.",
 };
 

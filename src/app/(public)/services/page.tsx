@@ -5,7 +5,7 @@ import { FileText, ShieldAlert, Search, CheckCircle2 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Our Services | InsurenceSarthi",
+  title: "Our Services | InsuranceSarthi",
   description: "Comprehensive insurance claim assistance, refiling, and policy review services.",
 };
 

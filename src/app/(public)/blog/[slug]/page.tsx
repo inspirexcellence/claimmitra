@@ -21,12 +21,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const blog = await getBlog(slug);
   
   if (!blog) {
-    return { title: "Blog Not Found | InsurenceSarthi" };
+    return { title: "Blog Not Found | InsuranceSarthi" };
   }
 
   return {
-    title: blog.metaTitle || `${blog.title} | InsurenceSarthi Blog`,
-    description: blog.metaDescription || `Read ${blog.title} on InsurenceSarthi`,
+    title: blog.metaTitle || `${blog.title} | InsuranceSarthi Blog`,
+    description: blog.metaDescription || `Read ${blog.title} on InsuranceSarthi`,
   };
 }
 
@@ -52,7 +52,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             </h1>
             
             <div className="text-sm text-slate-500 mb-6 font-medium">
-              Posted on {new Date(blog.createdAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })} by InsurenceSarthi
+              Posted on {new Date(blog.createdAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })} by InsuranceSarthi
             </div>
 
             {/* Spread the love social icons */}
@@ -91,9 +91,9 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
               </div>
 
               <div className="my-10 text-center">
-                <p className="text-red-600 font-bold mb-4">Click here to register your complaint with InsurenceSarthi</p>
-                <p className="text-sm">Visit our website: <Link href="/" className="text-red-600 hover:underline">insurencesarthi.com</Link></p>
-                <p className="text-sm mt-1">Mail us at <a href="mailto:corporate@insurencesarthi.com" className="text-red-600 hover:underline">corporate@insurencesarthi.com</a></p>
+                <p className="text-red-600 font-bold mb-4">Click here to register your complaint with InsuranceSarthi</p>
+                <p className="text-sm">Visit our website: <Link href="/" className="text-red-600 hover:underline">insurancesarthi.com</Link></p>
+                <p className="text-sm mt-1">Mail us at <a href="mailto:corporate@insurancesarthi.com" className="text-red-600 hover:underline">corporate@insurancesarthi.com</a></p>
               </div>
               
               <hr className="border-gray-200 mb-6" />
@@ -109,7 +109,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   <User className="text-slate-400 w-10 h-10" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg uppercase tracking-wider mb-2">InsurenceSarthi Expert</h4>
+                  <h4 className="font-bold text-lg uppercase tracking-wider mb-2">InsuranceSarthi Expert</h4>
                   <Link href="/blog" className="text-xs text-red-600 uppercase tracking-widest hover:underline">More Posts</Link>
                 </div>
               </div>

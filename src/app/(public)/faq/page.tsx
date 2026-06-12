@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import FaqSection from "@/components/home/FaqSection";
 
 export const metadata: Metadata = {
-  title: "FAQs | InsurenceSarthi",
+  title: "FAQs | InsuranceSarthi",
   description: "Frequently asked questions about our insurance claim resolution services.",
 };
 

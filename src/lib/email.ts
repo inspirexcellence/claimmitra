@@ -19,7 +19,7 @@ interface EmailOptions {
 export async function sendEmail({ to, subject, html }: EmailOptions) {
   try {
     await transporter.sendMail({
-      from: process.env.EMAIL_FROM || "noreply@insurencesarthi.com",
+      from: process.env.EMAIL_FROM || "noreply@insurancesarthi.com",
       to,
       subject,
       html,
@@ -33,18 +33,18 @@ export async function sendEmail({ to, subject, html }: EmailOptions) {
 
 export function claimSubmissionEmail(name: string) {
   return {
-    subject: "InsurenceSarthi — Your Claim Has Been Received",
+    subject: "InsuranceSarthi — Your Claim Has Been Received",
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <div style="background: #1e3a5f; padding: 24px; text-align: center;">
-          <h1 style="color: white; margin: 0;">InsurenceSarthi</h1>
+          <h1 style="color: white; margin: 0;">InsuranceSarthi</h1>
         </div>
         <div style="padding: 32px; background: #ffffff;">
           <h2 style="color: #1e3a5f;">Hello ${name},</h2>
-          <p>Thank you for submitting your claim with InsurenceSarthi. Our team of experts will review your documents and get back to you within 24-48 hours.</p>
+          <p>Thank you for submitting your claim with InsuranceSarthi. Our team of experts will review your documents and get back to you within 24-48 hours.</p>
           <p>If you have any questions, reply to this email or call us at <strong>+91 99850 60600</strong>.</p>
           <hr style="border: 1px solid #eee; margin: 24px 0;" />
-          <p style="color: #888; font-size: 12px;">This is an automated email from InsurenceSarthi. Please do not reply directly.</p>
+          <p style="color: #888; font-size: 12px;">This is an automated email from InsuranceSarthi. Please do not reply directly.</p>
         </div>
       </div>
     `,
@@ -53,18 +53,18 @@ export function claimSubmissionEmail(name: string) {
 
 export function policyReviewEmail(name: string) {
   return {
-    subject: "InsurenceSarthi — Policy Review Payment Received",
+    subject: "InsuranceSarthi — Policy Review Payment Received",
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <div style="background: #1e3a5f; padding: 24px; text-align: center;">
-          <h1 style="color: white; margin: 0;">InsurenceSarthi</h1>
+          <h1 style="color: white; margin: 0;">InsuranceSarthi</h1>
         </div>
         <div style="padding: 32px; background: #ffffff;">
           <h2 style="color: #1e3a5f;">Hello ${name},</h2>
           <p>Your payment of ₹99 for the Policy Review service has been received. Our experts will analyze your policy document and provide a detailed review within 48-72 hours.</p>
           <p>If you have any questions, reply to this email or call us at <strong>+91 99850 60600</strong>.</p>
           <hr style="border: 1px solid #eee; margin: 24px 0;" />
-          <p style="color: #888; font-size: 12px;">This is an automated email from InsurenceSarthi. Please do not reply directly.</p>
+          <p style="color: #888; font-size: 12px;">This is an automated email from InsuranceSarthi. Please do not reply directly.</p>
         </div>
       </div>
     `,
