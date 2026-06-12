@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="lg:col-span-2 pr-4">
             <h3 className="text-2xl font-black mb-6 flex items-center tracking-tight">
               <span className="text-orange-500">Insurance</span>
-              <span className="text-white">Sarthi</span>
+              <span className="text-emerald-500">Sarthi</span>
             </h3>
             <p className="text-gray-400 text-sm mb-6 leading-relaxed pr-2">
               We help you appeal & negotiate with insurers. Turning Insurance Challenges into Triumphs: From Denied Claims to Approved Success.

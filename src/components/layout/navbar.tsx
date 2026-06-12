@@ -55,7 +55,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="text-2xl lg:text-3xl font-black flex items-center tracking-tight">
                 <span className="text-orange-500">Insurance</span>
-                <span className="text-slate-900">Sarthi</span>
+                <span className="text-emerald-600">Sarthi</span>
               </Link>
             </div>
             
@@ -167,7 +167,7 @@ export default function Navbar({ session }: { session?: Session | null }) {
                   <div className="flex items-center pb-3 pt-1 px-4 border-b border-slate-100">
                     <span className="text-xl font-black tracking-tight">
                       <span className="text-orange-500">Insurance</span>
-                      <span className="text-slate-900">Sarthi</span>
+                      <span className="text-emerald-600">Sarthi</span>
                     </span>
                   </div>
 
