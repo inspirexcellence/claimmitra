@@ -49,7 +49,7 @@ export default function ProcessSection() {
           {steps.map((step, index) => (
             <StaggerItem key={index}>
               <div className="relative bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full">
-                <div className="text-5xl font-extrabold text-slate-100 absolute top-4 right-6">
+                <div className="text-5xl font-extrabold text-emerald-600/20 absolute top-4 right-6">
                   {step.number}
                 </div>
                 <div className="mb-6 bg-orange-50 w-16 h-16 rounded-full flex items-center justify-center relative z-10">
