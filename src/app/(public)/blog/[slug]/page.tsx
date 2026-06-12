@@ -47,41 +47,44 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
           {/* Main Content (Left Column) */}
           <div className="lg:col-span-2">
             
-            <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight tracking-tight">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight tracking-tight">
               {blog.title}
             </h1>
             
-            <div className="text-sm text-slate-500 mb-6 font-medium">
-              Posted on {new Date(blog.createdAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })} by InsuranceSarthi
-            </div>
+            <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-slate-100 pb-8 mb-10 gap-6">
+              <div className="flex items-center text-sm text-slate-500 font-medium">
+                <div className="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 mr-4 flex items-center justify-center shrink-0">
+                  <User className="w-6 h-6" />
+                </div>
+                <div>
+                  <div className="font-bold text-slate-900 text-base">InsuranceSarthi Expert</div>
+                  <div>Posted on {new Date(blog.createdAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</div>
+                </div>
+              </div>
 
-            {/* Spread the love social icons */}
-            <div className="mb-8">
-              <span className="text-sm font-bold uppercase tracking-widest text-slate-400 block mb-3">Share this article</span>
-              <div className="flex gap-3 flex-wrap">
-                <button className="bg-[#1877F2] text-white p-3 rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
-                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.597 1.323-1.324V1.325C24 .597 23.403 0 22.675 0z"/></svg>
+              {/* Spread the love social icons */}
+              <div className="flex items-center gap-3">
+                <span className="text-xs font-bold uppercase tracking-widest text-slate-400 mr-2">Share:</span>
+                <button className="w-10 h-10 flex items-center justify-center bg-[#1877F2] text-white rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.597 1.323-1.324V1.325C24 .597 23.403 0 22.675 0z"/></svg>
                 </button>
-                <button className="bg-black text-white p-3 rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
-                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                <button className="w-10 h-10 flex items-center justify-center bg-black text-white rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 </button>
-                <button className="bg-[#0A66C2] text-white p-3 rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
-                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+                <button className="w-10 h-10 flex items-center justify-center bg-[#0A66C2] text-white rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
                 </button>
-                <button className="bg-emerald-500 text-white p-3 rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
-                  <MessageCircle size={18} fill="currentColor" />
-                </button>
-                <button className="bg-red-500 text-white p-3 rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
-                  <Share2 size={18} />
+                <button className="w-10 h-10 flex items-center justify-center bg-emerald-500 text-white rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                  <MessageCircle size={16} fill="currentColor" />
                 </button>
               </div>
             </div>
 
-            <div className="w-full mb-10">
+            <div className="w-full mb-12 rounded-3xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-slate-100">
               <img 
                 src={blog.featuredImage || "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&auto=format&fit=crop&q=80"} 
                 alt={blog.title}
-                className="w-full h-auto object-contain max-h-[500px]"
+                className="w-full h-auto object-cover max-h-[400px] md:max-h-[550px]"
               />
             </div>
 
