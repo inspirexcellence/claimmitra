@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 
 export default function CtaSection() {
   return (
-    <section className="py-24 bg-gradient-to-br from-emerald-700 via-emerald-800 to-emerald-950 relative overflow-hidden">
+    <section className="py-24 bg-emerald-800 relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-emerald-500 opacity-20 blur-3xl" />
-      <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-emerald-400 opacity-20 blur-3xl" />
+      <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-emerald-700 opacity-20 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-emerald-700 opacity-20 blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10 text-center">
         <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
