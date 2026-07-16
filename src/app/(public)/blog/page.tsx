@@ -7,7 +7,7 @@ import BlogSidebar from "@/components/public/BlogSidebar";
 export const revalidate = 60; // Revalidate every 60 seconds to make the page load instantly
 
 export const metadata: Metadata = {
-  title: "Insurance Guides & Blog | InsuranceSarthi",
+  title: "Insurance Guides & Blog | INSURANCE SAHYOG",
   description: "Read the latest tips, guides, and news about health and life insurance claims in India.",
 };
 

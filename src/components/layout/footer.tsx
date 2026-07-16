@@ -10,8 +10,8 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2 pr-4">
             <h3 className="text-2xl font-black mb-6 flex items-center tracking-tight">
-              <span className="text-orange-500">Insurance</span>
-              <span className="text-emerald-500">Sarthi</span>
+              <span className="text-orange-500">INSURANCE</span>
+              <span className="text-emerald-500 ml-1.5">SAHYOG</span>
             </h3>
             <p className="text-gray-400 text-sm mb-6 leading-relaxed pr-2">
               We help you appeal & negotiate with insurers. Turning Insurance Challenges into Triumphs: From Denied Claims to Approved Success.
@@ -21,9 +21,9 @@ export default function Footer() {
                 <Phone className="w-4 h-4 mr-3 text-orange-500 group-hover:text-emerald-400 shrink-0" />
                 +91 99850 60600
               </a>
-              <a href="mailto:support@insurancesarthi.com" className="flex items-center text-gray-400 hover:text-white transition group whitespace-nowrap">
+              <a href="mailto:support@insurancesahyog.com" className="flex items-center text-gray-400 hover:text-white transition group whitespace-nowrap">
                 <Mail className="w-4 h-4 mr-3 text-orange-500 group-hover:text-emerald-400 shrink-0" />
-                support@insurancesarthi.com
+                support@insurancesahyog.com
               </a>
             </div>
           </div>
@@ -46,12 +46,8 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <h3 className="font-semibold text-base mb-5 text-white">Services</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/services/mis-selling" className="text-slate-400 hover:text-white transition-colors">Mis-selling of Policy</Link></li>
-              <li><Link href="/services/refile-claim" className="text-slate-400 hover:text-white transition-colors">Claim Rejection</Link></li>
-              <li><Link href="/services/delay-in-claim" className="text-slate-400 hover:text-white transition-colors">Delay in Process</Link></li>
-              <li><Link href="/services/short-settled" className="text-slate-400 hover:text-white transition-colors">Claim Short-settled</Link></li>
-              <li><Link href="/services/health-reimbursement" className="text-slate-400 hover:text-white transition-colors">Health Reimbursement</Link></li>
-              <li><Link href="/services/policy-review" className="text-slate-400 hover:text-white transition-colors">Know Your Policy (₹99)</Link></li>
+              <li><Link href="/services/file-claim" className="text-slate-400 hover:text-white transition-colors">New Claim Assistance</Link></li>
+              <li><Link href="/services/refile-claim" className="text-slate-400 hover:text-white transition-colors">Rejected Claim Assistance</Link></li>
             </ul>
           </div>
 
@@ -100,7 +96,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-neutral-800 mt-16 pt-8 text-center text-gray-500 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} InsuranceSarthi. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} INSURANCE SAHYOG. All rights reserved.</p>
           <p className="mt-4 md:mt-0 text-sm">Empowering policyholders across India.</p>
         </div>
       </div>

@@ -4,13 +4,13 @@ import Link from "next/link";
 import { FadeIn, SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 
 export const metadata: Metadata = {
-  title: "Media Coverage | InsuranceSarthi",
-  description: "See where InsuranceSarthi has been featured in the news, including Shark Tank India, Mint, Economic Times, and more.",
+  title: "Media Coverage | INSURANCE SAHYOG",
+  description: "See where INSURANCE SAHYOG has been featured in the news, including Shark Tank India, Mint, Economic Times, and more.",
 };
 
 const pressReleases = [
   {
-    title: "InsuranceSarthi pitches on Shark Tank India and secures funding",
+    title: "INSURANCE SAHYOG pitches on Shark Tank India and secures funding",
     source: "Shark Tank India (Sony Entertainment)",
     date: "March 2025",
     type: "tv"
@@ -22,7 +22,7 @@ const pressReleases = [
     type: "print"
   },
   {
-    title: "InsuranceSarthi resolves over ₹50 Crores in rejected health claims",
+    title: "INSURANCE SAHYOG resolves over ₹50 Crores in rejected health claims",
     source: "LiveMint",
     date: "December 2024",
     type: "print"

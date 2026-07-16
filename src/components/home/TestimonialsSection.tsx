@@ -6,17 +6,17 @@ import { SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animatio
 
 const testimonials = [
   {
-    quote: "My father's ₹8 Lakh health insurance claim was rejected citing 'pre-existing disease'. InsuranceSarthi's experts stepped in, proved the rejection was invalid using medical records, and got the full amount approved in 40 days.",
+    quote: "My father's ₹8 Lakh health insurance claim was rejected citing 'pre-existing disease'. Insurance Sahyog's experts stepped in, proved the rejection was invalid using medical records, and got the full amount approved in 40 days.",
     name: "Rajesh Sharma",
     title: "Mumbai, Maharashtra"
   },
   {
-    quote: "I was struggling for 6 months to get my car insurance claim settled after a major accident. The insurer kept delaying. Within 2 weeks of hiring InsuranceSarthi, the settlement amount was credited to my account.",
+    quote: "I was struggling for 6 months to get my car insurance claim settled after a major accident. The insurer kept delaying. Within 2 weeks of hiring Insurance Sahyog, the settlement amount was credited to my account.",
     name: "Priya Desai",
     title: "Pune, Maharashtra"
   },
   {
-    quote: "After my husband passed away, his life insurance company denied the claim due to a minor signature mismatch. I was completely lost. InsuranceSarthi handled the entire legal battle and won the ₹50 Lakh claim for my family.",
+    quote: "After my husband passed away, his life insurance company denied the claim due to a minor signature mismatch. I was completely lost. Insurance Sahyog handled the entire legal battle and won the ₹50 Lakh claim for my family.",
     name: "Sunita Reddy",
     title: "Hyderabad, Telangana"
   },

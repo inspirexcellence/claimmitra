@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://insurancesarthi.com";
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://insurancesahyog.com";
 
   return [
     {
@@ -30,12 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/services/refile-claim`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/services/policy-review`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

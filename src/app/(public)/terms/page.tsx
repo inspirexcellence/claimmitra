@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | InsuranceSarthi",
-  description: "Terms and conditions for using InsuranceSarthi services.",
+  title: "Terms & Conditions | INSURANCE SAHYOG",
+  description: "Terms and conditions for using INSURANCE SAHYOG services.",
 };
 
 export default function TermsPage() {
@@ -14,12 +14,12 @@ export default function TermsPage() {
 
         <h2 className="text-2xl font-semibold text-slate-800 mt-8 mb-4">1. Acceptance of Terms</h2>
         <p className="text-slate-600 mb-4">
-          By accessing or using the InsuranceSarthi website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you may not use our services.
+          By accessing or using the INSURANCE SAHYOG website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you may not use our services.
         </p>
 
         <h2 className="text-2xl font-semibold text-slate-800 mt-8 mb-4">2. Description of Service</h2>
         <p className="text-slate-600 mb-4">
-          InsuranceSarthi acts as a facilitator and consultant to help policyholders resolve delayed or rejected insurance claims. We are not an insurance company, insurance broker, or a law firm (unless specifically stated in a separate legal representation agreement).
+          INSURANCE SAHYOG acts as a facilitator and consultant to help policyholders resolve delayed or rejected insurance claims. We are not an insurance company, insurance broker, or a law firm (unless specifically stated in a separate legal representation agreement).
         </p>
 
         <h2 className="text-2xl font-semibold text-slate-800 mt-8 mb-4">3. Fees and Payments</h2>
@@ -34,7 +34,7 @@ export default function TermsPage() {
 
         <h2 className="text-2xl font-semibold text-slate-800 mt-8 mb-4">5. Limitation of Liability</h2>
         <p className="text-slate-600 mb-4">
-          While we maintain a high success rate, InsuranceSarthi does not guarantee that your claim will be approved. The final decision rests with the insurance company, the Ombudsman, or the Court. We are not liable for the outcome of the claim process.
+          While we maintain a high success rate, INSURANCE SAHYOG does not guarantee that your claim will be approved. The final decision rests with the insurance company, the Ombudsman, or the Court. We are not liable for the outcome of the claim process.
         </p>
       </div>
     </div>

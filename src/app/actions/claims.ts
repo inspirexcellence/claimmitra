@@ -79,7 +79,7 @@ export async function submitClaim(formData: FormData) {
       <p><strong>Details:</strong><br/>${details.replace(/\n/g, '<br/>')}</p>
     `;
     await sendEmail({
-      to: process.env.SMTP_USER || "admin@insurancesarthi.com", // Or a specific admin email
+      to: process.env.SMTP_USER || "admin@insurancesahyog.com", // Or a specific admin email
       subject: `New Claim/Query: ${type.toUpperCase()}`,
       html: adminEmailHtml,
     });

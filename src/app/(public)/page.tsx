@@ -9,8 +9,8 @@ import FaqSection from "@/components/home/FaqSection";
 import CtaSection from "@/components/home/CtaSection";
 
 export const metadata: Metadata = {
-  title: "InsuranceSarthi | Insurance Claim Assistance in India",
-  description: "We help you appeal, negotiate and win your rejected or delayed insurance claim.",
+  title: "INSURANCE SAHYOG | Insurance Claim Assistance in India",
+  description: "We help you navigate, appeal and win your rejected or delayed insurance claim.",
 };
 
 export default function Home() {

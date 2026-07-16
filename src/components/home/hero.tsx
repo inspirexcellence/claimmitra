@@ -65,17 +65,6 @@ export default function Hero() {
                 </Button>
               </Link>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.6 }}
-              className="mt-8 flex flex-wrap gap-6 text-sm text-slate-500 font-medium"
-            >
-              <span className="flex items-center"><span className="text-emerald-500 mr-2 font-bold">✓</span> No Win, No Fee*</span>
-              <span className="flex items-center"><span className="text-emerald-500 mr-2 font-bold">✓</span> 95% Success Rate</span>
-              <span className="flex items-center"><span className="text-emerald-500 mr-2 font-bold">✓</span> Free Initial Consultation</span>
-            </motion.div>
           </div>
 
           {/* Image Content */}

@@ -24,7 +24,7 @@ export default function AdminSidebar() {
     <>
       <div className="h-20 flex items-center px-6 border-b border-neutral-800 shrink-0">
         <Link href="/admin/dashboard" className="text-xl font-bold flex  items-center tracking-tight" onClick={() => setIsOpen(false)}>
-          <span className="text-orange-500">Insurance</span><span className="text-white">Sarthi</span><span className="ml-2 text-slate-400 font-normal text-sm">Admin</span>
+          <span className="text-orange-500">INSURANCE</span><span className="text-white ml-1">SAHYOG</span><span className="ml-2 text-slate-400 font-normal text-sm">Admin</span>
         </Link>
       </div>
 
@@ -80,7 +80,7 @@ export default function AdminSidebar() {
       {/* Mobile Header & Menu */}
       <div className="md:hidden fixed top-0 left-0 w-full h-16 bg-neutral-900 text-white flex items-center justify-between px-4 z-50 shadow-md">
         <Link href="/admin/dashboard" className="text-lg font-bold flex items-center tracking-tight">
-          <span className="text-orange-500">Insurance</span><span className="text-white">Sarthi</span><span className="ml-2 text-slate-400 font-normal text-xs">Admin</span>
+          <span className="text-orange-500">INSURANCE</span><span className="text-white ml-1">SAHYOG</span><span className="ml-2 text-slate-400 font-normal text-xs">Admin</span>
         </Link>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger className="p-2 -mr-2 text-slate-300 hover:text-white">

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | InsuranceSarthi",
-  description: "Legal disclaimer for InsuranceSarthi.",
+  title: "Disclaimer | INSURANCE SAHYOG",
+  description: "Legal disclaimer for INSURANCE SAHYOG.",
 };
 
 export default function DisclaimerPage() {
@@ -12,13 +12,13 @@ export default function DisclaimerPage() {
         <h1 className="text-4xl font-bold text-slate-900 mb-8">Disclaimer</h1>
         
         <p className="text-slate-600 mb-6">
-          The information provided on InsuranceSarthi (the "Website") is for general informational purposes only. All information on the Site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
+          The information provided on INSURANCE SAHYOG (the "Website") is for general informational purposes only. All information on the Site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
         </p>
 
         <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 mb-8">
           <h2 className="text-xl font-bold text-slate-800 mb-3">Not Legal or Financial Advice</h2>
           <p className="text-slate-600 text-sm">
-            InsuranceSarthi is an insurance claim consultancy platform. The content on this website does not constitute legal, financial, or professional advice. While we employ legal experts and industry professionals, your use of the site or our services does not create an attorney-client relationship. You should consult with a qualified professional before making any financial or legal decisions regarding your insurance policies.
+            INSURANCE SAHYOG is an insurance claim consultancy platform. The content on this website does not constitute legal, financial, or professional advice. While we employ legal experts and industry professionals, your use of the site or our services does not create an attorney-client relationship. You should consult with a qualified professional before making any financial or legal decisions regarding your insurance policies.
           </p>
         </div>
 

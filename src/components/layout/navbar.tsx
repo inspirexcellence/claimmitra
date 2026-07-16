@@ -43,9 +43,9 @@ export default function Navbar({ session }: { session?: Session | null }) {
               <Phone className="w-3.5 h-3.5 mr-2 text-orange-400" />
               +91 99850 60600
             </a>
-            <a href="mailto:support@insurancesarthi.com" className="flex items-center hover:text-white transition-colors text-[10px] sm:text-xs">
+            <a href="mailto:support@insurancesahyog.com" className="flex items-center hover:text-white transition-colors text-[10px] sm:text-xs">
               <Mail className="w-3.5 h-3.5 mr-2 text-orange-400" />
-              support@insurancesarthi.com
+              support@insurancesahyog.com
             </a>
           </div>
           <div className="hidden lg:flex items-center gap-4">
@@ -62,8 +62,8 @@ export default function Navbar({ session }: { session?: Session | null }) {
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="text-2xl lg:text-3xl font-black flex items-center tracking-tight">
-                <span className="text-orange-500">Insurance</span>
-                <span className="text-emerald-600">Sarthi</span>
+                <span className="text-orange-500">INSURANCE</span>
+                <span className="text-emerald-600 ml-1.5">SAHYOG</span>
               </Link>
             </div>
             
@@ -80,12 +80,8 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 </button>
                 <div className={cn("absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 opacity-0 invisible transition-all duration-300 transform translate-y-3 group-hover:translate-y-0 group-focus-within:translate-y-0 z-50", !hideDropdowns && "group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible")}>
                   <div className="bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-slate-100 p-3 flex flex-col gap-1" onClick={handleDropdownClick}>
-                    <Link href="/services/mis-selling" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Mis-selling of Insurance</Link>
-                    <Link href="/services/refile-claim" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Claim Rejection</Link>
-                    <Link href="/services/delay-in-claim" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Delay In Claim Process</Link>
-                    <Link href="/services/short-settled" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Claim Short-settled</Link>
-                    <Link href="/services/health-reimbursement" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Health Claim Reimbursement</Link>
-                    <Link href="/services/policy-review" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Know Your Policy</Link>
+                    <Link href="/services/file-claim" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">New Claim Assistance</Link>
+                    <Link href="/services/refile-claim" className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-emerald-600 rounded-xl transition-colors">Rejected Claim Assistance</Link>
                   </div>
                 </div>
               </div>
@@ -173,9 +169,9 @@ export default function Navbar({ session }: { session?: Session | null }) {
                 <SheetContent side="right" className="bg-white">
                   {/* Mobile Header Branding */}
                   <div className="flex items-center pb-3 pt-1 px-4 border-b border-slate-100">
-                    <span className="text-xl font-black tracking-tight">
-                      <span className="text-orange-500">Insurance</span>
-                      <span className="text-emerald-600">Sarthi</span>
+                    <span className="text-xl font-black tracking-tight flex items-center">
+                      <span className="text-orange-500">INSURANCE</span>
+                      <span className="text-emerald-600 ml-1">SAHYOG</span>
                     </span>
                   </div>
 
@@ -199,12 +195,8 @@ export default function Navbar({ session }: { session?: Session | null }) {
                       </button>
                       <div className={cn("overflow-hidden transition-all duration-300 ease-in-out", openDropdown === 'services' || pathname.startsWith("/services") ? "max-h-96 opacity-100 mb-2" : "max-h-0 opacity-0")}>
                         <div className="flex flex-col space-y-0.5 pl-3 border-l-2 border-slate-100 ml-1 py-1">
-                          <Link href="/services/mis-selling" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/mis-selling" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-emerald-600")} onClick={() => setIsMobileMenuOpen(false)}>Mis-selling of Insurance</Link>
-                          <Link href="/services/refile-claim" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/refile-claim" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-emerald-600")} onClick={() => setIsMobileMenuOpen(false)}>Claim Rejection</Link>
-                          <Link href="/services/delay-in-claim" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/delay-in-claim" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-emerald-600")} onClick={() => setIsMobileMenuOpen(false)}>Delay In Claim Process</Link>
-                          <Link href="/services/short-settled" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/short-settled" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-emerald-600")} onClick={() => setIsMobileMenuOpen(false)}>Claim Short-settled</Link>
-                          <Link href="/services/health-reimbursement" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/health-reimbursement" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-emerald-600")} onClick={() => setIsMobileMenuOpen(false)}>Health Claim Reimbursement</Link>
-                          <Link href="/services/policy-review" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/policy-review" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-emerald-600")} onClick={() => setIsMobileMenuOpen(false)}>Know Your Policy</Link>
+                          <Link href="/services/file-claim" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/file-claim" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-emerald-600")} onClick={() => setIsMobileMenuOpen(false)}>New Claim Assistance</Link>
+                          <Link href="/services/refile-claim" className={cn("text-sm py-1.5 pl-2 rounded-md", pathname === "/services/refile-claim" ? "text-orange-600 font-medium bg-orange-50" : "text-slate-600 hover:text-emerald-600")} onClick={() => setIsMobileMenuOpen(false)}>Rejected Claim Assistance</Link>
                         </div>
                       </div>
                     </div>

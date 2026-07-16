@@ -5,55 +5,40 @@ import { FileText, ShieldAlert, Search, CheckCircle2 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Our Services | InsuranceSarthi",
+  title: "Our Services | INSURANCE SAHYOG",
   description: "Comprehensive insurance claim assistance, refiling, and policy review services.",
 };
 
 const services = [
   {
     id: "file-claim",
-    title: "File Your Insurance Claim",
+    title: "New Claim Assistance",
     description: "Don't risk a rejection due to improper paperwork. Let our experts file your claim with the exact documentation and phrasing required by insurance companies.",
-    icon: <FileText className="w-12 h-12 text-orange-500" />,
+    icon: <FileText className="w-12 h-12 text-emerald-600" />,
     features: [
       "Complete documentation review before submission",
-      "Drafting of the claim narrative",
-      "Direct coordination with hospital/garage",
-      "Follow-up with the TPA (Third Party Administrator)",
+      "Drafting of the claim narrative and forms",
+      "Direct coordination with hospital/garage/insurer",
+      "End-to-end guidance from start to settlement",
     ],
-    cta: "Learn More",
+    cta: "File My Claim",
     link: "/services/file-claim",
-    price: "Free Evaluation",
+    price: "End-to-End Support",
   },
   {
     id: "refile-claim",
-    title: "Refile Rejected Claim",
+    title: "Rejected Claim Assistance",
     description: "Was your claim unfairly denied? We analyze the rejection reason, gather necessary medical or legal evidence, and legally challenge the insurer to overturn the decision.",
-    icon: <ShieldAlert className="w-12 h-12 text-red-500" />,
+    icon: <ShieldAlert className="w-12 h-12 text-orange-500" />,
     features: [
-      "Deep analysis of rejection letter",
-      "Collection of counter-evidence",
-      "Drafting of formal grievance and appeals",
-      "Escalation to Insurance Ombudsman if needed",
+      "Deep analysis of rejection reasons and policy terms",
+      "Collection of required medical/legal counter-evidence",
+      "Drafting of formal grievances and appeals resubmission",
+      "Escalation to Insurance Ombudsman or Legal support",
     ],
-    cta: "Refile Now",
+    cta: "Refile My Claim",
     link: "/services/refile-claim",
-    price: "Success Fee Model",
-  },
-  {
-    id: "policy-review",
-    title: "Understand My Policy",
-    description: "Stop guessing what your policy covers. Our experts will review your policy document and give you a plain-English breakdown of your coverage, limits, and exclusions.",
-    icon: <Search className="w-12 h-12 text-emerald-600" />,
-    features: [
-      "Summary of inclusions and exclusions",
-      "Identification of hidden waiting periods",
-      "Co-pay and sub-limit analysis",
-      "Recommendations for add-on covers",
-    ],
-    cta: "Get Review for ₹99",
-    link: "/services/policy-review",
-    price: "₹99 Flat Fee",
+    price: "Success & Grievance Support",
   },
 ];
 
@@ -68,7 +53,7 @@ export default function ServicesPage() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {services.map((service) => (
             <Card key={service.id} className="flex flex-col border-slate-200 shadow-sm hover:shadow-lg transition-all h-full">
               <CardHeader className="text-center pt-8">
