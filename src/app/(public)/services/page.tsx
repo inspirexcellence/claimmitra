@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const services = [
   {
     id: "file-claim",
-    title: "File Your Claim Properly",
+    title: "File Your Insurance Claim",
     description: "Don't risk a rejection due to improper paperwork. Let our experts file your claim with the exact documentation and phrasing required by insurance companies.",
     icon: <FileText className="w-12 h-12 text-orange-500" />,
     features: [
@@ -21,8 +21,8 @@ const services = [
       "Direct coordination with hospital/garage",
       "Follow-up with the TPA (Third Party Administrator)",
     ],
-    cta: "Start Your Claim",
-    link: "/submit-claim?type=health-reimbursement",
+    cta: "Learn More",
+    link: "/services/file-claim",
     price: "Free Evaluation",
   },
   {

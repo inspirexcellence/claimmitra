@@ -25,7 +25,7 @@ export default function Hero() {
             >
               <span className="inline-flex items-center rounded-full bg-emerald-50 px-4 py-1.5 text-sm font-medium text-emerald-700 border border-emerald-200">
                 <ShieldCheck className="w-4 h-4 mr-2 text-emerald-600" />
-                Health & Life Insurance Claim Rejection Support
+                Har Policyholder Ka Sachha Sahyog
               </span>
             </motion.div>
 
@@ -35,7 +35,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-emerald-800 tracking-tight leading-tight mb-6"
             >
-              We Help You <span className="text-orange-500">Appeal, Negotiate and Win</span> Your Claim
+              Having Trouble With Your <span className="text-orange-500">Insurance Claim?</span>
             </motion.h1>
 
             <motion.p
@@ -44,7 +44,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed"
             >
-              Are you tired of fighting with insurance companies over denied or delayed claims? InsuranceSarthi is India's most trusted platform for resolving complex insurance disputes. Our experts handle the paperwork, legalities, and negotiations so you get the money you deserve.
+              Insurance claims can be complicated. Insurance Sahyog helps you navigate the process with expert guidance, claim reviews, documentation support, and negotiations—so you can make informed decisions and move forward with confidence.
             </motion.p>
 
             <motion.div

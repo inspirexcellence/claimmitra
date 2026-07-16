@@ -1,36 +1,36 @@
-import { CheckCircle2, Scale, Zap, IndianRupee, ShieldCheck, Clock } from "lucide-react";
+import { CheckCircle2, Scale, ShieldCheck, Clock, FileCheck, HeartHandshake } from "lucide-react";
 import { SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 
 const features = [
   {
-    title: "95% Success Rate",
-    description: "We have an industry-leading success rate in resolving rejected health and life insurance claims.",
-    icon: <CheckCircle2 className="w-6 h-6 text-emerald-500" />
+    title: "Understand Your Policy",
+    description: "Insurance terms can be confusing. We help you understand the parts of your policy that matter to your claim.",
+    icon: <ShieldCheck className="w-6 h-6 text-emerald-600" />
   },
   {
-    title: "Expert Legal Team",
-    description: "Our panel includes former insurance ombudsmen, legal experts, and senior doctors.",
+    title: "Get Your Claim Right",
+    description: "A small mistake can cause delays. We help you prepare your claim correctly from the start.",
+    icon: <CheckCircle2 className="w-6 h-6 text-orange-500" />
+  },
+  {
+    title: "A Careful Review Every Time",
+    description: "Every claim is different. We review your documents carefully to help ensure nothing important is missed.",
+    icon: <FileCheck className="w-6 h-6 text-orange-500" />
+  },
+  {
+    title: "Support Beyond Submission",
+    description: "Filing your claim is just the beginning. We continue to guide you through insurer queries and the next steps.",
+    icon: <Clock className="w-6 h-6 text-orange-500" />
+  },
+  {
+    title: "Honest Advice, Always",
+    description: "No false promises or unrealistic expectations—just clear, practical guidance you can trust.",
     icon: <Scale className="w-6 h-6 text-orange-500" />
   },
   {
-    title: "Fast Resolution",
-    description: "We aim to resolve most claims within 30 to 45 days, cutting through the usual red tape.",
-    icon: <Zap className="w-6 h-6 text-orange-500" />
-  },
-  {
-    title: "Transparent Pricing",
-    description: "No hidden fees. We work on a flat fee or success-fee model depending on the case type.",
-    icon: <IndianRupee className="w-6 h-6 text-orange-500" />
-  },
-  {
-    title: "All Insurance Types",
-    description: "We handle Health, Life, Term, Motor, Property, and Corporate insurance disputes.",
-    icon: <ShieldCheck className="w-6 h-6 text-orange-500" />
-  },
-  {
-    title: "24/7 Support",
-    description: "Dedicated case managers keep you updated throughout the entire resolution process.",
-    icon: <Clock className="w-6 h-6 text-orange-500" />
+    title: "Tailored to Your Claim",
+    description: "Your claim is unique. Our guidance is based on your policy, your circumstances, and your specific situation—not a one-size-fits-all approach.",
+    icon: <HeartHandshake className="w-6 h-6 text-orange-500" />
   }
 ];
 
@@ -40,11 +40,11 @@ export default function WhyChooseSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <SlideUp>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Why Choose InsuranceSarthi?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Why People Trust Insurance Sahyog</h2>
           </SlideUp>
           <SlideUp delay={0.1}>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              We are India's most trusted insurance claim resolution platform.
+              Because trust is built through transparency, expertise, and genuine support.
             </p>
           </SlideUp>
         </div>

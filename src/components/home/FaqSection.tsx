@@ -3,35 +3,42 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 
 const faqs = [
   {
-    question: "What types of insurance claims do you handle?",
-    answer: "We handle all types of insurance claims including Health Insurance, Life Insurance, Term Life, Motor/Car Insurance, Property Insurance, and Corporate/Business Insurance."
+    question: "Can you guarantee my insurance claim will be approved?",
+    answer: "No. The final decision always rests with the insurance company and depends on your policy terms, supporting documents, and the details of your claim. Our role is to help you prepare your claim thoroughly, identify any gaps, and guide you through the process."
   },
   {
-    question: "How long does it take to resolve a rejected claim?",
-    answer: "The resolution time depends on the complexity of the case and the insurance company. However, most of our cases are resolved within 30 to 45 days."
+    question: "How do I know if my claim can be filed or refiled?",
+    answer: "During your initial consultation, we'll review your policy, claim details, and supporting documents to understand your situation. Based on our assessment, we'll advise you on the most appropriate way forward."
   },
   {
-    question: "Do I have to pay upfront fees?",
-    answer: "We offer a free initial consultation. Depending on your case, we may work on a fixed fee model or a success-fee model where you only pay a percentage if we successfully recover your claim amount."
+    question: "My claim has already been rejected. Is it too late to take action?",
+    answer: "Not necessarily. Some rejected claims may still have options available, depending on the reason for rejection and your policy terms. We'll review your case and help you understand the next steps that may be available."
   },
   {
-    question: "Can you help if my claim was rejected 2 years ago?",
-    answer: "Yes, you can file a complaint against an insurance rejection within 3 years from the date of rejection. Contact us immediately so we can evaluate your documents."
+    question: "Do I need a lawyer to file or refile my insurance claim?",
+    answer: "Not always. Many claims can be resolved with proper documentation, accurate filing, and the right guidance. If your case requires legal assistance, we'll let you know and guide you accordingly."
   },
   {
-    question: "What is the ₹99 Policy Review service?",
-    answer: "Our experts will review your entire policy document (up to 50 pages) and provide a simplified summary of what is covered, what is excluded, and identify any hidden clauses that could cause future rejections."
+    question: "How much does your claim assistance service cost?",
+    answer: "The cost depends on the type and complexity of your claim. During your initial consultation, we'll explain the applicable charges clearly before you decide to proceed."
   },
   {
-    question: "Are you affiliated with any insurance companies?",
-    answer: "No, we are a completely independent platform. We work exclusively on behalf of the policyholder to ensure you get the settlement you deserve."
+    question: "What if I don't have all the required documents?",
+    answer: "That's completely okay. We'll review the documents you already have, identify what's missing, and guide you on how to obtain the remaining documents wherever possible."
+  },
+  {
+    question: "How long does the insurance claim process usually take?",
+    answer: "The timeline varies depending on the type of insurance, the complexity of the claim, and the insurer's review process. While we help you prepare and submit your claim efficiently, the final processing time is determined by the insurance company."
+  },
+  {
+    question: "Why should I choose Insurance Sahyog instead of handling the claim myself?",
+    answer: "Insurance claims often involve detailed documentation, policy terms, and procedural requirements. We help you understand the process, prepare your claim carefully, and avoid common mistakes—so you can move forward with greater clarity and confidence."
   }
 ];
-
-import { SlideUp, StaggerContainer, StaggerItem } from "@/components/ui/animations";
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import FaqSection from "@/components/home/FaqSection";
 
 export const metadata: Metadata = {
-  title: "FAQs | InsuranceSarthi",
-  description: "Frequently asked questions about our insurance claim resolution services.",
+  title: "FAQs | Insurance Sahyog",
+  description: "Frequently asked questions about Insurance Sahyog and our insurance claim support services.",
 };
 
 export default function FaqPage() {
